@@ -7,14 +7,7 @@ import sqlite3
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 import pandas as pd
 from datetime import datetime
-
-# Remove NBA API dependency
-# try:
-#     from nba_api.stats.endpoints import LeagueGameFinder, CommonTeamRoster, BoxScoreTraditionalV2
-#     NBA_API_AVAILABLE = True
-# except ImportError:
-#     logging.warning("NBA API not available. Install with: pip install nba_api")
-#     NBA_API_AVAILABLE = False
+import json
 
 # Configure logging
 logging.basicConfig(
@@ -31,75 +24,13 @@ game_results = {}
 game_lock = threading.Lock()
 stats_queue = queue.Queue()
 
-# Define NBA teams and players
-NBA_TEAMS = {
-    # Eastern Conference
-    "BOS": {"name": "Boston Celtics", "arena": "TD Garden"},
-    "MIA": {"name": "Miami Heat", "arena": "Kaseya Center"},
-    "MIL": {"name": "Milwaukee Bucks", "arena": "Fiserv Forum"},
-    "PHI": {"name": "Philadelphia 76ers", "arena": "Wells Fargo Center"},
-    "NYK": {"name": "New York Knicks", "arena": "Madison Square Garden"},
-    "CLE": {"name": "Cleveland Cavaliers", "arena": "Rocket Mortgage FieldHouse"},
-    "ATL": {"name": "Atlanta Hawks", "arena": "State Farm Arena"},
-    "CHI": {"name": "Chicago Bulls", "arena": "United Center"},
-    "TOR": {"name": "Toronto Raptors", "arena": "Scotiabank Arena"},
-    "BKN": {"name": "Brooklyn Nets", "arena": "Barclays Center"},
-    "CHA": {"name": "Charlotte Hornets", "arena": "Spectrum Center"},
-    "IND": {"name": "Indiana Pacers", "arena": "Gainbridge Fieldhouse"},
-    "ORL": {"name": "Orlando Magic", "arena": "Kia Center"},
-    "DET": {"name": "Detroit Pistons", "arena": "Little Caesars Arena"},
-    "WAS": {"name": "Washington Wizards", "arena": "Capital One Arena"},
-    
-    # Western Conference
-    "LAL": {"name": "Los Angeles Lakers", "arena": "Crypto.com Arena"},
-    "GSW": {"name": "Golden State Warriors", "arena": "Chase Center"},
-    "DEN": {"name": "Denver Nuggets", "arena": "Ball Arena"},
-    "PHX": {"name": "Phoenix Suns", "arena": "Footprint Center"},
-    "DAL": {"name": "Dallas Mavericks", "arena": "American Airlines Center"},
-    "LAC": {"name": "Los Angeles Clippers", "arena": "Intuit Dome"},
-    "MEM": {"name": "Memphis Grizzlies", "arena": "FedExForum"},
-    "POR": {"name": "Portland Trail Blazers", "arena": "Moda Center"},
-    "NOP": {"name": "New Orleans Pelicans", "arena": "Smoothie King Center"},
-    "SAS": {"name": "San Antonio Spurs", "arena": "Frost Bank Center"},
-    "UTA": {"name": "Utah Jazz", "arena": "Delta Center"},
-    "SAC": {"name": "Sacramento Kings", "arena": "Golden 1 Center"},
-    "HOU": {"name": "Houston Rockets", "arena": "Toyota Center"},
-    "OKC": {"name": "Oklahoma City Thunder", "arena": "Paycom Center"},
-    "MIN": {"name": "Minnesota Timberwolves", "arena": "Target Center"}
-}
+# Load the JSON file
+with open('nba_data.json', 'r') as f:
+    nba_data = json.load(f)
 
-# Define players by team
-NBA_PLAYERS = {
-    "BOS": ["Jayson Tatum", "Jaylen Brown", "Derrick White", "Jrue Holiday", "Kristaps Porzingis", 
-            "Al Horford", "Payton Pritchard", "Sam Hauser", "Luke Kornet", "Xavier Tillman",
-            "Oshae Brissett", "Neemias Queta", "Jordan Walsh", "JD Davison", "Jaden Springer"],
-    "MIA": ["Jimmy Butler", "Bam Adebayo", "Tyler Herro", "Terry Rozier", "Duncan Robinson",
-            "Jaime Jaquez Jr.", "Kevin Love", "Caleb Martin", "Josh Richardson", "Nikola Jovic",
-            "Thomas Bryant", "Haywood Highsmith", "Orlando Robinson", "Kel'el Ware", "Cole Swider"],
-    "MIL": ["Giannis Antetokounmpo", "Damian Lillard", "Khris Middleton", "Brook Lopez", "Bobby Portis",
-            "Malik Beasley", "Pat Connaughton", "AJ Green", "MarJon Beauchamp", "Jae Crowder",
-            "Gary Trent Jr.", "Taurean Prince", "Delon Wright", "Andre Jackson Jr.", "Chris Livingston"],
-    "PHI": ["Joel Embiid", "Tyrese Maxey", "Paul George", "Tobias Harris", "Kyle Lowry",
-            "Kelly Oubre Jr.", "Caleb Martin", "Eric Gordon", "Andre Drummond", "Reggie Jackson",
-            "KJ Martin", "Guerschon Yabusele", "Jared McCain", "Adem Bona", "Jeff Dowtin Jr."],
-    "NYK": ["Jalen Brunson", "Julius Randle", "OG Anunoby", "Mikal Bridges", "Mitchell Robinson",
-            "Josh Hart", "Donte DiVincenzo", "Isaiah Hartenstein", "Miles McBride", "Precious Achiuwa",
-            "Keita Bates-Diop", "Shake Milton", "Charlie Brown Jr.", "Ariel Hukporti", "Jacob Toppin"],
-    "LAL": ["LeBron James", "Anthony Davis", "Austin Reaves", "D'Angelo Russell", "Rui Hachimura",
-            "Gabe Vincent", "Taurean Prince", "Jaxson Hayes", "Cam Reddish", "Max Christie",
-            "Christian Wood", "Jalen Hood-Schifino", "Skylar Mays", "Bronny James", "Dalton Knecht"],
-    "GSW": ["Stephen Curry", "Draymond Green", "Andrew Wiggins", "Buddy Hield", "Jonathan Kuminga",
-            "De'Anthony Melton", "Moses Moody", "Trayce Jackson-Davis", "Gary Payton II", "Kevon Looney",
-            "Kyle Anderson", "Brandin Podziemski", "Lindy Waters III", "Gui Santos", "Pat Spencer"],
-    "DEN": ["Nikola Jokić", "Jamal Murray", "Michael Porter Jr.", "Aaron Gordon", "Kentavious Caldwell-Pope",
-            "Christian Braun", "Reggie Jackson", "Peyton Watson", "Dario Šarić", "Zeke Nnaji",
-            "Julian Strawther", "Justin Holiday", "Hunter Tyson", "DaRon Holmes II", "Jay Huff"]
-}
-
-# Add some placeholder players for teams without specific rosters
-for team_code in NBA_TEAMS:
-    if team_code not in NBA_PLAYERS:
-        NBA_PLAYERS[team_code] = [f"{NBA_TEAMS[team_code]['name']} Player {i}" for i in range(1, 16)]
+# Access the data
+NBA_TEAMS = nba_data['NBA_TEAMS']
+NBA_PLAYERS = nba_data['NBA_PLAYERS']
 
 # Database connection setup
 def init_database():
