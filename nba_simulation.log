@@ -1,0 +1,827 @@
+2025-03-03 19:58:08,820 - MainThread - Database initialized successfully
+2025-03-03 19:58:08,820 - MainThread - Starting NBA simulation
+2025-03-03 19:58:08,820 - MainThread - Eastern Conference Games: 3
+2025-03-03 19:58:08,820 - MainThread - Western Conference Games: 3
+2025-03-03 19:58:09,288 - TD Garden-security - Starting security at TD Garden
+2025-03-03 19:58:09,288 - TD Garden-concessions - Starting concessions at TD Garden
+2025-03-03 19:58:09,298 - Ball Arena-security - Starting security at Ball Arena
+2025-03-03 19:58:09,298 - Ball Arena-concessions - Starting concessions at Ball Arena
+2025-03-03 19:58:09,301 - TD Garden-merchandise - Starting merchandise at TD Garden
+2025-03-03 19:58:09,305 - Ball Arena-merchandise - Starting merchandise at Ball Arena
+2025-03-03 19:58:09,310 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] 🏀 Game started at TD Garden!
+2025-03-03 19:58:09,314 - Fiserv Forum-security - Starting security at Fiserv Forum
+2025-03-03 19:58:09,314 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 1 started
+2025-03-03 19:58:09,314 - Fiserv Forum-concessions - Starting concessions at Fiserv Forum
+2025-03-03 19:58:09,320 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Luke Kornet makes 2 of 2 free throws
+2025-03-03 19:58:09,324 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] 🏀 Game started at Ball Arena!
+2025-03-03 19:58:09,324 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 1 started
+2025-03-03 19:58:09,324 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jamal Murray misses a shot, Keita Bates-Diop rebounds
+2025-03-03 19:58:09,324 - Madison Square Garden-security - Starting security at Madison Square Garden
+2025-03-03 19:58:09,334 - Fiserv Forum-merchandise - Starting merchandise at Fiserv Forum
+2025-03-03 19:58:09,337 - Madison Square Garden-concessions - Starting concessions at Madison Square Garden
+2025-03-03 19:58:09,340 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] 🏀 Game started at Fiserv Forum!
+2025-03-03 19:58:09,340 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 1 started
+2025-03-03 19:58:09,340 - Crypto.com Arena-security - Starting security at Crypto.com Arena
+2025-03-03 19:58:09,344 - Madison Square Garden-merchandise - Starting merchandise at Madison Square Garden
+2025-03-03 19:58:09,340 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Malik Beasley scores a three-pointer, assisted by AJ Green
+2025-03-03 19:58:09,351 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] 🏀 Game started at Madison Square Garden!
+2025-03-03 19:58:09,351 - American Airlines Center-security - Starting security at American Airlines Center
+2025-03-03 19:58:09,351 - American Airlines Center-concessions - Starting concessions at American Airlines Center
+2025-03-03 19:58:09,346 - Crypto.com Arena-concessions - Starting concessions at Crypto.com Arena
+2025-03-03 19:58:09,353 - Crypto.com Arena-merchandise - Starting merchandise at Crypto.com Arena
+2025-03-03 19:58:09,353 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] 🏀 Game started at Crypto.com Arena!
+2025-03-03 19:58:09,365 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 1 started
+2025-03-03 19:58:09,365 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood scores a three-pointer!
+2025-03-03 19:58:09,351 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 1 started
+2025-03-03 19:58:09,351 - American Airlines Center-merchandise - Starting merchandise at American Airlines Center
+2025-03-03 19:58:09,364 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] 🏀 Game started at American Airlines Center!
+2025-03-03 19:58:09,372 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Lonnie Walker IV scores 2 points, assisted by Dariq Whitehead
+2025-03-03 19:58:09,376 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 1 started
+2025-03-03 19:58:09,376 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Michael Porter Jr. misses a three-point attempt, Jusuf Nurkić rebounds
+2025-03-03 19:58:09,376 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Keyontae Johnson scores 2 points, assisted by Josh Giddey
+2025-03-03 19:58:09,383 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaden Springer misses a shot, Kel'el Ware rebounds
+2025-03-03 19:58:09,412 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Jackson Jr. misses a shot, Guerschon Yabusele rebounds
+2025-03-03 19:58:09,416 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] D'Angelo Russell scores 2 points, assisted by Jalen Hood-Schifino
+2025-03-03 19:58:09,427 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Trendon Watford blocks Josh Hart's shot
+2025-03-03 19:58:09,431 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jay Huff makes 1 of 3 free throws
+2025-03-03 19:58:09,431 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann scores 2 points, assisted by Keyontae Johnson
+2025-03-03 19:58:09,438 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Tyler Herro misses a three-point attempt, offensive rebound by Cole Swider
+2025-03-03 19:58:09,463 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] AJ Green makes 3 of 3 free throws
+2025-03-03 19:58:09,469 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Taurean Prince scores 2 points
+2025-03-03 19:58:09,480 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Spencer Dinwiddie scores 2 points, assisted by Cameron Johnson
+2025-03-03 19:58:09,486 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kevin Durant misses a shot, Jay Huff rebounds
+2025-03-03 19:58:09,486 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] PJ Washington misses a three-point attempt, Josh Giddey rebounds
+2025-03-03 19:58:09,493 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Al Horford makes 1 of 1 free throws
+2025-03-03 19:58:09,513 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Delon Wright blocks Jared McCain's shot
+2025-03-03 19:58:09,520 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Brandin Podziemski makes 2 of 3 free throws
+2025-03-03 19:58:09,532 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Charlie Brown Jr. scores 2 points
+2025-03-03 19:58:09,539 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Michael Porter Jr. misses a shot, Keita Bates-Diop rebounds
+2025-03-03 19:58:09,539 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jaylin Williams misses a shot, Greg Brown III rebounds
+2025-03-03 19:58:09,545 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Luke Kornet misses a shot, Jimmy Butler rebounds
+2025-03-03 19:58:09,566 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Damian Lillard misses a shot, Kyle Lowry rebounds
+2025-03-03 19:58:09,572 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Bronny James misses a shot, Moses Moody rebounds
+2025-03-03 19:58:09,587 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle scores a three-pointer, assisted by Precious Achiuwa
+2025-03-03 19:58:09,593 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Michael Porter Jr. scores a three-pointer, assisted by Nikola Jokić
+2025-03-03 19:58:09,594 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Maxi Kleber misses a shot, Jalen Williams rebounds
+2025-03-03 19:58:09,600 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] JD Davison misses a shot, offensive rebound by Sam Hauser
+2025-03-03 19:58:09,621 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Kelly Oubre Jr. turns the ball over to Milwaukee Bucks
+2025-03-03 19:58:09,627 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Trayce Jackson-Davis misses a shot, D'Angelo Russell rebounds
+2025-03-03 19:58:09,642 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart misses a shot, offensive rebound by Julius Randle
+2025-03-03 19:58:09,647 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a three-point attempt, Nikola Jokić rebounds
+2025-03-03 19:58:09,648 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Greg Brown III scores 2 points, assisted by Josh Green
+2025-03-03 19:58:09,654 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Josh Richardson scores 2 points, assisted by Duncan Robinson
+2025-03-03 19:58:09,673 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Damian Lillard misses a shot, offensive rebound by Delon Wright
+2025-03-03 19:58:09,682 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Moses Moody makes 0 of 1 free throws
+2025-03-03 19:58:09,695 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] OG Anunoby misses a shot, Spencer Dinwiddie rebounds
+2025-03-03 19:58:09,701 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Greg Brown III misses a shot, Josh Giddey rebounds
+2025-03-03 19:58:09,702 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Saben Lee blocks Nikola Jokić's shot
+2025-03-03 19:58:09,708 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum misses a shot, Nikola Jovic rebounds
+2025-03-03 19:58:09,728 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Tobias Harris misses a shot, MarJon Beauchamp rebounds
+2025-03-03 19:58:09,738 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Max Christie misses a three-point attempt, offensive rebound by Jaxson Hayes
+2025-03-03 19:58:09,750 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Cam Thomas scores a three-pointer, assisted by Armoni Brooks
+2025-03-03 19:58:09,753 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Aaron Gordon makes 1 of 1 free throws
+2025-03-03 19:58:09,753 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kyrie Irving turns the ball over to Oklahoma City Thunder
+2025-03-03 19:58:09,783 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] AJ Green misses a shot, Tobias Harris rebounds
+2025-03-03 19:58:09,793 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Anthony Davis misses a three-point attempt, offensive rebound by Anthony Davis
+2025-03-03 19:58:09,806 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Julian Strawther turns the ball over to Phoenix Suns
+2025-03-03 19:58:09,806 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Maxi Kleber misses a shot, Keyontae Johnson rebounds
+2025-03-03 19:58:09,806 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Keita Bates-Diop misses a shot, offensive rebound by Miles McBride
+2025-03-03 19:58:09,813 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kristaps Porzingis scores 2 points
+2025-03-03 19:58:09,838 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Giannis Antetokounmpo misses a three-point attempt, Tyrese Maxey rebounds
+2025-03-03 19:58:09,848 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Stephen Curry misses a shot, LeBron James rebounds
+2025-03-03 19:58:09,860 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton scores 2 points
+2025-03-03 19:58:09,860 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Drew Eubanks misses a shot, Jay Huff rebounds
+2025-03-03 19:58:09,860 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] PJ Washington makes 1 of 1 free throws
+2025-03-03 19:58:09,869 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Derrick White scores 2 points, assisted by JD Davison
+2025-03-03 19:58:09,894 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Guerschon Yabusele scores a three-pointer!
+2025-03-03 19:58:09,903 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Austin Reaves misses a shot, Gary Payton II rebounds
+2025-03-03 19:58:09,911 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Charlie Brown Jr. makes 1 of 2 free throws
+2025-03-03 19:58:09,911 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kevin Durant scores a three-pointer, assisted by Nassir Little
+2025-03-03 19:58:09,911 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Josh Giddey turns the ball over to Dallas Mavericks
+2025-03-03 19:58:09,924 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Caleb Martin makes 1 of 1 free throws
+2025-03-03 19:58:09,949 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Tobias Harris blocks Delon Wright's shot
+2025-03-03 19:58:09,959 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Moses Moody misses a three-point attempt, Christian Wood rebounds
+2025-03-03 19:58:09,965 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Shake Milton misses a shot, Cam Thomas rebounds
+2025-03-03 19:58:09,965 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Luguentz Dort steals the ball from Dwight Powell
+2025-03-03 19:58:09,965 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Theo Maledon scores 2 points
+2025-03-03 19:58:09,976 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Al Horford makes 1 of 2 free throws
+2025-03-03 19:58:10,004 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Bobby Portis misses a three-point attempt, Jeff Dowtin Jr. rebounds
+2025-03-03 19:58:10,014 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gui Santos makes 1 of 1 free throws
+2025-03-03 19:58:10,020 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dariq Whitehead steals the ball from Julius Randle
+2025-03-03 19:58:10,020 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann scores 2 points
+2025-03-03 19:58:10,020 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Bol Bol scores 2 points, assisted by Devin Booker
+2025-03-03 19:58:10,032 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaylen Brown blocks Jaime Jaquez Jr.'s shot
+2025-03-03 19:58:10,060 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Taurean Prince misses a shot, Kyle Lowry rebounds
+2025-03-03 19:58:10,074 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dennis Smith Jr. makes 1 of 1 free throws
+2025-03-03 19:58:10,075 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Theo Maledon misses a shot, Michael Porter Jr. rebounds
+2025-03-03 19:58:10,075 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Cason Wallace makes 3 of 3 free throws
+2025-03-03 19:58:10,087 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaylen Brown misses a shot, Caleb Martin rebounds
+2025-03-03 19:58:10,111 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Drummond misses a three-point attempt, AJ Green rebounds
+2025-03-03 19:58:10,118 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gui Santos scores 2 points, assisted by Gary Payton II
+2025-03-03 19:58:10,125 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dennis Smith Jr. scores a three-pointer!
+2025-03-03 19:58:10,128 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Keita Bates-Diop turns the ball over to Denver Nuggets
+2025-03-03 19:58:10,128 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Derrick Jones Jr. misses a shot, Keyontae Johnson rebounds
+2025-03-03 19:58:10,142 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Al Horford misses a shot, Nikola Jovic rebounds
+2025-03-03 19:58:10,166 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Reggie Jackson scores 2 points, assisted by Eric Gordon
+2025-03-03 19:58:10,173 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Cam Reddish scores 2 points, assisted by D'Angelo Russell
+2025-03-03 19:58:10,180 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Precious Achiuwa misses a shot, Ben Simmons rebounds
+2025-03-03 19:58:10,180 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Dante Exum scores 2 points, assisted by Daniel Gafford
+2025-03-03 19:58:10,181 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Theo Maledon misses a shot, Julian Strawther rebounds
+2025-03-03 19:58:10,192 - Madison Square Garden-merchandise - Merchandise: 20 items sold at Madison Square Garden
+2025-03-03 19:58:10,192 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Sam Hauser blocks Cole Swider's shot
+2025-03-03 19:58:10,220 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Delon Wright misses a shot, Eric Gordon rebounds
+2025-03-03 19:58:10,228 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer misses a shot, Christian Wood rebounds
+2025-03-03 19:58:10,232 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Josh Giddey misses a shot, Greg Brown III rebounds
+2025-03-03 19:58:10,232 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Drew Eubanks turns the ball over to Denver Nuggets
+2025-03-03 19:58:10,233 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Day'Ron Sharpe misses a shot, Shake Milton rebounds
+2025-03-03 19:58:10,244 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Terry Rozier makes 3 of 3 free throws
+2025-03-03 19:58:10,275 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Malik Beasley scores 2 points, assisted by MarJon Beauchamp
+2025-03-03 19:58:10,284 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood turns the ball over to Golden State Warriors
+2025-03-03 19:58:10,288 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Keita Bates-Diop makes 1 of 1 free throws
+2025-03-03 19:58:10,288 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns misses a shot, offensive rebound by Chet Holmgren
+2025-03-03 19:58:10,290 - American Airlines Center-merchandise - Merchandise: 20 items sold at American Airlines Center
+2025-03-03 19:58:10,296 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Derrick White misses a three-point attempt, Nikola Jovic rebounds
+2025-03-03 19:58:10,326 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jae Crowder misses a shot, Tobias Harris rebounds
+2025-03-03 19:58:10,334 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Draymond Green misses a three-point attempt, Gabe Vincent rebounds
+2025-03-03 19:58:10,340 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns misses a shot, Greg Brown III rebounds
+2025-03-03 19:58:10,341 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Shake Milton scores 2 points
+2025-03-03 19:58:10,343 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Keita Bates-Diop makes 1 of 3 free throws
+2025-03-03 19:58:10,348 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Xavier Tillman blocks Kel'el Ware's shot
+2025-03-03 19:58:10,378 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Delon Wright turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:10,385 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer misses a shot, offensive rebound by Buddy Hield
+2025-03-03 19:58:10,394 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Olivier Sarr scores 2 points, assisted by Keyontae Johnson
+2025-03-03 19:58:10,396 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Shake Milton scores 2 points, assisted by Josh Hart
+2025-03-03 19:58:10,396 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Michael Porter Jr. misses a shot, offensive rebound by Justin Holiday
+2025-03-03 19:58:10,400 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Sam Hauser misses a shot, Thomas Bryant rebounds
+2025-03-03 19:58:10,433 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Brook Lopez blocks Reggie Jackson's shot
+2025-03-03 19:58:10,440 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood makes 1 of 2 free throws
+2025-03-03 19:58:10,447 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Shai Gilgeous-Alexander scores 2 points, assisted by Kenrich Williams
+2025-03-03 19:58:10,447 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart makes 0 of 1 free throws
+2025-03-03 19:58:10,451 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Bradley Beal misses a three-point attempt, Jamal Murray rebounds
+2025-03-03 19:58:10,454 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Terry Rozier scores 2 points, assisted by Bam Adebayo
+2025-03-03 19:58:10,494 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Bronny James turns the ball over to Golden State Warriors
+2025-03-03 19:58:10,498 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Cameron Johnson misses a shot, Precious Achiuwa rebounds
+2025-03-03 19:58:10,502 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Shai Gilgeous-Alexander makes 1 of 1 free throws
+2025-03-03 19:58:10,509 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jordan Walsh scores 2 points, assisted by Jrue Holiday
+2025-03-03 19:58:10,543 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Drummond scores a three-pointer, assisted by Tyrese Maxey
+2025-03-03 19:58:10,546 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 1 ended. Score: Los Angeles Lakers 13 - Golden State Warriors 5
+2025-03-03 19:58:10,547 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter break
+2025-03-03 19:58:10,549 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton scores 2 points, assisted by Noah Clowney
+2025-03-03 19:58:10,556 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann scores 2 points, assisted by Isaiah Joe
+2025-03-03 19:58:10,558 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Zeke Nnaji misses a three-point attempt, Bol Bol rebounds
+2025-03-03 19:58:10,562 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Neemias Queta misses a three-point attempt, Duncan Robinson rebounds
+2025-03-03 19:58:10,597 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Chris Livingston misses a shot, Kelly Oubre Jr. rebounds
+2025-03-03 19:58:10,603 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Isaiah Hartenstein misses a shot, Dorian Finney-Smith rebounds
+2025-03-03 19:58:10,610 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kevin Durant turns the ball over to Denver Nuggets
+2025-03-03 19:58:10,610 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kenrich Williams scores 2 points
+2025-03-03 19:58:10,617 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaden Springer misses a shot, Bam Adebayo rebounds
+2025-03-03 19:58:10,651 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Pat Connaughton misses a shot, Kelly Oubre Jr. rebounds
+2025-03-03 19:58:10,658 - Crypto.com Arena-merchandise - Merchandise: 40 items sold at Crypto.com Arena
+2025-03-03 19:58:10,658 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] OG Anunoby makes 1 of 2 free throws
+2025-03-03 19:58:10,664 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Shai Gilgeous-Alexander scores a three-pointer!
+2025-03-03 19:58:10,665 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Bradley Beal scores 2 points, assisted by Jusuf Nurkić
+2025-03-03 19:58:10,670 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jrue Holiday scores 2 points
+2025-03-03 19:58:10,707 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jeff Dowtin Jr. misses a shot, Bobby Portis rebounds
+2025-03-03 19:58:10,713 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dorian Finney-Smith misses a shot, Jalen Brunson rebounds
+2025-03-03 19:58:10,720 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Cason Wallace misses a three-point attempt, Maxi Kleber rebounds
+2025-03-03 19:58:10,720 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Grayson Allen blocks Zeke Nnaji's shot
+2025-03-03 19:58:10,726 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Tyler Herro scores a three-pointer, assisted by Bam Adebayo
+2025-03-03 19:58:10,762 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Khris Middleton blocks Kyle Lowry's shot
+2025-03-03 19:58:10,772 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dorian Finney-Smith turns the ball over to New York Knicks
+2025-03-03 19:58:10,770 - Fiserv Forum-merchandise - Merchandise: 40 items sold at Fiserv Forum
+2025-03-03 19:58:10,775 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a shot, Kentavious Caldwell-Pope rebounds
+2025-03-03 19:58:10,776 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Aaron Wiggins misses a shot, Derrick Jones Jr. rebounds
+2025-03-03 19:58:10,778 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 1 ended. Score: Boston Celtics 12 - Miami Heat 14
+2025-03-03 19:58:10,778 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter break
+2025-03-03 19:58:10,813 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Drummond scores 2 points, assisted by Kelly Oubre Jr.
+2025-03-03 19:58:10,828 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Lonnie Walker IV scores 2 points, assisted by Nic Claxton
+2025-03-03 19:58:10,830 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 1 ended. Score: Denver Nuggets 8 - Phoenix Suns 11
+2025-03-03 19:58:10,830 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Dereck Lively II misses a three-point attempt, Luguentz Dort rebounds
+2025-03-03 19:58:10,830 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter break
+2025-03-03 19:58:10,864 - Ball Arena-merchandise - Merchandise: 40 items sold at Ball Arena
+2025-03-03 19:58:10,866 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 1 ended. Score: Milwaukee Bucks 8 - Philadelphia 76ers 13
+2025-03-03 19:58:10,866 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter break
+2025-03-03 19:58:10,883 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kyrie Irving scores 2 points
+2025-03-03 19:58:10,883 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jalen Brunson scores 2 points, assisted by Julius Randle
+2025-03-03 19:58:10,938 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 1 ended. Score: Dallas Mavericks 7 - Oklahoma City Thunder 21
+2025-03-03 19:58:10,938 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 1 ended. Score: New York Knicks 13 - Brooklyn Nets 20
+2025-03-03 19:58:10,938 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter break
+2025-03-03 19:58:10,938 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter break
+2025-03-03 19:58:10,973 - Madison Square Garden-merchandise - Merchandise: 40 items sold at Madison Square Garden
+2025-03-03 19:58:11,023 - TD Garden-merchandise - Merchandise: 40 items sold at TD Garden
+2025-03-03 19:58:11,048 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 2 started
+2025-03-03 19:58:11,048 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jonathan Kuminga misses a shot, Austin Reaves rebounds
+2025-03-03 19:58:11,103 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Brandin Podziemski scores 2 points
+2025-03-03 19:58:11,156 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gui Santos turns the ball over to Los Angeles Lakers
+2025-03-03 19:58:11,211 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Cam Reddish turns the ball over to Golden State Warriors
+2025-03-03 19:58:11,262 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] De'Anthony Melton misses a three-point attempt, offensive rebound by Jonathan Kuminga
+2025-03-03 19:58:11,283 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 2 started
+2025-03-03 19:58:11,283 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Orlando Robinson misses a shot, offensive rebound by Bam Adebayo
+2025-03-03 19:58:11,313 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Andrew Wiggins misses a shot, Skylar Mays rebounds
+2025-03-03 19:58:11,334 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 2 started
+2025-03-03 19:58:11,334 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Cole Swider misses a shot, Al Horford rebounds
+2025-03-03 19:58:11,335 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Josh Okogie scores 2 points
+2025-03-03 19:58:11,335 - Crypto.com Arena-merchandise - Merchandise: 60 items sold at Crypto.com Arena
+2025-03-03 19:58:11,367 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood scores 2 points, assisted by Dalton Knecht
+2025-03-03 19:58:11,369 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 2 started
+2025-03-03 19:58:11,369 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp scores 2 points, assisted by Pat Connaughton
+2025-03-03 19:58:11,389 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum scores a three-pointer, assisted by Payton Pritchard
+2025-03-03 19:58:11,390 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Nassir Little scores 2 points
+2025-03-03 19:58:11,420 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood misses a three-point attempt, Jonathan Kuminga rebounds
+2025-03-03 19:58:11,424 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] AJ Green steals the ball from Kyle Lowry
+2025-03-03 19:58:11,441 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 2 started
+2025-03-03 19:58:11,441 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jaden Hardy scores a three-pointer!
+2025-03-03 19:58:11,443 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 2 started
+2025-03-03 19:58:11,443 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Cameron Johnson scores a three-pointer, assisted by Day'Ron Sharpe
+2025-03-03 19:58:11,444 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Christian Braun scores 2 points, assisted by Nikola Jokić
+2025-03-03 19:58:11,475 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jalen Hood-Schifino misses a shot, Stephen Curry rebounds
+2025-03-03 19:58:11,475 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Gary Trent Jr. turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:11,495 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton misses a three-point attempt, Precious Achiuwa rebounds
+2025-03-03 19:58:11,496 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Cason Wallace turns the ball over to Dallas Mavericks
+2025-03-03 19:58:11,497 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Hunter Tyson scores a three-pointer, assisted by Jay Huff
+2025-03-03 19:58:11,497 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jrue Holiday blocks Jaime Jaquez Jr.'s shot
+2025-03-03 19:58:11,530 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Kevon Looney misses a shot, Austin Reaves rebounds
+2025-03-03 19:58:11,530 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Bobby Portis blocks Paul George's shot
+2025-03-03 19:58:11,547 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart scores 2 points
+2025-03-03 19:58:11,548 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann turns the ball over to Dallas Mavericks
+2025-03-03 19:58:11,551 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum makes 2 of 3 free throws
+2025-03-03 19:58:11,572 - Ball Arena-merchandise - Merchandise: 60 items sold at Ball Arena
+2025-03-03 19:58:11,585 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] AJ Green steals the ball from Kelly Oubre Jr.
+2025-03-03 19:58:11,586 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gui Santos steals the ball from D'Angelo Russell
+2025-03-03 19:58:11,602 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart scores 2 points, assisted by Ariel Hukporti
+2025-03-03 19:58:11,602 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Udoka Azubuike misses a shot, Jamal Murray rebounds
+2025-03-03 19:58:11,603 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Maxi Kleber misses a three-point attempt, Olivier Sarr rebounds
+2025-03-03 19:58:11,604 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Cole Swider misses a shot, Jordan Walsh rebounds
+2025-03-03 19:58:11,640 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Paul George scores a three-pointer, assisted by KJ Martin
+2025-03-03 19:58:11,641 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] LeBron James turns the ball over to Golden State Warriors
+2025-03-03 19:58:11,657 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Mitchell Robinson scores 2 points
+2025-03-03 19:58:11,658 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] DaRon Holmes II scores 2 points, assisted by Zeke Nnaji
+2025-03-03 19:58:11,658 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tim Hardaway Jr. scores 2 points
+2025-03-03 19:58:11,659 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jordan Walsh misses a three-point attempt, Terry Rozier rebounds
+2025-03-03 19:58:11,694 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood scores 2 points, assisted by Bronny James
+2025-03-03 19:58:11,695 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Malik Beasley misses a shot, Eric Gordon rebounds
+2025-03-03 19:58:11,711 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Daniel Gafford scores a three-pointer, assisted by Josh Green
+2025-03-03 19:58:11,711 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Miles McBride misses a three-point attempt, Cam Thomas rebounds
+2025-03-03 19:58:11,712 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Josh Okogie makes 2 of 3 free throws
+2025-03-03 19:58:11,714 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Cole Swider turns the ball over to Boston Celtics
+2025-03-03 19:58:11,748 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer misses a shot, offensive rebound by Andrew Wiggins
+2025-03-03 19:58:11,748 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Delon Wright misses a shot, offensive rebound by AJ Green
+2025-03-03 19:58:11,764 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] PJ Washington misses a three-point attempt, offensive rebound by Tim Hardaway Jr.
+2025-03-03 19:58:11,764 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dorian Finney-Smith misses a shot, offensive rebound by Spencer Dinwiddie
+2025-03-03 19:58:11,764 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Nassir Little scores 2 points, assisted by Chimezie Metu
+2025-03-03 19:58:11,765 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Derrick White scores a three-pointer, assisted by Neemias Queta
+2025-03-03 19:58:11,800 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jaxson Hayes scores 2 points, assisted by Rui Hachimura
+2025-03-03 19:58:11,800 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Chris Livingston turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:11,819 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Olivier Sarr makes 1 of 3 free throws
+2025-03-03 19:58:11,819 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Keita Bates-Diop misses a three-point attempt, Day'Ron Sharpe rebounds
+2025-03-03 19:58:11,819 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Julian Strawther misses a shot, Bol Bol rebounds
+2025-03-03 19:58:11,820 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jordan Walsh misses a shot, Kevin Love rebounds
+2025-03-03 19:58:11,836 - American Airlines Center-merchandise - Merchandise: 60 items sold at American Airlines Center
+2025-03-03 19:58:11,854 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer makes 3 of 3 free throws
+2025-03-03 19:58:11,854 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] KJ Martin misses a shot, Taurean Prince rebounds
+2025-03-03 19:58:11,856 - TD Garden-merchandise - Merchandise: 60 items sold at TD Garden
+2025-03-03 19:58:11,861 - Madison Square Garden-merchandise - Merchandise: 60 items sold at Madison Square Garden
+2025-03-03 19:58:11,874 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ariel Hukporti misses a shot, Royce O'Neale rebounds
+2025-03-03 19:58:11,874 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Haywood Highsmith misses a shot, Jordan Walsh rebounds
+2025-03-03 19:58:11,874 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Ousmane Dieng scores 2 points
+2025-03-03 19:58:11,875 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Michael Porter Jr. misses a shot, offensive rebound by Reggie Jackson
+2025-03-03 19:58:11,906 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Taurean Prince steals the ball from Buddy Hield
+2025-03-03 19:58:11,906 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Caleb Martin scores 2 points
+2025-03-03 19:58:11,928 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Xavier Tillman misses a shot, Jaime Jaquez Jr. rebounds
+2025-03-03 19:58:11,929 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jacob Toppin makes 1 of 2 free throws
+2025-03-03 19:58:11,929 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kenrich Williams misses a shot, Josh Green rebounds
+2025-03-03 19:58:11,929 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Drew Eubanks turns the ball over to Denver Nuggets
+2025-03-03 19:58:11,961 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Kevon Looney makes 2 of 3 free throws
+2025-03-03 19:58:11,961 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Paul George misses a shot, offensive rebound by Eric Gordon
+2025-03-03 19:58:11,980 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jimmy Butler turns the ball over to Boston Celtics
+2025-03-03 19:58:11,984 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Cam Thomas blocks Isaiah Hartenstein's shot
+2025-03-03 19:58:11,985 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns scores 2 points
+2025-03-03 19:58:11,985 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jay Huff misses a shot, Udoka Azubuike rebounds
+2025-03-03 19:58:11,997 - Crypto.com Arena-merchandise - Merchandise: 80 items sold at Crypto.com Arena
+2025-03-03 19:58:12,012 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jalen Hood-Schifino scores 2 points, assisted by Austin Reaves
+2025-03-03 19:58:12,013 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Gary Trent Jr. makes 2 of 3 free throws
+2025-03-03 19:58:12,030 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Oshae Brissett misses a three-point attempt, Terry Rozier rebounds
+2025-03-03 19:58:12,036 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Charlie Brown Jr. misses a shot, Cameron Johnson rebounds
+2025-03-03 19:58:12,036 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić scores 2 points, assisted by Josh Okogie
+2025-03-03 19:58:12,037 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Josh Giddey misses a three-point attempt, Greg Brown III rebounds
+2025-03-03 19:58:12,065 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Kyle Lowry scores 2 points, assisted by Reggie Jackson
+2025-03-03 19:58:12,065 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Kevon Looney misses a three-point attempt, Anthony Davis rebounds
+2025-03-03 19:58:12,085 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Neemias Queta scores 2 points
+2025-03-03 19:58:12,089 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ben Simmons scores 2 points, assisted by Cameron Johnson
+2025-03-03 19:58:12,089 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Josh Okogie scores 2 points, assisted by Jusuf Nurkić
+2025-03-03 19:58:12,089 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann scores 2 points
+2025-03-03 19:58:12,121 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Malik Beasley turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:12,121 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer misses a shot, offensive rebound by Gary Payton II
+2025-03-03 19:58:12,141 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Markieff Morris scores 2 points
+2025-03-03 19:58:12,141 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Nikola Jovic makes 1 of 3 free throws
+2025-03-03 19:58:12,144 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jalen Brunson misses a shot, Nic Claxton rebounds
+2025-03-03 19:58:12,144 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jamal Murray scores a three-pointer, assisted by Zeke Nnaji
+2025-03-03 19:58:12,174 - Fiserv Forum-merchandise - Merchandise: 80 items sold at Fiserv Forum
+2025-03-03 19:58:12,176 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Delon Wright turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:12,176 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jalen Hood-Schifino scores a three-pointer, assisted by Bronny James
+2025-03-03 19:58:12,191 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kyrie Irving scores 2 points
+2025-03-03 19:58:12,194 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] JD Davison misses a shot, Jimmy Butler rebounds
+2025-03-03 19:58:12,196 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a shot, Zeke Nnaji rebounds
+2025-03-03 19:58:12,196 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dennis Smith Jr. blocks Jalen Brunson's shot
+2025-03-03 19:58:12,231 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Guerschon Yabusele steals the ball from MarJon Beauchamp
+2025-03-03 19:58:12,231 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer misses a shot, Austin Reaves rebounds
+2025-03-03 19:58:12,245 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns scores 2 points
+2025-03-03 19:58:12,247 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a shot, offensive rebound by Keita Bates-Diop
+2025-03-03 19:58:12,250 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kevin Love misses a three-point attempt, Jaden Springer rebounds
+2025-03-03 19:58:12,251 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Isaiah Hartenstein blocks Royce O'Neale's shot
+2025-03-03 19:58:12,282 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp blocks Tobias Harris's shot
+2025-03-03 19:58:12,287 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jalen Hood-Schifino misses a shot, De'Anthony Melton rebounds
+2025-03-03 19:58:12,299 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kevin Durant misses a three-point attempt, offensive rebound by Theo Maledon
+2025-03-03 19:58:12,299 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Cason Wallace scores 2 points, assisted by Tre Mann
+2025-03-03 19:58:12,305 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Haywood Highsmith scores 2 points, assisted by Caleb Martin
+2025-03-03 19:58:12,305 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton misses a three-point attempt, Mitchell Robinson rebounds
+2025-03-03 19:58:12,335 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Khris Middleton misses a three-point attempt, offensive rebound by Khris Middleton
+2025-03-03 19:58:12,342 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Austin Reaves misses a shot, offensive rebound by LeBron James
+2025-03-03 19:58:12,343 - Fiserv Forum-security - Security: 100 fans have entered Fiserv Forum
+2025-03-03 19:58:12,350 - Ball Arena-security - Security: 100 fans have entered Ball Arena
+2025-03-03 19:58:12,354 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Peyton Watson scores 2 points, assisted by Dario Šarić
+2025-03-03 19:58:12,355 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Cason Wallace scores 2 points
+2025-03-03 19:58:12,356 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] OG Anunoby blocks Noah Clowney's shot
+2025-03-03 19:58:12,360 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaylen Brown scores 2 points, assisted by Oshae Brissett
+2025-03-03 19:58:12,391 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Damian Lillard misses a shot, offensive rebound by Khris Middleton
+2025-03-03 19:58:12,393 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gui Santos turns the ball over to Los Angeles Lakers
+2025-03-03 19:58:12,406 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Aaron Gordon blocks Josh Okogie's shot
+2025-03-03 19:58:12,406 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams steals the ball from Isaiah Joe
+2025-03-03 19:58:12,407 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Shake Milton steals the ball from Cameron Johnson
+2025-03-03 19:58:12,414 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kel'el Ware blocks Jaden Springer's shot
+2025-03-03 19:58:12,444 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Eric Gordon scores 2 points, assisted by Andre Drummond
+2025-03-03 19:58:12,445 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jonathan Kuminga makes 2 of 3 free throws
+2025-03-03 19:58:12,457 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Cameron Johnson steals the ball from Julius Randle
+2025-03-03 19:58:12,461 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Dario Šarić scores 2 points, assisted by Peyton Watson
+2025-03-03 19:58:12,462 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Ousmane Dieng scores a three-pointer, assisted by Kenrich Williams
+2025-03-03 19:58:12,465 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Derrick White misses a shot, offensive rebound by Derrick White
+2025-03-03 19:58:12,465 - American Airlines Center-security - Security: 100 fans have entered American Airlines Center
+2025-03-03 19:58:12,500 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] AJ Green turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:12,500 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gary Payton II misses a shot, offensive rebound by Gui Santos
+2025-03-03 19:58:12,508 - TD Garden-security - Security: 100 fans have entered TD Garden
+2025-03-03 19:58:12,508 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton misses a shot, Mitchell Robinson rebounds
+2025-03-03 19:58:12,513 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Chet Holmgren scores 2 points
+2025-03-03 19:58:12,520 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Cole Swider blocks Jrue Holiday's shot
+2025-03-03 19:58:12,527 - TD Garden-merchandise - Merchandise: 80 items sold at TD Garden
+2025-03-03 19:58:12,553 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Tyrese Maxey scores a three-pointer, assisted by Jeff Dowtin Jr.
+2025-03-03 19:58:12,554 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Buddy Hield misses a shot, offensive rebound by Gary Payton II
+2025-03-03 19:58:12,562 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle turns the ball over to Brooklyn Nets
+2025-03-03 19:58:12,566 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 2 ended. Score: Dallas Mavericks 19 - Oklahoma City Thunder 39
+2025-03-03 19:58:12,566 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter break
+2025-03-03 19:58:12,569 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jay Huff misses a shot, Grayson Allen rebounds
+2025-03-03 19:58:12,573 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Sam Hauser misses a shot, Tyler Herro rebounds
+2025-03-03 19:58:12,579 - Crypto.com Arena-security - Security: 100 fans have entered Crypto.com Arena
+2025-03-03 19:58:12,586 - Madison Square Garden-merchandise - Merchandise: 80 items sold at Madison Square Garden
+2025-03-03 19:58:12,591 - Madison Square Garden-security - Security: 100 fans have entered Madison Square Garden
+2025-03-03 19:58:12,608 - American Airlines Center-merchandise - Merchandise: 80 items sold at American Airlines Center
+2025-03-03 19:58:12,609 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jeff Dowtin Jr. steals the ball from Taurean Prince
+2025-03-03 19:58:12,609 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 2 ended. Score: Los Angeles Lakers 24 - Golden State Warriors 14
+2025-03-03 19:58:12,609 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter break
+2025-03-03 19:58:12,614 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle scores 2 points
+2025-03-03 19:58:12,624 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Reggie Jackson scores 2 points, assisted by Michael Porter Jr.
+2025-03-03 19:58:12,624 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Al Horford scores 2 points
+2025-03-03 19:58:12,662 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 2 ended. Score: Milwaukee Bucks 12 - Philadelphia 76ers 25
+2025-03-03 19:58:12,662 - Crypto.com Arena-merchandise - Merchandise: 100 items sold at Crypto.com Arena
+2025-03-03 19:58:12,662 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter break
+2025-03-03 19:58:12,669 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Trendon Watford scores 2 points
+2025-03-03 19:58:12,675 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Haywood Highsmith misses a shot, Jordan Walsh rebounds
+2025-03-03 19:58:12,675 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 2 ended. Score: Denver Nuggets 28 - Phoenix Suns 23
+2025-03-03 19:58:12,675 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter break
+2025-03-03 19:58:12,720 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 2 ended. Score: New York Knicks 22 - Brooklyn Nets 27
+2025-03-03 19:58:12,720 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter break
+2025-03-03 19:58:12,727 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum turns the ball over to Miami Heat
+2025-03-03 19:58:12,782 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 2 ended. Score: Boston Celtics 29 - Miami Heat 17
+2025-03-03 19:58:12,783 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter break
+2025-03-03 19:58:12,874 - Fiserv Forum-merchandise - Merchandise: 100 items sold at Fiserv Forum
+2025-03-03 19:58:13,071 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 3 started
+2025-03-03 19:58:13,072 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams blocks Luguentz Dort's shot
+2025-03-03 19:58:13,111 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 3 started
+2025-03-03 19:58:13,112 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Cam Reddish misses a three-point attempt, Jonathan Kuminga rebounds
+2025-03-03 19:58:13,126 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Aaron Wiggins misses a three-point attempt, offensive rebound by Shai Gilgeous-Alexander
+2025-03-03 19:58:13,164 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Kyle Anderson turns the ball over to Los Angeles Lakers
+2025-03-03 19:58:13,164 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 3 started
+2025-03-03 19:58:13,165 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Brook Lopez makes 2 of 2 free throws
+2025-03-03 19:58:13,176 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kenrich Williams misses a shot, Markieff Morris rebounds
+2025-03-03 19:58:13,178 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 3 started
+2025-03-03 19:58:13,178 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Peyton Watson scores 2 points
+2025-03-03 19:58:13,215 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Lindy Waters III scores 2 points, assisted by Kevon Looney
+2025-03-03 19:58:13,215 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Pat Connaughton makes 1 of 2 free throws
+2025-03-03 19:58:13,226 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 3 started
+2025-03-03 19:58:13,226 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dennis Smith Jr. misses a shot, Keita Bates-Diop rebounds
+2025-03-03 19:58:13,228 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] PJ Washington misses a three-point attempt, Luguentz Dort rebounds
+2025-03-03 19:58:13,229 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kentavious Caldwell-Pope makes 3 of 3 free throws
+2025-03-03 19:58:13,270 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jaxson Hayes blocks Gary Payton II's shot
+2025-03-03 19:58:13,271 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Gary Trent Jr. scores 2 points
+2025-03-03 19:58:13,280 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a three-point attempt, Aaron Gordon rebounds
+2025-03-03 19:58:13,280 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jalen Williams turns the ball over to Dallas Mavericks
+2025-03-03 19:58:13,281 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle scores 2 points, assisted by Josh Hart
+2025-03-03 19:58:13,285 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 3 started
+2025-03-03 19:58:13,285 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum turns the ball over to Miami Heat
+2025-03-03 19:58:13,326 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] De'Anthony Melton misses a three-point attempt, Jalen Hood-Schifino rebounds
+2025-03-03 19:58:13,326 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] KJ Martin scores 2 points, assisted by Kelly Oubre Jr.
+2025-03-03 19:58:13,335 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Keita Bates-Diop blocks Hunter Tyson's shot
+2025-03-03 19:58:13,336 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Aaron Wiggins misses a three-point attempt, Brandon Williams rebounds
+2025-03-03 19:58:13,336 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Spencer Dinwiddie scores 2 points, assisted by Mikal Bridges
+2025-03-03 19:58:13,337 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Terry Rozier misses a shot, offensive rebound by Terry Rozier
+2025-03-03 19:58:13,374 - TD Garden-merchandise - Merchandise: 100 items sold at TD Garden
+2025-03-03 19:58:13,379 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Kyle Lowry makes 1 of 1 free throws
+2025-03-03 19:58:13,379 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Kevon Looney misses a shot, Bronny James rebounds
+2025-03-03 19:58:13,391 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] JD Davison misses a shot, Tyler Herro rebounds
+2025-03-03 19:58:13,391 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Christian Braun misses a three-point attempt, Kevin Durant rebounds
+2025-03-03 19:58:13,391 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Keyontae Johnson blocks Luka Dončić's shot
+2025-03-03 19:58:13,391 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ben Simmons scores 2 points
+2025-03-03 19:58:13,435 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Guerschon Yabusele makes 1 of 3 free throws
+2025-03-03 19:58:13,435 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Anthony Davis turns the ball over to Golden State Warriors
+2025-03-03 19:58:13,445 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Nikola Jokić blocks Chimezie Metu's shot
+2025-03-03 19:58:13,445 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jalen Williams scores 2 points
+2025-03-03 19:58:13,445 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Royce O'Neale turns the ball over to New York Knicks
+2025-03-03 19:58:13,446 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kristaps Porzingis scores 2 points
+2025-03-03 19:58:13,474 - Madison Square Garden-merchandise - Merchandise: 100 items sold at Madison Square Garden
+2025-03-03 19:58:13,490 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Andrew Wiggins steals the ball from Jalen Hood-Schifino
+2025-03-03 19:58:13,490 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Damian Lillard scores a three-pointer, assisted by Brook Lopez
+2025-03-03 19:58:13,497 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jrue Holiday misses a shot, Nikola Jovic rebounds
+2025-03-03 19:58:13,497 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Dereck Lively II scores 2 points, assisted by Josh Green
+2025-03-03 19:58:13,497 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a three-point attempt, offensive rebound by Kevin Durant
+2025-03-03 19:58:13,497 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Spencer Dinwiddie makes 1 of 1 free throws
+2025-03-03 19:58:13,545 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Skylar Mays blocks Brandin Podziemski's shot
+2025-03-03 19:58:13,546 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Joel Embiid scores 2 points
+2025-03-03 19:58:13,549 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Dereck Lively II misses a shot, Aaron Wiggins rebounds
+2025-03-03 19:58:13,549 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton misses a three-point attempt, Charlie Brown Jr. rebounds
+2025-03-03 19:58:13,552 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Nassir Little scores 2 points, assisted by Udoka Azubuike
+2025-03-03 19:58:13,552 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jordan Walsh turns the ball over to Miami Heat
+2025-03-03 19:58:13,599 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Bobby Portis makes 1 of 1 free throws
+2025-03-03 19:58:13,600 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] LeBron James misses a shot, Moses Moody rebounds
+2025-03-03 19:58:13,603 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle steals the ball from Armoni Brooks
+2025-03-03 19:58:13,605 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jaden Hardy makes 2 of 2 free throws
+2025-03-03 19:58:13,605 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Bradley Beal scores 2 points
+2025-03-03 19:58:13,605 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jimmy Butler misses a shot, offensive rebound by Orlando Robinson
+2025-03-03 19:58:13,652 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Chris Livingston scores a three-pointer, assisted by Delon Wright
+2025-03-03 19:58:13,655 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Max Christie scores a three-pointer!
+2025-03-03 19:58:13,655 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Derrick Jones Jr. misses a shot, Isaiah Joe rebounds
+2025-03-03 19:58:13,655 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jrue Holiday scores 2 points, assisted by Luke Kornet
+2025-03-03 19:58:13,656 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Lonnie Walker IV steals the ball from OG Anunoby
+2025-03-03 19:58:13,657 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Devin Booker misses a shot, Nikola Jokić rebounds
+2025-03-03 19:58:13,706 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Jackson Jr. scores 2 points
+2025-03-03 19:58:13,706 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Lindy Waters III misses a shot, LeBron James rebounds
+2025-03-03 19:58:13,706 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kyrie Irving scores 2 points
+2025-03-03 19:58:13,707 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Mikal Bridges scores a three-pointer, assisted by Spencer Dinwiddie
+2025-03-03 19:58:13,710 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Caleb Martin blocks Jrue Holiday's shot
+2025-03-03 19:58:13,712 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Christian Braun misses a shot, Eric Gordon rebounds
+2025-03-03 19:58:13,761 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaden Springer blocks Duncan Robinson's shot
+2025-03-03 19:58:13,761 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Brook Lopez misses a shot, offensive rebound by Damian Lillard
+2025-03-03 19:58:13,762 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns scores 2 points, assisted by Cason Wallace
+2025-03-03 19:58:13,762 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Brandin Podziemski makes 2 of 2 free throws
+2025-03-03 19:58:13,764 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Donte DiVincenzo misses a shot, Cam Thomas rebounds
+2025-03-03 19:58:13,767 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Peyton Watson misses a shot, Bol Bol rebounds
+2025-03-03 19:58:13,814 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp misses a shot, offensive rebound by AJ Green
+2025-03-03 19:58:13,815 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kenrich Williams scores 2 points
+2025-03-03 19:58:13,815 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum misses a shot, Duncan Robinson rebounds
+2025-03-03 19:58:13,821 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jalen Brunson scores 2 points, assisted by Ariel Hukporti
+2025-03-03 19:58:13,821 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Julian Strawther steals the ball from Eric Gordon
+2025-03-03 19:58:13,869 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Brandin Podziemski misses a shot, Skylar Mays rebounds
+2025-03-03 19:58:13,870 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Duncan Robinson makes 1 of 1 free throws
+2025-03-03 19:58:13,870 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Pat Connaughton turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:13,870 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tim Hardaway Jr. scores 2 points
+2025-03-03 19:58:13,876 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Saben Lee makes 2 of 2 free throws
+2025-03-03 19:58:13,876 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ariel Hukporti makes 1 of 1 free throws
+2025-03-03 19:58:13,925 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Buddy Hield scores 2 points
+2025-03-03 19:58:13,925 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jaden Hardy misses a three-point attempt, Luguentz Dort rebounds
+2025-03-03 19:58:13,925 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kristaps Porzingis misses a shot, Kevin Love rebounds
+2025-03-03 19:58:13,925 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Tyrese Maxey turns the ball over to Milwaukee Bucks
+2025-03-03 19:58:13,930 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Noah Clowney misses a three-point attempt, Mitchell Robinson rebounds
+2025-03-03 19:58:13,931 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a three-point attempt, Christian Braun rebounds
+2025-03-03 19:58:13,978 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Ousmane Dieng scores 2 points
+2025-03-03 19:58:13,978 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Payton Pritchard misses a shot, offensive rebound by Jaylen Brown
+2025-03-03 19:58:13,978 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Chris Livingston misses a three-point attempt, offensive rebound by Taurean Prince
+2025-03-03 19:58:13,980 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] LeBron James misses a shot, Moses Moody rebounds
+2025-03-03 19:58:13,986 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart makes 1 of 1 free throws
+2025-03-03 19:58:13,986 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Michael Porter Jr. scores a three-pointer, assisted by Reggie Jackson
+2025-03-03 19:58:14,028 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams scores 2 points
+2025-03-03 19:58:14,028 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Caleb Martin scores 2 points, assisted by Paul George
+2025-03-03 19:58:14,033 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Tyler Herro misses a shot, offensive rebound by Kel'el Ware
+2025-03-03 19:58:14,035 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood makes 1 of 1 free throws
+2025-03-03 19:58:14,040 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] OG Anunoby scores 2 points, assisted by Keita Bates-Diop
+2025-03-03 19:58:14,041 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Eric Gordon scores 2 points
+2025-03-03 19:58:14,080 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Chet Holmgren scores a three-pointer, assisted by Tre Mann
+2025-03-03 19:58:14,081 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jared McCain steals the ball from Andre Jackson Jr.
+2025-03-03 19:58:14,087 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Thomas Bryant steals the ball from Derrick White
+2025-03-03 19:58:14,091 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gary Payton II misses a three-point attempt, Cam Reddish rebounds
+2025-03-03 19:58:14,093 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Spencer Dinwiddie scores 2 points
+2025-03-03 19:58:14,097 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Bol Bol misses a shot, Julian Strawther rebounds
+2025-03-03 19:58:14,132 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tim Hardaway Jr. steals the ball from Chet Holmgren
+2025-03-03 19:58:14,136 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Drummond blocks Delon Wright's shot
+2025-03-03 19:58:14,139 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jrue Holiday misses a shot, Duncan Robinson rebounds
+2025-03-03 19:58:14,146 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gabe Vincent scores a three-pointer, assisted by Rui Hachimura
+2025-03-03 19:58:14,148 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Grayson Allen turns the ball over to Denver Nuggets
+2025-03-03 19:58:14,148 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Mikal Bridges scores 2 points
+2025-03-03 19:58:14,148 - American Airlines Center-merchandise - Merchandise: 120 items sold at American Airlines Center
+2025-03-03 19:58:14,178 - Crypto.com Arena-merchandise - Merchandise: 140 items sold at Crypto.com Arena
+2025-03-03 19:58:14,187 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns misses a shot, offensive rebound by Jalen Williams
+2025-03-03 19:58:14,191 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Adem Bona scores 2 points, assisted by Reggie Jackson
+2025-03-03 19:58:14,194 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Payton Pritchard steals the ball from Kevin Love
+2025-03-03 19:58:14,199 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Donte DiVincenzo turns the ball over to Brooklyn Nets
+2025-03-03 19:58:14,201 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Skylar Mays misses a shot, Kevon Looney rebounds
+2025-03-03 19:58:14,202 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Theo Maledon scores a three-pointer, assisted by Bradley Beal
+2025-03-03 19:58:14,238 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Luguentz Dort scores 2 points, assisted by Isaiah Joe
+2025-03-03 19:58:14,242 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Kyle Lowry makes 1 of 2 free throws
+2025-03-03 19:58:14,244 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Xavier Tillman misses a shot, Thomas Bryant rebounds
+2025-03-03 19:58:14,249 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle misses a shot, Ben Simmons rebounds
+2025-03-03 19:58:14,251 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer scores 2 points
+2025-03-03 19:58:14,257 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Keita Bates-Diop turns the ball over to Denver Nuggets
+2025-03-03 19:58:14,290 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Maxi Kleber misses a three-point attempt, Tre Mann rebounds
+2025-03-03 19:58:14,295 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Kyle Lowry scores a three-pointer, assisted by Joel Embiid
+2025-03-03 19:58:14,295 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kristaps Porzingis scores 2 points, assisted by Xavier Tillman
+2025-03-03 19:58:14,302 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] LeBron James scores 2 points
+2025-03-03 19:58:14,304 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 3 ended. Score: New York Knicks 30 - Brooklyn Nets 39
+2025-03-03 19:58:14,304 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter break
+2025-03-03 19:58:14,308 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 3 ended. Score: Denver Nuggets 36 - Phoenix Suns 34
+2025-03-03 19:58:14,308 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter break
+2025-03-03 19:58:14,315 - Madison Square Garden-merchandise - Merchandise: 120 items sold at Madison Square Garden
+2025-03-03 19:58:14,344 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 3 ended. Score: Dallas Mavericks 29 - Oklahoma City Thunder 52
+2025-03-03 19:58:14,345 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter break
+2025-03-03 19:58:14,347 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jeff Dowtin Jr. misses a three-point attempt, Taurean Prince rebounds
+2025-03-03 19:58:14,347 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 3 ended. Score: Boston Celtics 35 - Miami Heat 18
+2025-03-03 19:58:14,347 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter break
+2025-03-03 19:58:14,352 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Trayce Jackson-Davis misses a shot, offensive rebound by Gui Santos
+2025-03-03 19:58:14,352 - TD Garden-merchandise - Merchandise: 120 items sold at TD Garden
+2025-03-03 19:58:14,353 - TD Garden-merchandise - Merchandise sales at TD Garden:
+2025-03-03 19:58:14,353 - TD Garden-merchandise -   - Jersey: 23 units, $2760.00
+2025-03-03 19:58:14,353 - TD Garden-merchandise -   - Cap: 16 units, $560.00
+2025-03-03 19:58:14,353 - TD Garden-merchandise -   - T-shirt: 30 units, $1350.00
+2025-03-03 19:58:14,353 - TD Garden-merchandise -   - Basketball: 30 units, $1800.00
+2025-03-03 19:58:14,353 - TD Garden-merchandise -   - Poster: 21 units, $525.00
+2025-03-03 19:58:14,353 - TD Garden-merchandise - Total: 120 items sold, $6995.00 revenue
+2025-03-03 19:58:14,363 - Ball Arena-merchandise - Merchandise sales at Ball Arena:
+2025-03-03 19:58:14,364 - Ball Arena-merchandise -   - Jersey: 33 units, $3960.00
+2025-03-03 19:58:14,364 - Ball Arena-merchandise -   - Cap: 23 units, $805.00
+2025-03-03 19:58:14,364 - Ball Arena-merchandise -   - T-shirt: 23 units, $1035.00
+2025-03-03 19:58:14,364 - Ball Arena-merchandise -   - Basketball: 20 units, $1200.00
+2025-03-03 19:58:14,364 - Ball Arena-merchandise -   - Poster: 31 units, $775.00
+2025-03-03 19:58:14,364 - Ball Arena-merchandise - Total: 130 items sold, $7775.00 revenue
+2025-03-03 19:58:14,386 - Madison Square Garden-merchandise - Merchandise sales at Madison Square Garden:
+2025-03-03 19:58:14,387 - Madison Square Garden-merchandise -   - Jersey: 19 units, $2280.00
+2025-03-03 19:58:14,387 - Madison Square Garden-merchandise -   - Cap: 20 units, $700.00
+2025-03-03 19:58:14,387 - Madison Square Garden-merchandise -   - T-shirt: 25 units, $1125.00
+2025-03-03 19:58:14,387 - Madison Square Garden-merchandise -   - Basketball: 32 units, $1920.00
+2025-03-03 19:58:14,387 - Madison Square Garden-merchandise -   - Poster: 26 units, $650.00
+2025-03-03 19:58:14,387 - Madison Square Garden-merchandise - Total: 122 items sold, $6675.00 revenue
+2025-03-03 19:58:14,399 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp makes 2 of 2 free throws
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise - Merchandise sales at Fiserv Forum:
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise -   - Jersey: 14 units, $1680.00
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise -   - Cap: 35 units, $1225.00
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise -   - T-shirt: 44 units, $1980.00
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise -   - Basketball: 26 units, $1560.00
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise -   - Poster: 19 units, $475.00
+2025-03-03 19:58:14,405 - Fiserv Forum-merchandise - Total: 138 items sold, $6920.00 revenue
+2025-03-03 19:58:14,407 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Christian Wood scores a three-pointer, assisted by Dalton Knecht
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise - Merchandise sales at American Airlines Center:
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise -   - Jersey: 26 units, $3120.00
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise -   - Cap: 24 units, $840.00
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise -   - T-shirt: 30 units, $1350.00
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise -   - Basketball: 23 units, $1380.00
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise -   - Poster: 25 units, $625.00
+2025-03-03 19:58:14,407 - American Airlines Center-merchandise - Total: 128 items sold, $7315.00 revenue
+2025-03-03 19:58:14,453 - Crypto.com Arena-merchandise - Merchandise sales at Crypto.com Arena:
+2025-03-03 19:58:14,453 - Crypto.com Arena-merchandise -   - Jersey: 22 units, $2640.00
+2025-03-03 19:58:14,453 - Crypto.com Arena-merchandise -   - Cap: 35 units, $1225.00
+2025-03-03 19:58:14,453 - Crypto.com Arena-merchandise -   - T-shirt: 23 units, $1035.00
+2025-03-03 19:58:14,453 - Crypto.com Arena-merchandise -   - Basketball: 29 units, $1740.00
+2025-03-03 19:58:14,453 - Crypto.com Arena-merchandise -   - Poster: 36 units, $900.00
+2025-03-03 19:58:14,454 - Crypto.com Arena-merchandise - Total: 145 items sold, $7540.00 revenue
+2025-03-03 19:58:14,454 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 3 ended. Score: Milwaukee Bucks 28 - Philadelphia 76ers 39
+2025-03-03 19:58:14,454 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter break
+2025-03-03 19:58:14,461 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Stephen Curry misses a shot, Jaxson Hayes rebounds
+2025-03-03 19:58:14,511 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Austin Reaves misses a three-point attempt, Draymond Green rebounds
+2025-03-03 19:58:14,566 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Brandin Podziemski misses a shot, offensive rebound by Kyle Anderson
+2025-03-03 19:58:14,619 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 3 ended. Score: Los Angeles Lakers 36 - Golden State Warriors 25
+2025-03-03 19:58:14,620 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter break
+2025-03-03 19:58:14,809 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 4 started
+2025-03-03 19:58:14,809 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jalen Brunson misses a shot, Royce O'Neale rebounds
+2025-03-03 19:58:14,813 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 4 started
+2025-03-03 19:58:14,813 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Theo Maledon misses a three-point attempt, Jay Huff rebounds
+2025-03-03 19:58:14,850 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 4 started
+2025-03-03 19:58:14,850 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Olivier Sarr turns the ball over to Dallas Mavericks
+2025-03-03 19:58:14,852 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 4 started
+2025-03-03 19:58:14,853 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Josh Richardson misses a three-point attempt, Al Horford rebounds
+2025-03-03 19:58:14,862 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ben Simmons scores 2 points
+2025-03-03 19:58:14,868 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Justin Holiday turns the ball over to Phoenix Suns
+2025-03-03 19:58:14,902 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Josh Green turns the ball over to Oklahoma City Thunder
+2025-03-03 19:58:14,904 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jimmy Butler misses a shot, Kristaps Porzingis rebounds
+2025-03-03 19:58:14,912 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ariel Hukporti turns the ball over to Brooklyn Nets
+2025-03-03 19:58:14,924 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kentavious Caldwell-Pope scores 2 points
+2025-03-03 19:58:14,957 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Sam Hauser scores 2 points
+2025-03-03 19:58:14,957 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Isaiah Joe misses a shot, offensive rebound by Keyontae Johnson
+2025-03-03 19:58:14,958 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 4 started
+2025-03-03 19:58:14,958 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jae Crowder makes 2 of 2 free throws
+2025-03-03 19:58:14,964 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton misses a shot, Shake Milton rebounds
+2025-03-03 19:58:14,977 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jay Huff misses a shot, offensive rebound by Julian Strawther
+2025-03-03 19:58:15,012 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Caleb Martin turns the ball over to Boston Celtics
+2025-03-03 19:58:15,012 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Shai Gilgeous-Alexander misses a three-point attempt, Daniel Gafford rebounds
+2025-03-03 19:58:15,013 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp misses a shot, Eric Gordon rebounds
+2025-03-03 19:58:15,019 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jalen Brunson misses a shot, Armoni Brooks rebounds
+2025-03-03 19:58:15,028 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Justin Holiday scores 2 points, assisted by Michael Porter Jr.
+2025-03-03 19:58:15,066 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jrue Holiday misses a shot, Jaime Jaquez Jr. rebounds
+2025-03-03 19:58:15,066 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Eric Gordon misses a three-point attempt, Delon Wright rebounds
+2025-03-03 19:58:15,067 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Maxi Kleber misses a shot, offensive rebound by Markieff Morris
+2025-03-03 19:58:15,082 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Reggie Jackson misses a shot, Bol Bol rebounds
+2025-03-03 19:58:15,121 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 4 started
+2025-03-03 19:58:15,121 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Al Horford misses a three-point attempt, offensive rebound by Jaden Springer
+2025-03-03 19:58:15,121 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Jackson Jr. scores 2 points, assisted by Khris Middleton
+2025-03-03 19:58:15,122 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Moses Moody misses a three-point attempt, offensive rebound by Gui Santos
+2025-03-03 19:58:15,126 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Cam Thomas makes 1 of 1 free throws
+2025-03-03 19:58:15,137 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kentavious Caldwell-Pope makes 3 of 3 free throws
+2025-03-03 19:58:15,177 - Fiserv Forum-security - Security: 200 fans have entered Fiserv Forum
+2025-03-03 19:58:15,177 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Reggie Jackson scores 2 points, assisted by Kelly Oubre Jr.
+2025-03-03 19:58:15,177 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Spencer Dinwiddie misses a shot, Isaiah Hartenstein rebounds
+2025-03-03 19:58:15,177 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Josh Richardson misses a shot, Jayson Tatum rebounds
+2025-03-03 19:58:15,177 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Kyle Anderson misses a three-point attempt, Anthony Davis rebounds
+2025-03-03 19:58:15,178 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann scores 2 points, assisted by Isaiah Joe
+2025-03-03 19:58:15,183 - Ball Arena-security - Security: 200 fans have entered Ball Arena
+2025-03-03 19:58:15,192 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić turns the ball over to Denver Nuggets
+2025-03-03 19:58:15,228 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Shake Milton misses a shot, Nic Claxton rebounds
+2025-03-03 19:58:15,228 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] De'Anthony Melton steals the ball from Rui Hachimura
+2025-03-03 19:58:15,230 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams scores 2 points
+2025-03-03 19:58:15,232 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Bobby Portis scores 2 points, assisted by Andre Jackson Jr.
+2025-03-03 19:58:15,232 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Sam Hauser misses a shot, Terry Rozier rebounds
+2025-03-03 19:58:15,247 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Christian Braun scores 2 points
+2025-03-03 19:58:15,280 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Lindy Waters III misses a shot, offensive rebound by Kevon Looney
+2025-03-03 19:58:15,281 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Ariel Hukporti steals the ball from Cam Thomas
+2025-03-03 19:58:15,285 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Markieff Morris misses a three-point attempt, offensive rebound by Derrick Jones Jr.
+2025-03-03 19:58:15,286 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp misses a shot, offensive rebound by Andre Jackson Jr.
+2025-03-03 19:58:15,287 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaden Springer misses a three-point attempt, Bam Adebayo rebounds
+2025-03-03 19:58:15,300 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Christian Braun scores 2 points
+2025-03-03 19:58:15,336 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jalen Hood-Schifino scores 2 points, assisted by Rui Hachimura
+2025-03-03 19:58:15,336 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Charlie Brown Jr. steals the ball from Dorian Finney-Smith
+2025-03-03 19:58:15,336 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] PJ Washington misses a shot, Ousmane Dieng rebounds
+2025-03-03 19:58:15,342 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Giannis Antetokounmpo misses a shot, Kyle Lowry rebounds
+2025-03-03 19:58:15,342 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Neemias Queta scores 2 points, assisted by Al Horford
+2025-03-03 19:58:15,355 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jamal Murray misses a three-point attempt, Udoka Azubuike rebounds
+2025-03-03 19:58:15,389 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Jaden Hardy misses a shot, Josh Giddey rebounds
+2025-03-03 19:58:15,391 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Draymond Green scores a three-pointer!
+2025-03-03 19:58:15,391 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart misses a three-point attempt, Armoni Brooks rebounds
+2025-03-03 19:58:15,394 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaime Jaquez Jr. scores a three-pointer, assisted by Kel'el Ware
+2025-03-03 19:58:15,397 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Reggie Jackson turns the ball over to Milwaukee Bucks
+2025-03-03 19:58:15,411 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Hunter Tyson scores a three-pointer, assisted by DaRon Holmes II
+2025-03-03 19:58:15,444 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Ousmane Dieng scores 2 points
+2025-03-03 19:58:15,444 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Lindy Waters III scores 2 points, assisted by Stephen Curry
+2025-03-03 19:58:15,446 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Isaiah Hartenstein scores 2 points
+2025-03-03 19:58:15,449 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Nikola Jovic misses a three-point attempt, Luke Kornet rebounds
+2025-03-03 19:58:15,450 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Andre Jackson Jr. misses a three-point attempt, Eric Gordon rebounds
+2025-03-03 19:58:15,464 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Christian Braun scores 2 points
+2025-03-03 19:58:15,496 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Pat Spencer misses a shot, offensive rebound by Jonathan Kuminga
+2025-03-03 19:58:15,498 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Josh Green misses a three-point attempt, Luguentz Dort rebounds
+2025-03-03 19:58:15,498 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] OG Anunoby turns the ball over to Brooklyn Nets
+2025-03-03 19:58:15,501 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Paul George misses a shot, Damian Lillard rebounds
+2025-03-03 19:58:15,501 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jimmy Butler scores 2 points
+2025-03-03 19:58:15,520 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jay Huff misses a shot, Devin Booker rebounds
+2025-03-03 19:58:15,528 - TD Garden-security - Security: 200 fans have entered TD Garden
+2025-03-03 19:58:15,549 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Stephen Curry misses a shot, Skylar Mays rebounds
+2025-03-03 19:58:15,549 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Julius Randle makes 1 of 1 free throws
+2025-03-03 19:58:15,553 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kyrie Irving misses a shot, Shai Gilgeous-Alexander rebounds
+2025-03-03 19:58:15,555 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Tyler Herro scores a three-pointer, assisted by Caleb Martin
+2025-03-03 19:58:15,555 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Chris Livingston scores a three-pointer, assisted by Delon Wright
+2025-03-03 19:58:15,570 - American Airlines Center-security - Security: 200 fans have entered American Airlines Center
+2025-03-03 19:58:15,570 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Kevin Durant makes 3 of 3 free throws
+2025-03-03 19:58:15,600 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Jalen Hood-Schifino makes 2 of 2 free throws
+2025-03-03 19:58:15,600 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Precious Achiuwa turns the ball over to Brooklyn Nets
+2025-03-03 19:58:15,606 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Daniel Gafford steals the ball from Tre Mann
+2025-03-03 19:58:15,606 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Gary Trent Jr. makes 2 of 3 free throws
+2025-03-03 19:58:15,606 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Derrick White scores a three-pointer, assisted by Sam Hauser
+2025-03-03 19:58:15,626 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Josh Okogie makes 0 of 1 free throws
+2025-03-03 19:58:15,655 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] LeBron James scores 2 points, assisted by Dalton Knecht
+2025-03-03 19:58:15,655 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Trendon Watford misses a three-point attempt, offensive rebound by Trendon Watford
+2025-03-03 19:58:15,661 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Shai Gilgeous-Alexander turns the ball over to Dallas Mavericks
+2025-03-03 19:58:15,662 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] AJ Green turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:15,662 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Haywood Highsmith steals the ball from Derrick White
+2025-03-03 19:58:15,681 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Bol Bol makes 2 of 3 free throws
+2025-03-03 19:58:15,708 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Austin Reaves scores 2 points, assisted by Bronny James
+2025-03-03 19:58:15,711 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Royce O'Neale turns the ball over to New York Knicks
+2025-03-03 19:58:15,713 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jaden Springer misses a shot, Jimmy Butler rebounds
+2025-03-03 19:58:15,716 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Ousmane Dieng misses a three-point attempt, Tim Hardaway Jr. rebounds
+2025-03-03 19:58:15,731 - Madison Square Garden-security - Security: 200 fans have entered Madison Square Garden
+2025-03-03 19:58:15,736 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Julian Strawther misses a three-point attempt, Eric Gordon rebounds
+2025-03-03 19:58:15,763 - Crypto.com Arena-security - Security: 200 fans have entered Crypto.com Arena
+2025-03-03 19:58:15,763 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Cam Reddish misses a shot, offensive rebound by Jalen Hood-Schifino
+2025-03-03 19:58:15,766 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Lonnie Walker IV misses a three-point attempt, offensive rebound by Day'Ron Sharpe
+2025-03-03 19:58:15,768 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Haywood Highsmith misses a shot, Payton Pritchard rebounds
+2025-03-03 19:58:15,768 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams misses a shot, Luguentz Dort rebounds
+2025-03-03 19:58:15,768 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Kelly Oubre Jr. scores a three-pointer, assisted by KJ Martin
+2025-03-03 19:58:15,791 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Drew Eubanks misses a three-point attempt, Michael Porter Jr. rebounds
+2025-03-03 19:58:15,821 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Damian Lillard scores 2 points, assisted by Brook Lopez
+2025-03-03 19:58:15,821 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Dennis Smith Jr. scores 2 points, assisted by Noah Clowney
+2025-03-03 19:58:15,823 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Terry Rozier misses a three-point attempt, offensive rebound by Jimmy Butler
+2025-03-03 19:58:15,823 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams misses a shot, offensive rebound by Daniel Gafford
+2025-03-03 19:58:15,844 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Udoka Azubuike scores 2 points, assisted by Nassir Little
+2025-03-03 19:58:15,866 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gary Payton II steals the ball from Max Christie
+2025-03-03 19:58:15,873 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Brook Lopez scores 2 points, assisted by Khris Middleton
+2025-03-03 19:58:15,875 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kristaps Porzingis scores 2 points, assisted by Jrue Holiday
+2025-03-03 19:58:15,875 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Isaiah Hartenstein scores 2 points
+2025-03-03 19:58:15,878 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Tre Mann scores 2 points, assisted by Aaron Wiggins
+2025-03-03 19:58:15,897 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Peyton Watson makes 1 of 1 free throws
+2025-03-03 19:58:15,921 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Dalton Knecht turns the ball over to Golden State Warriors
+2025-03-03 19:58:15,927 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Nic Claxton scores 2 points
+2025-03-03 19:58:15,928 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jared McCain misses a shot, Chris Livingston rebounds
+2025-03-03 19:58:15,928 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams misses a three-point attempt, Luguentz Dort rebounds
+2025-03-03 19:58:15,930 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Neemias Queta misses a three-point attempt, Kevin Love rebounds
+2025-03-03 19:58:15,950 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Theo Maledon scores 2 points, assisted by Saben Lee
+2025-03-03 19:58:15,977 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Anthony Davis turns the ball over to Golden State Warriors
+2025-03-03 19:58:15,979 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Josh Hart misses a three-point attempt, Mikal Bridges rebounds
+2025-03-03 19:58:15,979 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] MarJon Beauchamp turns the ball over to Philadelphia 76ers
+2025-03-03 19:58:15,979 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Luka Dončić scores a three-pointer, assisted by Daniel Gafford
+2025-03-03 19:58:15,982 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Terry Rozier scores 2 points
+2025-03-03 19:58:16,005 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Chimezie Metu makes 0 of 1 free throws
+2025-03-03 19:58:16,032 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Shake Milton turns the ball over to Brooklyn Nets
+2025-03-03 19:58:16,032 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Moses Moody steals the ball from Max Christie
+2025-03-03 19:58:16,032 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Kenrich Williams misses a shot, offensive rebound by Luguentz Dort
+2025-03-03 19:58:16,033 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Khris Middleton misses a three-point attempt, offensive rebound by Damian Lillard
+2025-03-03 19:58:16,034 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jimmy Butler steals the ball from JD Davison
+2025-03-03 19:58:16,057 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Jusuf Nurkić misses a shot, Michael Porter Jr. rebounds
+2025-03-03 19:58:16,086 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Buddy Hield scores 2 points, assisted by Kyle Anderson
+2025-03-03 19:58:16,086 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Duncan Robinson scores 2 points, assisted by Caleb Martin
+2025-03-03 19:58:16,086 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Taurean Prince misses a three-point attempt, Kyle Lowry rebounds
+2025-03-03 19:58:16,086 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Lonnie Walker IV scores 2 points
+2025-03-03 19:58:16,086 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Brandon Williams scores 2 points, assisted by Dante Exum
+2025-03-03 19:58:16,109 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Chimezie Metu misses a shot, offensive rebound by Udoka Azubuike
+2025-03-03 19:58:16,138 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Gabe Vincent scores 2 points
+2025-03-03 19:58:16,140 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Thomas Bryant misses a shot, offensive rebound by Kevin Love
+2025-03-03 19:58:16,140 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] OG Anunoby misses a shot, Cameron Johnson rebounds
+2025-03-03 19:58:16,140 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Cason Wallace makes 1 of 1 free throws
+2025-03-03 19:58:16,141 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Jared McCain scores 2 points
+2025-03-03 19:58:16,193 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] Quarter 4 ended. Score: Los Angeles Lakers 46 - Golden State Warriors 35
+2025-03-03 19:58:16,194 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] 🏆 Final Score: Los Angeles Lakers 46 - Golden State Warriors 35
+2025-03-03 19:58:16,194 - ThreadPoolExecutor-0_2 - [Los Angeles Lakers vs Golden State Warriors] 🎉 Winner: Los Angeles Lakers
+2025-03-03 19:58:16,194 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Tyrese Maxey steals the ball from Andre Jackson Jr.
+2025-03-03 19:58:16,195 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] JD Davison misses a three-point attempt, Jaime Jaquez Jr. rebounds
+2025-03-03 19:58:16,195 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Jacob Toppin misses a shot, Spencer Dinwiddie rebounds
+2025-03-03 19:58:16,195 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Davis Bertāns blocks Tim Hardaway Jr.'s shot
+2025-03-03 19:58:16,216 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] Quarter 4 ended. Score: Denver Nuggets 55 - Phoenix Suns 43
+2025-03-03 19:58:16,216 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] 🏆 Final Score: Denver Nuggets 55 - Phoenix Suns 43
+2025-03-03 19:58:16,216 - ThreadPoolExecutor-0_0 - [Denver Nuggets vs Phoenix Suns] 🎉 Winner: Denver Nuggets
+2025-03-03 19:58:16,245 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Delon Wright scores a three-pointer!
+2025-03-03 19:58:16,250 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Jayson Tatum scores 2 points, assisted by JD Davison
+2025-03-03 19:58:16,251 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] Quarter 4 ended. Score: New York Knicks 35 - Brooklyn Nets 50
+2025-03-03 19:58:16,251 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] Quarter 4 ended. Score: Dallas Mavericks 38 - Oklahoma City Thunder 59
+2025-03-03 19:58:16,251 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] 🏆 Final Score: New York Knicks 35 - Brooklyn Nets 50
+2025-03-03 19:58:16,251 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] 🏆 Final Score: Dallas Mavericks 38 - Oklahoma City Thunder 59
+2025-03-03 19:58:16,251 - ThreadPoolExecutor-0_1 - [New York Knicks vs Brooklyn Nets] 🎉 Winner: Brooklyn Nets
+2025-03-03 19:58:16,251 - ThreadPoolExecutor-0_2 - [Dallas Mavericks vs Oklahoma City Thunder] 🎉 Winner: Oklahoma City Thunder
+2025-03-03 19:58:16,265 - Ball Arena-security - Security completed: 231 fans processed at Ball Arena
+2025-03-03 19:58:16,299 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Gary Trent Jr. misses a shot, Kelly Oubre Jr. rebounds
+2025-03-03 19:58:16,305 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Kevin Love misses a three-point attempt, offensive rebound by Jaime Jaquez Jr.
+2025-03-03 19:58:16,349 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] Quarter 4 ended. Score: Milwaukee Bucks 46 - Philadelphia 76ers 48
+2025-03-03 19:58:16,350 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] 🏆 Final Score: Milwaukee Bucks 46 - Philadelphia 76ers 48
+2025-03-03 19:58:16,350 - ThreadPoolExecutor-0_1 - [Milwaukee Bucks vs Philadelphia 76ers] 🎉 Winner: Philadelphia 76ers
+2025-03-03 19:58:16,356 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Orlando Robinson makes 2 of 2 free throws
+2025-03-03 19:58:16,412 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] Quarter 4 ended. Score: Boston Celtics 46 - Miami Heat 32
+2025-03-03 19:58:16,412 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] 🏆 Final Score: Boston Celtics 46 - Miami Heat 32
+2025-03-03 19:58:16,412 - ThreadPoolExecutor-0_0 - [Boston Celtics vs Miami Heat] 🎉 Winner: Boston Celtics
+2025-03-03 19:58:16,430 - TD Garden-security - Security completed: 228 fans processed at TD Garden
+2025-03-03 19:58:16,803 - Ball Arena-concessions - Concessions: 50 orders processed at Ball Arena
+2025-03-03 19:58:16,804 - Ball Arena-concessions - Concessions completed: 50 orders processed at Ball Arena
+2025-03-03 19:58:16,804 - Ball Arena-concessions - Total concessions revenue: $808.00
+2025-03-03 19:58:16,807 - TD Garden-concessions - Concessions: 50 orders processed at TD Garden
+2025-03-03 19:58:16,807 - TD Garden-concessions - Concessions completed: 50 orders processed at TD Garden
+2025-03-03 19:58:16,808 - TD Garden-concessions - Total concessions revenue: $772.00
+2025-03-03 19:58:16,830 - Madison Square Garden-security - Security completed: 239 fans processed at Madison Square Garden
+2025-03-03 19:58:16,842 - Fiserv Forum-security - Security completed: 252 fans processed at Fiserv Forum
+2025-03-03 19:58:16,956 - American Airlines Center-concessions - Concessions: 50 orders processed at American Airlines Center
+2025-03-03 19:58:16,970 - Madison Square Garden-concessions - Concessions completed: 45 orders processed at Madison Square Garden
+2025-03-03 19:58:16,970 - Madison Square Garden-concessions - Total concessions revenue: $827.00
+2025-03-03 19:58:16,979 - American Airlines Center-security - Security completed: 248 fans processed at American Airlines Center
+2025-03-03 19:58:17,322 - Fiserv Forum-concessions - Concessions: 50 orders processed at Fiserv Forum
+2025-03-03 19:58:17,323 - Fiserv Forum-concessions - Concessions completed: 50 orders processed at Fiserv Forum
+2025-03-03 19:58:17,323 - Fiserv Forum-concessions - Total concessions revenue: $865.00
+2025-03-03 19:58:17,332 - Crypto.com Arena-concessions - Concessions: 50 orders processed at Crypto.com Arena
+2025-03-03 19:58:17,354 - Crypto.com Arena-security - Security completed: 253 fans processed at Crypto.com Arena
+2025-03-03 19:58:17,760 - Crypto.com Arena-concessions - Concessions completed: 55 orders processed at Crypto.com Arena
+2025-03-03 19:58:17,761 - Crypto.com Arena-concessions - Total concessions revenue: $866.50
+2025-03-03 19:58:17,771 - American Airlines Center-concessions - Concessions completed: 55 orders processed at American Airlines Center
+2025-03-03 19:58:17,771 - American Airlines Center-concessions - Total concessions revenue: $875.50
+2025-03-03 19:58:17,844 - MainThread - 
+===== NBA SIMULATION STATS REPORT =====
+2025-03-03 19:58:17,845 - MainThread - 
+TOP SCORING TEAMS:
+2025-03-03 19:58:17,845 - MainThread - 1. Milwaukee Bucks: 46 points
+2025-03-03 19:58:17,845 - MainThread - 2. Boston Celtics: 46 points
+2025-03-03 19:58:17,845 - MainThread - 3. Dallas Mavericks: 38 points
+2025-03-03 19:58:17,845 - MainThread - 
+TOP SCORING PLAYERS:
+2025-03-03 19:58:17,845 - MainThread - 1. Tre Mann: 12 points
+2025-03-03 19:58:17,845 - MainThread - 2. Christian Wood: 12 points
+2025-03-03 19:58:17,845 - MainThread - 3. Christian Braun: 11 points
+2025-03-03 19:58:17,845 - MainThread - 4. Tyler Herro: 9 points
+2025-03-03 19:58:17,845 - MainThread - 5. Ousmane Dieng: 9 points
+2025-03-03 19:58:17,845 - MainThread - 6. Nic Claxton: 9 points
+2025-03-03 19:58:17,845 - MainThread - 7. Jalen Hood-Schifino: 9 points
+2025-03-03 19:58:17,845 - MainThread - 8. Brandin Podziemski: 9 points
+2025-03-03 19:58:17,845 - MainThread - 9. Kristaps Porzingis: 8 points
+2025-03-03 19:58:17,845 - MainThread - 10. Kentavious Caldwell-Pope: 8 points
+2025-03-03 19:58:17,845 - MainThread - 
+STADIUM OPERATIONS AVERAGES:
+2025-03-03 19:58:17,845 - MainThread - Concessions: 50.8 average processed
+2025-03-03 19:58:17,845 - MainThread - Merchandise: 130.5 average processed
+2025-03-03 19:58:17,845 - MainThread - Security: 241.8 average processed
+2025-03-03 19:58:17,845 - MainThread - 
+======================================
+2025-03-03 19:58:17,845 - MainThread - Simulation completed!
+2025-03-03 19:58:17,845 - MainThread - Game Results:
