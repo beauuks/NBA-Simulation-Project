@@ -64,5 +64,13 @@ This is a Python-based NBA game simulation project that demonstrates advanced co
 ## Disclaimer
 This is a simulation project for educational and demonstrative purposes. It does not represent actual NBA game outcomes or official NBA statistics.
 
+## Course Context
+This project was developed as a comprehensive assignment for the **Operating Systems and Parallel Computing** course. It serves to demonstrate practical applications of:
+
+- Concurrent programming techniques
+- Parallel computing principles
+- Thread synchronization
+- Resource management
+
 ## Contributions
 Contributions, issues, and feature requests are welcome!
