@@ -46,7 +46,6 @@ This is a Python-based NBA game simulation project that demonstrates advanced co
   - threading
   - queue
   - sqlite3
-  - pandas
   - json
 
 
