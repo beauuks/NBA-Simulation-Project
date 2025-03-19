@@ -5,16 +5,8 @@ import queue
 import logging
 import sqlite3
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
-import pandas as pd
 from datetime import datetime
-
-# Try importing NBA API (install with: pip install nba_api)
-try:
-    from nba_api.stats.endpoints import LeagueGameFinder, CommonTeamRoster, BoxScoreTraditionalV2
-    NBA_API_AVAILABLE = True
-except ImportError:
-    logging.warning("NBA API not available. Install with: pip install nba_api")
-    NBA_API_AVAILABLE = False
+import json
 
 # Configure logging
 logging.basicConfig(
@@ -31,12 +23,23 @@ game_results = {}
 game_lock = threading.Lock()
 stats_queue = queue.Queue()
 
-# Database connection setup
+# playoffs 
+playoff_results = {}
+playoff_bracket = {}
+
+# Load the JSON file
+with open('nba_data.json', 'r') as f:
+    nba_data = json.load(f)
+
+# Access the data
+NBA_TEAMS = nba_data['NBA_TEAMS']
+NBA_PLAYERS = nba_data['NBA_PLAYERS']
+
+# set up a database for games, players, and stadium operations
 def init_database():
-    """Initialize the database with required tables"""
     conn = sqlite3.connect('nba_simulation.db')
     cursor = conn.cursor()
-    
+
     # Create games table
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS games (
@@ -124,17 +127,12 @@ def save_stadium_ops_to_db(game_id, arena, operation_type, processed_count, deta
     conn.close()
 
 def get_team_roster(team_id):
-    """Get player roster for a team using NBA API"""
-    if not NBA_API_AVAILABLE:
-        # Return dummy roster if API not available
-        return [f"Player{i}" for i in range(1, 16)]
+    """Get player roster for a team from our defined dictionaries"""
+    if team_id and team_id in NBA_PLAYERS:
+        return NBA_PLAYERS[team_id]
     
-    try:
-        roster = CommonTeamRoster(team_id=team_id).get_data_frames()[0]
-        return roster['PLAYER_NAME'].tolist()
-    except Exception as e:
-        logging.error(f"Error fetching roster for team {team_id}: {e}")
-        return [f"Player{i}" for i in range(1, 16)]
+    # Return a default roster if team not found
+    return [f"Player{i}" for i in range(1, 16)]
 
 class Player:
     def __init__(self, name, team):
@@ -519,53 +517,39 @@ class StadiumOperation(threading.Thread):
             logging.info(f"  - {product}: {count} units, ${revenue[product]:.2f}")
         logging.info(f"Total: {self.processed_count} items sold, ${self.details['total_revenue']:.2f} revenue")
 
-def fetch_nba_games(season='2023-24', num_games=10):
-    """Fetch real NBA games from the NBA API"""
-    if not NBA_API_AVAILABLE:
-        logging.warning("NBA API not available. Using dummy data.")
-        return [
-            ("Boston Celtics", "Miami Heat", "TD Garden", "BOS", "MIA"),
-            ("Milwaukee Bucks", "Philadelphia 76ers", "Fiserv Forum", "MIL", "PHI"),
-            ("Los Angeles Lakers", "Golden State Warriors", "Crypto.com Arena", "LAL", "GSW")
-        ]
+def fetch_nba_games(season='2023-24', num_games=82):
+    """Create predefined NBA games for a full regular season"""
+    all_teams = list(NBA_TEAMS.values())
     
-    try:
-        # Get games from the NBA API
-        games = LeagueGameFinder(season_nullable=season).get_data_frames()[0]
-        
-        # Filter completed games
-        # games = games[games['WL'].notnull()]
-        
-        # Get a subset of most recent games
-        games = games.sort_values(by='GAME_DATE', ascending=False).head(num_games)
-        
-        # Extract useful information
-        game_data = []
-        for _, game in games.iterrows():
-            # Each game appears twice in the API (once for each team)
-            # We only want to process each game once
-            if game['MATCHUP'].startswith('@'):  # Away game
-                continue
-                
-            home_team = game['TEAM_NAME']
-            away_team = game['MATCHUP'].split(' ')[1]  # Extract opponent
-            arena = "NBA Arena"  # Arena info not directly available
-            game_date = game['GAME_DATE']
-            home_team_id = game['TEAM_ID']
-            away_team_id = None  # Would need another API call to get this
+    # Create a comprehensive schedule
+    games = []
+    used_games = set()
+    
+    while len(games) < num_games:
+        # Ensure no team plays more than 82 games
+        for home_team in all_teams:
+            for away_team in all_teams:
+                if home_team != away_team:
+                    # Create a unique game combination
+                    game_key = (home_team['name'], away_team['name'])
+                    reverse_game_key = (away_team['name'], home_team['name'])
+                    
+                    if game_key not in used_games and reverse_game_key not in used_games:
+                        games.append((
+                            home_team['name'], 
+                            away_team['name'], 
+                            home_team['arena'], 
+                            datetime.now().strftime('%Y-%m-%d')
+                        ))
+                        used_games.add(game_key)
+                        
+                        if len(games) >= num_games:
+                            break
             
-            game_data.append((home_team, away_team, arena, game_date, home_team_id, away_team_id))
-        
-        logging.info(f"Fetched {len(game_data)} NBA games from the API")
-        return game_data
-        
-    except Exception as e:
-        logging.error(f"Error fetching NBA games: {e}")
-        return [
-            ("Boston Celtics", "Miami Heat", "TD Garden", datetime.now().strftime('%Y-%m-%d'), None, None),
-            ("Milwaukee Bucks", "Philadelphia 76ers", "Fiserv Forum", datetime.now().strftime('%Y-%m-%d'), None, None),
-            ("Los Angeles Lakers", "Golden State Warriors", "Crypto.com Arena", datetime.now().strftime('%Y-%m-%d'), None, None)
-        ]
+            if len(games) >= num_games:
+                break
+    
+    return games[:num_games]
 
 def simulate_parallel_games(game_schedule):
     """Simulate multiple NBA games in parallel using thread pool"""
@@ -614,12 +598,17 @@ def simulate_conferences(east_schedule, west_schedule):
     """Simulate eastern and western conference games using multiprocessing"""
     with ProcessPoolExecutor(max_workers=2) as executor:
         # Submit each conference's games to separate processes
+        logging.info("Submitting Eastern Conference games.")
         east_future = executor.submit(simulate_parallel_games, east_schedule)
+        logging.info("Submitting Western Conference games.")
         west_future = executor.submit(simulate_parallel_games, west_schedule)
         
         # Wait for both conferences to complete their games
+        logging.info("Waiting for Eastern Conference to complete.")
         east_future.result()
+        logging.info("Waiting for Western Conference to complete.")
         west_future.result()
+    logging.info("Conference simulations completed.")
 
 def generate_stats_report():
     """Generate a report of game stats from the database"""
@@ -673,37 +662,172 @@ def generate_stats_report():
     
     logging.info("\n======================================")
 
+def create_playoff_bracket(top_teams):
+    """Create a playoff bracket from top teams in each conference"""
+    playoff_bracket.clear()
+
+    # Eastern Conference Playoff Bracket
+    east_bracket = top_teams[:8]
+    playoff_bracket['Eastern Conference'] = {
+        'First Round': [
+            (east_bracket[0], east_bracket[7]),
+            (east_bracket[1], east_bracket[6]),
+            (east_bracket[2], east_bracket[5]),
+            (east_bracket[3], east_bracket[4])
+        ]
+    }
+
+    # Western Conference Playoff Bracket
+    west_bracket = top_teams[8:]
+    playoff_bracket['Western Conference'] = {
+        'First Round': [
+            (west_bracket[0], west_bracket[7]),
+            (west_bracket[1], west_bracket[6]),
+            (west_bracket[2], west_bracket[5]),
+            (west_bracket[3], west_bracket[4])
+        ]
+    }
+
+    return playoff_bracket
+
+def simulate_playoff_series(team1, team2, series_length=7):
+    """Simulate a best-of-7 playoff series"""
+    series_winner = None
+    series_score = {team1: 0, team2: 0}
+    series_games = []
+    
+    # Determine home team advantage
+    home_team = random.choice([team1, team2])
+    away_team = team2 if home_team == team1 else team1
+    
+    while max(series_score.values()) < 4 and sum(series_score.values()) < 7:
+        # Swap home/away for each game
+        current_home = home_team if len(series_games) % 2 == 0 else away_team
+        current_away = away_team if current_home == home_team else home_team
+        
+        # Simulate game with home team advantage
+        game_id = len(series_games)
+        game = NBA_Game(current_home, current_away, game_id, 
+                        arena=f"{current_home} Arena", 
+                        team1_id=NBA_TEAMS[current_home]["id"] if current_home in NBA_TEAMS else None, 
+                        team2_id=NBA_TEAMS[current_away]["id"] if current_away in NBA_TEAMS else None)
+        game.run()
+        
+        # Get the game result
+        result = game_results.get(game_id, {})
+        winner = result.get('winner')
+        
+        # Update series score
+        series_score[winner] += 1
+        series_games.append(result)
+        
+        # Check if series is over
+        if max(series_score.values()) == 4:
+            series_winner = max(series_score, key=series_score.get)
+    
+    return {
+        'winner': series_winner,
+        'series_score': series_score,
+        'games': series_games
+    }
+
+def simulate_full_playoffs(top_teams):
+    """Simulate the entire NBA playoffs"""
+    playoff_bracket = create_playoff_bracket(top_teams)
+    playoff_results.clear()
+    
+    # Simulate Conference Semifinals
+    for conference in ['Eastern Conference', 'Western Conference']:
+        semifinal_winners = []
+        
+        for series in playoff_bracket[conference]['First Round']:
+            # Simulate first-round series
+            series_result = simulate_playoff_series(series[0], series[1])
+            playoff_results[f"{conference} First Round: {series[0]} vs {series[1]}"] = series_result
+            semifinal_winners.append(series_result['winner'])
+        
+        # Update playoff bracket with Semifinals
+        playoff_bracket[conference]['Semifinals'] = [
+            (semifinal_winners[0], semifinal_winners[1]),
+            (semifinal_winners[2], semifinal_winners[3])
+        ]
+        
+        # Simulate Conference Semifinals
+        conference_finalists = []
+        for series in playoff_bracket[conference]['Semifinals']:
+            series_result = simulate_playoff_series(series[0], series[1])
+            playoff_results[f"{conference} Semifinals: {series[0]} vs {series[1]}"] = series_result
+            conference_finalists.append(series_result['winner'])
+        
+        # Update playoff bracket with Conference Finals
+        playoff_bracket[conference]['Conference Finals'] = (conference_finalists[0], conference_finalists[1])
+        
+        # Simulate Conference Finals
+        conference_final_result = simulate_playoff_series(conference_finalists[0], conference_finalists[1])
+        playoff_results[f"{conference} Conference Finals"] = conference_final_result
+        playoff_bracket[conference]['Conference Champion'] = conference_final_result['winner']
+    
+    # NBA Finals
+    finals_teams = [
+        playoff_bracket['Eastern Conference']['Conference Champion'],
+        playoff_bracket['Western Conference']['Conference Champion']
+    ]
+    nba_finals_result = simulate_playoff_series(finals_teams[0], finals_teams[1])
+    playoff_results['NBA Finals'] = nba_finals_result
+    
+    return nba_finals_result
+
+def generate_playoff_summary():
+    """Generate a comprehensive playoff summary"""
+    logging.info("\n===== 🏆 NBA PLAYOFFS SUMMARY 🏆 =====")
+    
+    # NBA Finals
+    finals = playoff_results.get('NBA Finals', {})
+    champion = finals.get('winner')
+    logging.info(f"\nNBA CHAMPION: {champion}")
+    
+    # Detailed playoff progression
+    for round_name, result in playoff_results.items():
+        if round_name == 'NBA Finals':
+            logging.info(f"\n{round_name}:")
+            logging.info(f"{result['series_score'][result['winner']]} - {result['series_score'][result['winner'] == result['games'][0]['team1'] and result['games'][0]['team2'] or result['games'][0]['team1']]} Series Win")
+            logging.info("Championship Series Detailed Results:")
+            for i, game in enumerate(result['games'], 1):
+                logging.info(f"Game {i}: {game['team1']} {game['score1']} - {game['team2']} {game['score2']} (Winner: {game['winner']})")
+    
+    logging.info("\n===== END OF PLAYOFFS SUMMARY =====")
+
 # Main entry point
 if __name__ == "__main__":
     # Initialize database
     init_database()
     
-    # Fetch real NBA games using the API
-    nba_games = fetch_nba_games(num_games=6)
+    # Simulate regular season
+    logging.info("Starting NBA Regular Season Simulation")
+    nba_games = fetch_nba_games(num_games=82)  # Full 82-game season
     
-    # Split games into conferences (simplified for demo)
+    # Split games into conferences (simplified)
     mid_point = len(nba_games) // 2
     eastern_games = nba_games[:mid_point]
     western_games = nba_games[mid_point:]
     
-    # Log the start of simulation
-    logging.info("Starting NBA simulation")
-    logging.info(f"Eastern Conference Games: {len(eastern_games)}")
-    logging.info(f"Western Conference Games: {len(western_games)}")
-    
-    # Option 1: Simulate conferences in parallel using multiprocessing
+    # Simulate regular season
     simulate_conferences(eastern_games, western_games)
     
-    # Option 2: Simulate all games using a thread pool
-    # all_games = eastern_games + western_games
-    # simulate_parallel_games(all_games)
-    
-    # Generate a stats report
+    # Generate stats report for regular season
     generate_stats_report()
     
-    # Print results
-    logging.info("Simulation completed!")
-    logging.info("Game Results:")
-    for game_id, result in game_results.items():
-        logging.info(f"Game {game_id}: {result['team1']} {result['score1']} - {result['team2']} {result['score2']}")
-        logging.info(f"Winner: {result['winner']}")
+    # Determine top teams for playoffs (top 8 from each conference)
+    # For simplicity, we'll use the first 16 teams from game_results
+    top_teams = list(set([
+        result['team1'] for result in list(game_results.values())[:16]
+    ]))
+    
+    # Simulate Playoffs
+    logging.info("\nStarting NBA Playoffs Simulation")
+    champion = simulate_full_playoffs(top_teams)
+    
+    # Generate playoff summary
+    generate_playoff_summary()
+    
+    logging.info("Complete NBA Season Simulation Completed!")

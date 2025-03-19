@@ -5,9 +5,9 @@ import queue
 import logging
 import sqlite3
 from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
-import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
+import uuid
 
 # Configure logging
 logging.basicConfig(
@@ -24,6 +24,10 @@ game_results = {}
 game_lock = threading.Lock()
 stats_queue = queue.Queue()
 
+# playoffs 
+playoff_results = {}
+playoff_bracket = {}
+
 # Load the JSON file
 with open('nba_data.json', 'r') as f:
     nba_data = json.load(f)
@@ -37,7 +41,7 @@ def init_database():
     conn = sqlite3.connect('nba_simulation.db')
     cursor = conn.cursor()
 
-    # Create games table
+    # games table
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS games (
         id INTEGER PRIMARY KEY,
@@ -51,7 +55,7 @@ def init_database():
     )
     ''')
     
-    # Create player stats table
+    # player stats table
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS player_stats (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -67,7 +71,7 @@ def init_database():
     )
     ''')
     
-    # Create stadium operations table
+    # stadium operations table
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS stadium_ops (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -124,7 +128,7 @@ def save_stadium_ops_to_db(game_id, arena, operation_type, processed_count, deta
     conn.close()
 
 def get_team_roster(team_id):
-    """Get player roster for a team from our defined dictionaries"""
+    """Get player roster for a team"""
     if team_id and team_id in NBA_PLAYERS:
         return NBA_PLAYERS[team_id]
     
@@ -514,161 +518,426 @@ class StadiumOperation(threading.Thread):
             logging.info(f"  - {product}: {count} units, ${revenue[product]:.2f}")
         logging.info(f"Total: {self.processed_count} items sold, ${self.details['total_revenue']:.2f} revenue")
 
-def fetch_nba_games(season='2023-24', num_games=10):
-    """Create predefined NBA games instead of using the API"""
-    # Create a list of predefined games using our NBA_TEAMS dictionary
-    games = [
-        # Format: (home_team_name, away_team_name, arena, date, home_team_id, away_team_id)
-        (NBA_TEAMS["BOS"]["name"], NBA_TEAMS["MIA"]["name"], NBA_TEAMS["BOS"]["arena"], datetime.now().strftime('%Y-%m-%d'), "BOS", "MIA"),
-        (NBA_TEAMS["MIL"]["name"], NBA_TEAMS["PHI"]["name"], NBA_TEAMS["MIL"]["arena"], datetime.now().strftime('%Y-%m-%d'), "MIL", "PHI"),
-        (NBA_TEAMS["LAL"]["name"], NBA_TEAMS["GSW"]["name"], NBA_TEAMS["LAL"]["arena"], datetime.now().strftime('%Y-%m-%d'), "LAL", "GSW"),
-        (NBA_TEAMS["DEN"]["name"], NBA_TEAMS["PHX"]["name"], NBA_TEAMS["DEN"]["arena"], datetime.now().strftime('%Y-%m-%d'), "DEN", "PHX"),
-        (NBA_TEAMS["NYK"]["name"], NBA_TEAMS["BKN"]["name"], NBA_TEAMS["NYK"]["arena"], datetime.now().strftime('%Y-%m-%d'), "NYK", "BKN"),
-        (NBA_TEAMS["DAL"]["name"], NBA_TEAMS["OKC"]["name"], NBA_TEAMS["DAL"]["arena"], datetime.now().strftime('%Y-%m-%d'), "DAL", "OKC"),
-        (NBA_TEAMS["CLE"]["name"], NBA_TEAMS["CHI"]["name"], NBA_TEAMS["CLE"]["arena"], datetime.now().strftime('%Y-%m-%d'), "CLE", "CHI"),
-        (NBA_TEAMS["MEM"]["name"], NBA_TEAMS["NOP"]["name"], NBA_TEAMS["MEM"]["arena"], datetime.now().strftime('%Y-%m-%d'), "MEM", "NOP")
-    ]
-    
-    # Limit to the requested number of games
-    return games[:num_games]
+def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82):
+    """Generates a simplified, but more realistic NBA schedule with game IDs."""
+
+    teams = list(NBA_TEAMS.values())
+    schedule = []
+    game_date = season_start_date
+    days_between_games = 2
+
+    for _ in range(num_games * len(teams) // 2):
+        home_team = random.choice(teams)
+        away_team = random.choice(teams)
+
+        if home_team != away_team:
+            game_id = str(uuid.uuid4()) #Generate a unique ID
+            schedule.append({
+                "game_id": game_id, #add game id
+                "home": home_team["name"],
+                "away": away_team["name"],
+                "arena": home_team["arena"],
+                "date": game_date.strftime("%Y-%m-%d")
+            })
+            game_date += timedelta(days=days_between_games)
+
+    return schedule
 
 def simulate_parallel_games(game_schedule):
     """Simulate multiple NBA games in parallel using thread pool"""
     with ThreadPoolExecutor(max_workers=len(game_schedule)) as executor:
-        # Submit all games to the thread pool
         futures = []
         stadium_threads = []
-        
-        for game_id, game_info in enumerate(game_schedule):
-            # Extract game information
-            if len(game_info) >= 6:  # Full info including IDs
-                team1, team2, arena, game_date, team1_id, team2_id = game_info
-            elif len(game_info) >= 4:  # With date
-                team1, team2, arena, game_date = game_info
-                team1_id = team2_id = None
-            else:  # Basic info
-                team1, team2, arena = game_info
-                game_date = datetime.now().strftime('%Y-%m-%d')
-                team1_id = team2_id = None
-            
+
+        for game in game_schedule: #loop through schedule dictionaries.
+            game_id = game["game_id"] #access game_id from dictionary.
+            team1 = game["home"]
+            team2 = game["away"]
+            arena = game["arena"]
+            game_date = game["date"]
+            team1_id = None #or get them from the dictionary if you added them
+            team2_id = None
+
             # Start stadium operations first
             security = StadiumOperation(game_id, arena, "security")
             concessions = StadiumOperation(game_id, arena, "concessions")
             merchandise = StadiumOperation(game_id, arena, "merchandise")
-            
+
             security.start()
             concessions.start()
             merchandise.start()
-            
+
             stadium_threads.extend([security, concessions, merchandise])
-            
+
             # Create and start the game
-            game = NBA_Game(team1, team2, game_id, arena, game_date, team1_id, team2_id)
-            futures.append(executor.submit(game.run))
-        
+            game_instance = NBA_Game(team1, team2, game_id, arena, game_date, team1_id, team2_id)
+            futures.append(executor.submit(game_instance.run))
+
         # Wait for all games to complete
         for future in futures:
             future.result()
-        
+
         # Stop stadium operations
         for thread in stadium_threads:
             thread.stop_event.set()
-            thread.join(timeout=1.0)  # Join with timeout to avoid hanging
+            thread.join(timeout=1.0)
 
 def simulate_conferences(east_schedule, west_schedule):
     """Simulate eastern and western conference games using multiprocessing"""
     with ProcessPoolExecutor(max_workers=2) as executor:
         # Submit each conference's games to separate processes
+        logging.info("Submitting Eastern Conference games.")
         east_future = executor.submit(simulate_parallel_games, east_schedule)
+        logging.info("Submitting Western Conference games.")
         west_future = executor.submit(simulate_parallel_games, west_schedule)
         
         # Wait for both conferences to complete their games
+        logging.info("Waiting for Eastern Conference to complete.")
         east_future.result()
+        logging.info("Waiting for Western Conference to complete.")
         west_future.result()
+    logging.info("Conference simulations completed.")
 
 def generate_stats_report():
     """Generate a report of game stats from the database"""
-    conn = sqlite3.connect('nba_simulation.db')
-    cursor = conn.cursor()
-    
-    # Get top scoring teams
-    cursor.execute('''
-    SELECT team1, SUM(score1) as points
-    FROM games
-    GROUP BY team1
-    ORDER BY points DESC
-    LIMIT 5
-    ''')
-    top_teams = cursor.fetchall()
-    
-    # Get top scoring players
-    cursor.execute('''
-    SELECT player_name, SUM(points) as total_points
-    FROM player_stats
-    GROUP BY player_name
-    ORDER BY total_points DESC
-    LIMIT 10
-    ''')
-    top_players = cursor.fetchall()
-    
-    # Get stadium operation stats
-    cursor.execute('''
-    SELECT operation_type, AVG(processed_count) as avg_count
-    FROM stadium_ops
-    GROUP BY operation_type
-    ''')
-    ops_stats = cursor.fetchall()
-    
-    conn.close()
-    
-    # Log the report
-    logging.info("\n===== NBA SIMULATION STATS REPORT =====")
-    
-    logging.info("\nTOP SCORING TEAMS:")
-    for i, (team, points) in enumerate(top_teams, 1):
-        logging.info(f"{i}. {team}: {points} points")
-    
-    logging.info("\nTOP SCORING PLAYERS:")
-    for i, (player, points) in enumerate(top_players, 1):
-        logging.info(f"{i}. {player}: {points} points")
-    
-    logging.info("\nSTADIUM OPERATIONS AVERAGES:")
-    for op_type, avg in ops_stats:
-        logging.info(f"{op_type.capitalize()}: {avg:.1f} average processed")
-    
-    logging.info("\n======================================")
+    try:
+        conn = sqlite3.connect('nba_simulation.db')
+        cursor = conn.cursor()
+        
+        # Get top scoring teams
+        cursor.execute('''
+        SELECT team1, SUM(score1) as points
+        FROM games
+        GROUP BY team1
+        ORDER BY points DESC
+        LIMIT 5
+        ''')
+        top_teams = cursor.fetchall()
+        
+        # Get top scoring players
+        cursor.execute('''
+        SELECT player_name, SUM(points) as total_points
+        FROM player_stats
+        GROUP BY player_name
+        ORDER BY total_points DESC
+        LIMIT 10
+        ''')
+        top_players = cursor.fetchall()
+        
+        # Get stadium operation stats
+        cursor.execute('''
+        SELECT operation_type, AVG(processed_count) as avg_count
+        FROM stadium_ops
+        GROUP BY operation_type
+        ''')
+        ops_stats = cursor.fetchall()
+        
+        conn.close()
+        
+        # Log the report
+        logging.info("\n===== NBA SIMULATION STATS REPORT =====")
+        
+        logging.info("\nTOP SCORING TEAMS:")
+        for i, (team, points) in enumerate(top_teams, 1):
+            logging.info(f"{i}. {team}: {points} points")
+        
+        logging.info("\nTOP SCORING PLAYERS:")
+        for i, (player, points) in enumerate(top_players, 1):
+            logging.info(f"{i}. {player}: {points} points")
+        
+        logging.info("\nSTADIUM OPERATIONS AVERAGES:")
+        for op_type, avg in ops_stats:
+            logging.info(f"{op_type.capitalize()}: {avg:.1f} average processed")
+        
+        logging.info("\n======================================")
 
-# Main entry point
+    except sqlite3.Error as e:
+        logging.error(f"Database error: {e}")
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+
+def determine_top_conference_teams(teams, NBA_TEAMS):
+    """Determine the top 8 teams from each conference."""
+
+    east_teams = []
+    west_teams = []
+
+    for team in teams:
+        team_name = team['name']
+        if team_name in NBA_TEAMS:
+            conference = NBA_TEAMS[team_name]['conference']
+            if conference == 'East':
+                east_teams.append(team)
+            elif conference == 'West':
+                west_teams.append(team)
+        else:
+            print(f"team name {team_name} not found in NBA_TEAMS dictionary")
+
+    def get_win_percentage(team):
+        return team['wins'] / (team['wins'] + team['losses'])
+
+    top_east = sorted(east_teams, key=get_win_percentage, reverse=True)[:8]
+    top_west = sorted(west_teams, key=get_win_percentage, reverse=True)[:8]
+
+    return top_east, top_west
+
+def create_playoff_bracket(east_teams, west_teams):
+    """Create a playoff bracket from top teams in each conference"""
+    playoff_bracket = {}
+
+    playoff_bracket['Eastern Conference'] = {
+        'First Round': [
+            (east_teams[0], east_teams[7]),
+            (east_teams[1], east_teams[6]),
+            (east_teams[2], east_teams[5]),
+            (east_teams[3], east_teams[4])
+        ]
+    }
+
+    playoff_bracket['Western Conference'] = {
+        'First Round': [
+            (west_teams[0], west_teams[7]),
+            (west_teams[1], west_teams[6]),
+            (west_teams[2], west_teams[5]),
+            (west_teams[3], west_teams[4])
+        ]
+    }
+
+    return playoff_bracket
+
+def simulate_playoff_series(team1, team2, game_results, series_length=7):
+    """Simulate a best-of-7 playoff series"""
+    series_winner = None
+    series_score = {team1: 0, team2: 0}
+    series_games = []
+
+    home_team = random.choice([team1, team2])
+    away_team = team2 if home_team == team1 else team1
+
+    while max(series_score.values()) < 4 and sum(series_score.values()) < 7:
+        current_home = home_team if len(series_games) % 2 == 0 or len(series_games) == 4 or len(series_games) == 6 else away_team
+        current_away = away_team if current_home == home_team else home_team
+
+        game_id = f"{team1}-{team2}-{len(series_games)}"
+        game = NBA_Game(current_home, current_away, game_id,
+                        arena=f"{current_home} Arena",
+                        team1_id=NBA_TEAMS[current_home]["id"] if current_home in NBA_TEAMS else None,
+                        team2_id=NBA_TEAMS[current_away]["id"] if current_away in NBA_TEAMS else None)
+        game.run()
+
+        result = game_results.get(game_id, {})
+        winner = result.get('winner')
+
+        series_score[winner] += 1
+        series_games.append(result)
+
+        if max(series_score.values()) == 4:
+            series_winner = max(series_score, key=series_score.get)
+
+    return {
+        'winner': series_winner,
+        'series_score': series_score,
+        'games': series_games
+    }
+
+def simulate_full_playoffs(east_teams, west_teams, game_results):
+    """Simulate the entire NBA playoffs"""
+    playoff_bracket = create_playoff_bracket(east_teams, west_teams)
+    playoff_results = {}
+
+    for conference in ['Eastern Conference', 'Western Conference']:
+        semifinal_winners = []
+
+        for series in playoff_bracket[conference]['First Round']:
+            series_result = simulate_playoff_series(series[0], series[1], game_results)
+            playoff_results[f"{conference} First Round: {series[0]} vs {series[1]}"] = series_result
+            semifinal_winners.append(series_result['winner'])
+
+        playoff_bracket[conference]['Semifinals'] = [
+            (semifinal_winners[0], semifinal_winners[1]),
+            (semifinal_winners[2], semifinal_winners[3])
+        ]
+
+        conference_finalists = []
+        for series in playoff_bracket[conference]['Semifinals']:
+            series_result = simulate_playoff_series(series[0], series[1], game_results)
+            playoff_results[f"{conference} Semifinals: {series[0]} vs {series[1]}"] = series_result
+            conference_finalists.append(series_result['winner'])
+
+        playoff_bracket[conference]['Conference Finals'] = (conference_finalists[0], conference_finalists[1])
+
+        conference_final_result = simulate_playoff_series(conference_finalists[0], conference_finalists[1], game_results)
+        playoff_results[f"{conference} Conference Finals"] = conference_final_result
+        playoff_bracket[conference]['Conference Champion'] = conference_final_result['winner']
+
+    finals_teams = [
+        playoff_bracket['Eastern Conference']['Conference Champion'],
+        playoff_bracket['Western Conference']['Conference Champion']
+    ]
+    nba_finals_result = simulate_playoff_series(finals_teams[0], finals_teams[1], game_results)
+    playoff_results['NBA Finals'] = nba_finals_result
+
+    return playoff_results
+
+def generate_playoff_summary(playoff_results, game_results):
+    """Generate a comprehensive playoff summary"""
+    logging.info("\n===== 🏆 NBA PLAYOFFS SUMMARY 🏆 =====")
+
+    finals = playoff_results.get('NBA Finals', {})
+    champion = finals.get('winner')
+    logging.info(f"\nNBA CHAMPION: {champion}")
+
+    for round_name, result in playoff_results.items():
+        logging.info(f"\n{round_name}:")
+        logging.info(f"{result['series_score'][result['winner']]} - {result['series_score'][result['winner'] == result['games'][0]['team1'] and result['games'][0]['team2'] or result['games'][0]['team1']]} Series Win")
+        logging.info("Series Detailed Results:")
+        for i, game in enumerate(result['games'], 1):
+            game_id = game['game_id']
+            logging.info(f"  Game {i}: {game['team1']} {game_results[game_id]['score1']} - {game['team2']} {game_results[game_id]['score2']} (Winner: {game['winner']})")
+
+    logging.info("\n===== END OF PLAYOFFS SUMMARY =====")
+
+def create_realistic_playoff_schedule(playoff_bracket, start_date=datetime(2024, 4, 20)):
+    """Create a more realistic game schedule for the playoffs."""
+
+    schedule = {}
+    current_date = start_date
+    rest_days = 2  # Default rest days between games
+
+    def schedule_series(series_pair, round_name, conference):
+        nonlocal current_date
+        team1, team2 = series_pair
+        series_id = f"{conference} {round_name}: {team1} vs {team2}"
+        schedule[series_id] = []
+        home_team = random.choice([team1, team2])
+        away_team = team2 if home_team == team1 else team1
+
+        for game_num in range(1, 8):  # Max 7 games
+            if game_num == 1 or game_num == 2 or game_num == 5 or game_num == 7:
+              game_home = home_team
+              game_away = away_team
+            else:
+              game_home = away_team
+              game_away = home_team
+
+            schedule[series_id].append({
+                "game_num": game_num,
+                "home": game_home,
+                "away": game_away,
+                "date": current_date.strftime("%Y-%m-%d")
+            })
+            current_date += timedelta(days=1)  # Games on consecutive days
+
+            if game_num in [2, 4, 6]: #add rest days after games 2, 4, 6
+              current_date += timedelta(days=rest_days)
+
+            # Check for series completion
+            if game_num == 4:
+                # If a team has won 4 games, the series is over
+                series_result = simulate_playoff_series(team1, team2) #simulate series to get winner.
+                if series_result['series_score'][series_result['winner']] == 4:
+                  break
+            if game_num == 5:
+                series_result = simulate_playoff_series(team1, team2)
+                if series_result['series_score'][series_result['winner']] == 4:
+                  break
+            if game_num == 6:
+                series_result = simulate_playoff_series(team1, team2)
+                if series_result['series_score'][series_result['winner']] == 4:
+                  break
+
+        current_date += timedelta(days=rest_days)  # Rest after series
+
+    # Schedule each round
+    for conference, rounds in playoff_bracket.items():
+        for round_name, series_pairs in rounds.items():
+            if isinstance(series_pairs, tuple): #Handles Conference Finals.
+              schedule_series(series_pairs, round_name, conference)
+            else:
+              for series_pair in series_pairs:
+                  schedule_series(series_pair, round_name, conference)
+
+    # Schedule NBA Finals
+    finals_teams = [
+        playoff_bracket['Eastern Conference']['Conference Champion'],
+        playoff_bracket['Western Conference']['Conference Champion']
+    ]
+    schedule_series(finals_teams, "NBA Finals", "NBA")
+
+    return schedule
+
 if __name__ == "__main__":
     # Initialize database
     init_database()
     
-    # Fetch real NBA games using the API
-    nba_games = fetch_nba_games(num_games=6)
+    # Simulate regular season
+    logging.info("Starting NBA Regular Season Simulation")
+    nba_games = generate_nba_schedule(num_games=82)  # Full 82-game season
     
-    # Split games into conferences (simplified for demo)
+    # Split games into conferences (simplified)
     mid_point = len(nba_games) // 2
     eastern_games = nba_games[:mid_point]
     western_games = nba_games[mid_point:]
     
-    # Log the start of simulation
-    logging.info("Starting NBA simulation")
-    logging.info(f"Eastern Conference Games: {len(eastern_games)}")
-    logging.info(f"Western Conference Games: {len(western_games)}")
-    
-    # Option 1: Simulate conferences in parallel using multiprocessing
+    # Simulate regular season
     simulate_conferences(eastern_games, western_games)
     
-    # Option 2: Simulate all games using a thread pool
-    # all_games = eastern_games + western_games
-    # simulate_parallel_games(all_games)
-    
-    # Generate a stats report
+    # Generate stats report for regular season
     generate_stats_report()
     
-    # Print results
-    logging.info("Simulation completed!")
-    logging.info("Game Results:")
-    for game_id, result in game_results.items():
-        logging.info(f"Game {game_id}: {result['team1']} {result['score1']} - {result['team2']} {result['score2']}")
-        logging.info(f"Winner: {result['winner']}")
+    # Determine top teams for playoffs (top 8 from each conference)
+    teams_with_records = []
+    for game in game_results.values():
+        if game.get('team1') and game.get('winner'):
+            winner = game.get('winner')
+            loser = game.get('team2') if winner == game.get('team1') else game.get('team1')
+
+            team1_exists = False
+            team2_exists = False
+
+            for team_record in teams_with_records:
+                if team_record['name'] == game.get('team1'):
+                    team1_exists = True
+                    if winner == game.get('team1'):
+                        team_record['wins'] += 1
+                    else:
+                        team_record['losses'] += 1
+                if team_record['name'] == game.get('team2'):
+                    team2_exists = True
+                    if winner == game.get('team2'):
+                        team_record['wins'] += 1
+                    else:
+                        team_record['losses'] += 1
+
+            if not team1_exists:
+                if winner == game.get('team1'):
+                    teams_with_records.append({'name': game.get('team1'), 'wins': 1, 'losses': 0})
+                else:
+                    teams_with_records.append({'name': game.get('team1'), 'wins': 0, 'losses': 1})
+
+            if not team2_exists:
+                if winner == game.get('team2'):
+                    teams_with_records.append({'name': game.get('team2'), 'wins': 1, 'losses': 0})
+                else:
+                    teams_with_records.append({'name': game.get('team2'), 'wins': 0, 'losses': 1})
+
+    east_teams, west_teams = determine_top_conference_teams(teams_with_records, NBA_TEAMS)
+
+    # Simulate Playoffs
+    logging.info("\nStarting NBA Playoffs Simulation")
+    playoff_results = simulate_full_playoffs(east_teams, west_teams, game_results)
+
+    # Generate playoff summary
+    generate_playoff_summary(playoff_results, game_results)
+
+    # Create Playoff Schedule
+    playoff_bracket = create_playoff_bracket(east_teams, west_teams)
+    playoff_schedule = create_realistic_playoff_schedule(playoff_bracket)
+
+    # print playoff schedule.
+    for series, games in playoff_schedule.items():
+        print(f"\n{series}:")
+        for game in games:
+            print(f"  Game {game['game_num']}: {game['away']} @ {game['home']} on {game['date']}")
+
+    logging.info("Complete NBA Season Simulation Completed!")
