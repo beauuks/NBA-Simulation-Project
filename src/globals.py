@@ -12,7 +12,7 @@ playoff_results = {}
 playoff_bracket = {}
 
 # Load the JSON file
-with open('nba_data.json', 'r') as f:
+with open('data/nba_data.json', 'r') as f:
     nba_data = json.load(f)
 
 # Access the data

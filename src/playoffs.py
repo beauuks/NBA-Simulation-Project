@@ -2,8 +2,8 @@ import random
 from datetime import datetime, timedelta
 import logging
 
-from nba_classes import NBA_Game
-from globals import NBA_TEAMS
+from src.nba_classes import NBA_Game
+from src.globals import NBA_TEAMS
 
 
 def determine_top_conference_teams(teams, NBA_TEAMS):

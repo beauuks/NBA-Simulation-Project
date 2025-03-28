@@ -13,7 +13,7 @@ import matplotlib.patches as mpatches
 from PIL import Image, ImageDraw
 
 # Assuming globals.py has been imported with game_results and playoff_results
-from globals import game_results, playoff_results, playoff_bracket, NBA_TEAMS
+from src.globals import game_results, playoff_results, playoff_bracket, NBA_TEAMS
 
 # Create directories for assets and output
 os.makedirs('assets/logos', exist_ok=True)

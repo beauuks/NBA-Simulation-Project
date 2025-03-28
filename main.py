@@ -1,11 +1,11 @@
 
 import logging
-from globals import game_results, game_lock, stats_queue, playoff_results, playoff_bracket, NBA_TEAMS, NBA_PLAYERS
-from database import init_database, generate_stats_report
-from nba_classes import NBA_Game, Player
-from stadium_ops import StadiumOperation
-from simulation import generate_nba_schedule, simulate_parallel_games, simulate_conferences
-from playoffs import determine_top_conference_teams, simulate_full_playoffs, generate_playoff_summary, create_playoff_bracket, create_realistic_playoff_schedule
+from src.globals import game_results, game_lock, stats_queue, playoff_results, playoff_bracket, NBA_TEAMS, NBA_PLAYERS
+from src.database import init_database, generate_stats_report
+from src.nba_classes import NBA_Game, Player
+from src.stadium_ops import StadiumOperation
+from src.simulation import generate_nba_schedule, simulate_parallel_games, simulate_conferences
+from src.playoffs import determine_top_conference_teams, simulate_full_playoffs, generate_playoff_summary, create_playoff_bracket, create_realistic_playoff_schedule
 
 
 # Configure logging
@@ -20,25 +20,23 @@ logging.basicConfig(
 
 
 if __name__ == "__main__":
-    # Initialize database
     init_database()
+
+    # regular season
+    logging.info("Starting NBA regular season simulation")
+    all_games = generate_nba_schedule(num_games=82)
+
+    # TODO: Split games based on the actual teams in each conference
+    # splitting games into eastern and western conferences
+    mid_point = len(all_games) // 2
+    eastern_games = all_games[:mid_point]
+    western_games = all_games[mid_point:]
     
-    # Simulate regular season
-    logging.info("Starting NBA Regular Season Simulation")
-    nba_games = generate_nba_schedule(num_games=82)  # Full 82-game season
-    
-    # Split games into conferences (simplified)
-    mid_point = len(nba_games) // 2
-    eastern_games = nba_games[:mid_point]
-    western_games = nba_games[mid_point:]
-    
-    # Simulate regular season
     simulate_conferences(eastern_games, western_games)
-    
-    # Generate stats report for regular season
     generate_stats_report()
     
     # Determine top teams for playoffs (top 8 from each conference)
+    # TODO: doesn't the function determine_top_conference_teams() already do this?
     teams_with_records = []
     for game in game_results.values():
         if game.get('team1') and game.get('winner'):

@@ -4,8 +4,8 @@ import threading
 import logging
 import datetime
 
-from globals import game_lock, game_results, NBA_PLAYERS
-from database import save_game_to_db
+from src.globals import game_lock, game_results, NBA_PLAYERS
+from src.database import save_game_to_db
 
 def get_team_roster(team_id):
     """Get player roster for a team"""

@@ -4,7 +4,7 @@ import time
 import queue
 import logging
 
-from database import save_stadium_ops_to_db
+from src.database import save_stadium_ops_to_db
 
 class StadiumOperation(threading.Thread):
     def __init__(self, game_id, arena_name, operation_type, capacity=18000):
