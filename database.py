@@ -60,6 +60,7 @@ def save_game_to_db(game_id, result):
     conn = sqlite3.connect('nba_simulation.db')
     cursor = conn.cursor()
     
+    # TODO: CHeck if it inserts the real date of the game (use the real schedule of the NBA season 2023-2024)
     # Insert game result
     cursor.execute(
         "INSERT OR REPLACE INTO games VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
