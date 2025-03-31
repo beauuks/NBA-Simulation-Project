@@ -1,0 +1,5150 @@
+{
+    "Luka Don\u010di\u0107": {
+        "Unnamed: 0": 1,
+        "Team": "DAL",
+        "Min": 2624.0,
+        "FG%": 48.7,
+        "3P%": 38.2,
+        "FT%": 78.6,
+        "min%": 66.67
+    },
+    "Shai Gilgeous-Alexander": {
+        "Unnamed: 0": 2,
+        "Team": "OKC",
+        "Min": 2552.7,
+        "FG%": 53.5,
+        "3P%": 35.3,
+        "FT%": 87.4,
+        "min%": 64.86
+    },
+    "Giannis Antetokounmpo": {
+        "Unnamed: 0": 3,
+        "Team": "MIL",
+        "Min": 2567.2,
+        "FG%": 61.1,
+        "3P%": 27.4,
+        "FT%": 65.7,
+        "min%": 65.22
+    },
+    "Jalen Brunson": {
+        "Unnamed: 0": 4,
+        "Team": "NYK",
+        "Min": 2726.3,
+        "FG%": 47.9,
+        "3P%": 40.1,
+        "FT%": 84.7,
+        "min%": 69.27
+    },
+    "Nikola Joki\u0107": {
+        "Unnamed: 0": 5,
+        "Team": "DEN",
+        "Min": 2736.5,
+        "FG%": 58.3,
+        "3P%": 35.9,
+        "FT%": 81.7,
+        "min%": 69.52
+    },
+    "Anthony Edwards": {
+        "Unnamed: 0": 6,
+        "Team": "MIN",
+        "Min": 2770.4,
+        "FG%": 46.1,
+        "3P%": 35.7,
+        "FT%": 83.6,
+        "min%": 70.39
+    },
+    "Kevin Durant": {
+        "Unnamed: 0": 7,
+        "Team": "PHX",
+        "Min": 2790.6,
+        "FG%": 52.3,
+        "3P%": 41.3,
+        "FT%": 85.6,
+        "min%": 70.9
+    },
+    "Jayson Tatum": {
+        "Unnamed: 0": 8,
+        "Team": "BOS",
+        "Min": 2645.2,
+        "FG%": 47.1,
+        "3P%": 37.6,
+        "FT%": 83.3,
+        "min%": 67.21
+    },
+    "De'Aaron Fox": {
+        "Unnamed: 0": 9,
+        "Team": "SAC",
+        "Min": 2658.8,
+        "FG%": 46.5,
+        "3P%": 36.9,
+        "FT%": 73.8,
+        "min%": 67.55
+    },
+    "Stephen Curry": {
+        "Unnamed: 0": 10,
+        "Team": "GSW",
+        "Min": 2421.5,
+        "FG%": 45.0,
+        "3P%": 40.8,
+        "FT%": 92.3,
+        "min%": 61.52
+    },
+    "DeMar DeRozan": {
+        "Unnamed: 0": 11,
+        "Team": "CHI",
+        "Min": 2988.6,
+        "FG%": 48.0,
+        "3P%": 33.3,
+        "FT%": 85.3,
+        "min%": 75.93
+    },
+    "Anthony Davis": {
+        "Unnamed: 0": 12,
+        "Team": "LAL",
+        "Min": 2700.2,
+        "FG%": 55.6,
+        "3P%": 27.1,
+        "FT%": 81.6,
+        "min%": 68.6
+    },
+    "Devin Booker": {
+        "Unnamed: 0": 13,
+        "Team": "PHX",
+        "Min": 2446.7,
+        "FG%": 49.2,
+        "3P%": 36.4,
+        "FT%": 88.6,
+        "min%": 62.16
+    },
+    "LeBron James": {
+        "Unnamed: 0": 14,
+        "Team": "LAL",
+        "Min": 2503.7,
+        "FG%": 54.0,
+        "3P%": 41.0,
+        "FT%": 75.0,
+        "min%": 63.61
+    },
+    "Tyrese Maxey": {
+        "Unnamed: 0": 15,
+        "Team": "PHI",
+        "Min": 2625.8,
+        "FG%": 45.0,
+        "3P%": 37.3,
+        "FT%": 86.8,
+        "min%": 66.71
+    },
+    "Paolo Banchero": {
+        "Unnamed: 0": 16,
+        "Team": "ORL",
+        "Min": 2798.7,
+        "FG%": 45.5,
+        "3P%": 33.9,
+        "FT%": 72.5,
+        "min%": 71.11
+    },
+    "Damian Lillard": {
+        "Unnamed: 0": 17,
+        "Team": "MIL",
+        "Min": 2578.4,
+        "FG%": 42.4,
+        "3P%": 35.4,
+        "FT%": 92.0,
+        "min%": 65.51
+    },
+    "Dejounte Murray": {
+        "Unnamed: 0": 18,
+        "Team": "ATL",
+        "Min": 2783.3,
+        "FG%": 45.9,
+        "3P%": 36.3,
+        "FT%": 79.4,
+        "min%": 70.71
+    },
+    "Pascal Siakam": {
+        "Unnamed: 0": 19,
+        "Team": "IND",
+        "Min": 2657.9,
+        "FG%": 53.6,
+        "3P%": 34.6,
+        "FT%": 73.2,
+        "min%": 67.53
+    },
+    "Paul George": {
+        "Unnamed: 0": 20,
+        "Team": "LAC",
+        "Min": 2501.8,
+        "FG%": 47.1,
+        "3P%": 41.3,
+        "FT%": 90.7,
+        "min%": 63.56
+    },
+    "Kawhi Leonard": {
+        "Unnamed: 0": 21,
+        "Team": "LAC",
+        "Min": 2330.0,
+        "FG%": 52.5,
+        "3P%": 41.7,
+        "FT%": 88.5,
+        "min%": 59.2
+    },
+    "Jalen Green": {
+        "Unnamed: 0": 22,
+        "Team": "HOU",
+        "Min": 2601.4,
+        "FG%": 42.3,
+        "3P%": 33.2,
+        "FT%": 80.4,
+        "min%": 66.09
+    },
+    "Jaylen Brown": {
+        "Unnamed: 0": 22,
+        "Team": "BOS",
+        "Min": 2342.5,
+        "FG%": 49.9,
+        "3P%": 35.4,
+        "FT%": 70.3,
+        "min%": 59.51
+    },
+    "Mikal Bridges": {
+        "Unnamed: 0": 24,
+        "Team": "BKN",
+        "Min": 2854.2,
+        "FG%": 43.6,
+        "3P%": 37.2,
+        "FT%": 81.4,
+        "min%": 72.52
+    },
+    "Zion Williamson": {
+        "Unnamed: 0": 25,
+        "Team": "NOP",
+        "Min": 2206.9,
+        "FG%": 57.0,
+        "3P%": 33.3,
+        "FT%": 70.2,
+        "min%": 56.07
+    },
+    "Domantas Sabonis": {
+        "Unnamed: 0": 26,
+        "Team": "SAC",
+        "Min": 2928.0,
+        "FG%": 59.4,
+        "3P%": 37.9,
+        "FT%": 70.4,
+        "min%": 74.39
+    },
+    "Kyle Kuzma": {
+        "Unnamed: 0": 27,
+        "Team": "WAS",
+        "Min": 2281.1,
+        "FG%": 46.3,
+        "3P%": 33.6,
+        "FT%": 77.5,
+        "min%": 57.95
+    },
+    "Victor Wembanyama": {
+        "Unnamed: 0": 28,
+        "Team": "SAS",
+        "Min": 2106.2,
+        "FG%": 46.5,
+        "3P%": 32.5,
+        "FT%": 79.6,
+        "min%": 53.51
+    },
+    "Coby White": {
+        "Unnamed: 0": 29,
+        "Team": "CHI",
+        "Min": 2881.4,
+        "FG%": 44.7,
+        "3P%": 37.6,
+        "FT%": 83.8,
+        "min%": 73.21
+    },
+    "Kyrie Irving": {
+        "Unnamed: 0": 30,
+        "Team": "DAL",
+        "Min": 2029.6,
+        "FG%": 49.7,
+        "3P%": 41.1,
+        "FT%": 90.5,
+        "min%": 51.57
+    },
+    "Jaren Jackson Jr.": {
+        "Unnamed: 0": 31,
+        "Team": "MEM",
+        "Min": 2124.2,
+        "FG%": 44.4,
+        "3P%": 32.0,
+        "FT%": 80.8,
+        "min%": 53.97
+    },
+    "Cam Thomas": {
+        "Unnamed: 0": 32,
+        "Team": "BKN",
+        "Min": 2074.8,
+        "FG%": 44.2,
+        "3P%": 36.4,
+        "FT%": 85.6,
+        "min%": 52.71
+    },
+    "Donovan Mitchell": {
+        "Unnamed: 0": 33,
+        "Team": "CLE",
+        "Min": 1942.7,
+        "FG%": 46.2,
+        "3P%": 36.8,
+        "FT%": 86.5,
+        "min%": 49.36
+    },
+    "Collin Sexton": {
+        "Unnamed: 0": 34,
+        "Team": "UTA",
+        "Min": 2074.8,
+        "FG%": 48.7,
+        "3P%": 39.4,
+        "FT%": 85.9,
+        "min%": 52.71
+    },
+    "Miles Bridges": {
+        "Unnamed: 0": 35,
+        "Team": "CHA",
+        "Min": 2581.1,
+        "FG%": 46.2,
+        "3P%": 34.9,
+        "FT%": 82.5,
+        "min%": 65.58
+    },
+    "Franz Wagner": {
+        "Unnamed: 0": 36,
+        "Team": "ORL",
+        "Min": 2337.4,
+        "FG%": 48.2,
+        "3P%": 28.1,
+        "FT%": 85.0,
+        "min%": 59.39
+    },
+    "Cade Cunningham": {
+        "Unnamed: 0": 37,
+        "Team": "DET",
+        "Min": 2074.2,
+        "FG%": 44.9,
+        "3P%": 35.5,
+        "FT%": 86.9,
+        "min%": 52.7
+    },
+    "Trae Young": {
+        "Unnamed: 0": 38,
+        "Team": "ATL",
+        "Min": 1941.7,
+        "FG%": 43.0,
+        "3P%": 37.3,
+        "FT%": 85.5,
+        "min%": 49.33
+    },
+    "Tyrese Haliburton": {
+        "Unnamed: 0": 38,
+        "Team": "IND",
+        "Min": 2223.5,
+        "FG%": 47.7,
+        "3P%": 36.4,
+        "FT%": 85.5,
+        "min%": 56.49
+    },
+    "Klay Thompson": {
+        "Unnamed: 0": 40,
+        "Team": "GSW",
+        "Min": 2284.2,
+        "FG%": 43.2,
+        "3P%": 38.7,
+        "FT%": 92.7,
+        "min%": 58.03
+    },
+    "Nikola Vu\u010devi\u0107": {
+        "Unnamed: 0": 41,
+        "Team": "CHI",
+        "Min": 2609.5,
+        "FG%": 48.4,
+        "3P%": 29.4,
+        "FT%": 82.2,
+        "min%": 66.3
+    },
+    "D'Angelo Russell": {
+        "Unnamed: 0": 42,
+        "Team": "LAL",
+        "Min": 2484.1,
+        "FG%": 45.6,
+        "3P%": 41.5,
+        "FT%": 82.8,
+        "min%": 63.11
+    },
+    "Bam Adebayo": {
+        "Unnamed: 0": 43,
+        "Team": "MIA",
+        "Min": 2416.5,
+        "FG%": 52.1,
+        "3P%": 35.7,
+        "FT%": 75.5,
+        "min%": 61.39
+    },
+    "Chet Holmgren": {
+        "Unnamed: 0": 44,
+        "Team": "OKC",
+        "Min": 2412.8,
+        "FG%": 53.0,
+        "3P%": 37.0,
+        "FT%": 79.3,
+        "min%": 61.3
+    },
+    "Jordan Poole": {
+        "Unnamed: 0": 45,
+        "Team": "WAS",
+        "Min": 2345.6,
+        "FG%": 41.3,
+        "3P%": 32.6,
+        "FT%": 87.7,
+        "min%": 59.59
+    },
+    "Michael Porter Jr.": {
+        "Unnamed: 0": 45,
+        "Team": "DEN",
+        "Min": 2564.6,
+        "FG%": 48.4,
+        "3P%": 39.7,
+        "FT%": 83.6,
+        "min%": 65.16
+    },
+    "Jalen Williams": {
+        "Unnamed: 0": 47,
+        "Team": "OKC",
+        "Min": 2223.6,
+        "FG%": 54.0,
+        "3P%": 42.7,
+        "FT%": 81.4,
+        "min%": 56.49
+    },
+    "Joel Embiid": {
+        "Unnamed: 0": 48,
+        "Team": "PHI",
+        "Min": 1309.4,
+        "FG%": 52.9,
+        "3P%": 38.8,
+        "FT%": 88.3,
+        "min%": 33.27
+    },
+    "Karl-Anthony Towns": {
+        "Unnamed: 0": 49,
+        "Team": "MIN",
+        "Min": 2025.6,
+        "FG%": 50.4,
+        "3P%": 41.6,
+        "FT%": 87.3,
+        "min%": 51.46
+    },
+    "Bogdan Bogdanovi\u0107": {
+        "Unnamed: 0": 50,
+        "Team": "ATL",
+        "Min": 2401.4,
+        "FG%": 42.8,
+        "3P%": 37.4,
+        "FT%": 92.1,
+        "min%": 61.01
+    },
+    "Brandon Ingram": {
+        "Unnamed: 0": 51,
+        "Team": "NOP",
+        "Min": 2102.7,
+        "FG%": 49.2,
+        "3P%": 35.5,
+        "FT%": 80.1,
+        "min%": 53.42
+    },
+    "Alperen Sengun": {
+        "Unnamed: 0": 52,
+        "Team": "HOU",
+        "Min": 2045.6,
+        "FG%": 53.7,
+        "3P%": 29.7,
+        "FT%": 69.3,
+        "min%": 51.97
+    },
+    "Devin Vassell": {
+        "Unnamed: 0": 53,
+        "Team": "SAS",
+        "Min": 2247.7,
+        "FG%": 47.2,
+        "3P%": 37.2,
+        "FT%": 80.1,
+        "min%": 57.11
+    },
+    "CJ McCollum": {
+        "Unnamed: 0": 54,
+        "Team": "NOP",
+        "Min": 2158.5,
+        "FG%": 45.9,
+        "3P%": 42.9,
+        "FT%": 82.7,
+        "min%": 54.84
+    },
+    "Myles Turner": {
+        "Unnamed: 0": 55,
+        "Team": "IND",
+        "Min": 2076.4,
+        "FG%": 52.4,
+        "3P%": 35.8,
+        "FT%": 77.3,
+        "min%": 52.75
+    },
+    "Austin Reaves": {
+        "Unnamed: 0": 56,
+        "Team": "LAL",
+        "Min": 2628.9,
+        "FG%": 48.6,
+        "3P%": 36.7,
+        "FT%": 85.3,
+        "min%": 66.79
+    },
+    "Brandon Miller": {
+        "Unnamed: 0": 57,
+        "Team": "CHA",
+        "Min": 2383.0,
+        "FG%": 44.0,
+        "3P%": 37.3,
+        "FT%": 82.7,
+        "min%": 60.54
+    },
+    "Lauri Markkanen": {
+        "Unnamed: 0": 58,
+        "Team": "UTA",
+        "Min": 1819.7,
+        "FG%": 48.0,
+        "3P%": 39.9,
+        "FT%": 89.9,
+        "min%": 46.23
+    },
+    "Jarrett Allen": {
+        "Unnamed: 0": 59,
+        "Team": "CLE",
+        "Min": 2442.1,
+        "FG%": 63.4,
+        "3P%": 0.0,
+        "FT%": 74.2,
+        "min%": 62.05
+    },
+    "Fred VanVleet": {
+        "Unnamed: 0": 60,
+        "Team": "HOU",
+        "Min": 2684.4,
+        "FG%": 41.6,
+        "3P%": 38.7,
+        "FT%": 86.0,
+        "min%": 68.2
+    },
+    "Donte DiVincenzo": {
+        "Unnamed: 0": 61,
+        "Team": "NYK",
+        "Min": 2360.4,
+        "FG%": 44.3,
+        "3P%": 40.1,
+        "FT%": 75.4,
+        "min%": 59.97
+    },
+    "Jamal Murray": {
+        "Unnamed: 0": 62,
+        "Team": "DEN",
+        "Min": 1861.4,
+        "FG%": 48.1,
+        "3P%": 42.5,
+        "FT%": 85.3,
+        "min%": 47.29
+    },
+    "Jimmy Butler III": {
+        "Unnamed: 0": 63,
+        "Team": "MIA",
+        "Min": 2042.1,
+        "FG%": 49.9,
+        "3P%": 41.4,
+        "FT%": 85.8,
+        "min%": 51.88
+    },
+    "Terry Rozier": {
+        "Unnamed: 0": 64,
+        "Team": "MIA",
+        "Min": 2040.4,
+        "FG%": 44.3,
+        "3P%": 36.3,
+        "FT%": 86.9,
+        "min%": 51.84
+    },
+    "Tobias Harris": {
+        "Unnamed: 0": 65,
+        "Team": "PHI",
+        "Min": 2367.8,
+        "FG%": 48.7,
+        "3P%": 35.3,
+        "FT%": 87.8,
+        "min%": 60.16
+    },
+    "James Harden": {
+        "Unnamed: 0": 66,
+        "Team": "LAC",
+        "Min": 2469.7,
+        "FG%": 42.8,
+        "3P%": 38.1,
+        "FT%": 87.8,
+        "min%": 62.75
+    },
+    "Scottie Barnes": {
+        "Unnamed: 0": 67,
+        "Team": "TOR",
+        "Min": 2094.2,
+        "FG%": 47.5,
+        "3P%": 34.1,
+        "FT%": 78.1,
+        "min%": 53.21
+    },
+    "Jonathan Kuminga": {
+        "Unnamed: 0": 68,
+        "Team": "GSW",
+        "Min": 1949.5,
+        "FG%": 52.9,
+        "3P%": 32.1,
+        "FT%": 74.6,
+        "min%": 49.53
+    },
+    "Jaden Ivey": {
+        "Unnamed: 0": 69,
+        "Team": "DET",
+        "Min": 2217.5,
+        "FG%": 42.9,
+        "3P%": 33.6,
+        "FT%": 74.9,
+        "min%": 56.34
+    },
+    "Keegan Murray": {
+        "Unnamed: 0": 70,
+        "Team": "SAC",
+        "Min": 2588.6,
+        "FG%": 45.4,
+        "3P%": 35.8,
+        "FT%": 83.1,
+        "min%": 65.77
+    },
+    "RJ Barrett": {
+        "Unnamed: 0": 71,
+        "Team": "TOR",
+        "Min": 1838.1,
+        "FG%": 49.5,
+        "3P%": 36.0,
+        "FT%": 71.5,
+        "min%": 46.7
+    },
+    "Immanuel Quickley": {
+        "Unnamed: 0": 72,
+        "Team": "TOR",
+        "Min": 1985.3,
+        "FG%": 43.4,
+        "3P%": 39.5,
+        "FT%": 85.3,
+        "min%": 50.44
+    },
+    "Kristaps Porzi\u0146\u0123is": {
+        "Unnamed: 0": 73,
+        "Team": "BOS",
+        "Min": 1689.9,
+        "FG%": 51.6,
+        "3P%": 37.5,
+        "FT%": 85.8,
+        "min%": 42.93
+    },
+    "Tim Hardaway Jr.": {
+        "Unnamed: 0": 74,
+        "Team": "DAL",
+        "Min": 2120.3,
+        "FG%": 40.2,
+        "3P%": 35.3,
+        "FT%": 85.2,
+        "min%": 53.87
+    },
+    "Jerami Grant": {
+        "Unnamed: 0": 75,
+        "Team": "POR",
+        "Min": 1830.2,
+        "FG%": 45.1,
+        "3P%": 40.2,
+        "FT%": 81.7,
+        "min%": 46.5
+    },
+    "Bobby Portis": {
+        "Unnamed: 0": 76,
+        "Team": "MIL",
+        "Min": 2008.2,
+        "FG%": 50.8,
+        "3P%": 40.7,
+        "FT%": 79.0,
+        "min%": 51.02
+    },
+    "Dennis Schr\u00f6der": {
+        "Unnamed: 0": 77,
+        "Team": "BKN",
+        "Min": 2485.9,
+        "FG%": 43.5,
+        "3P%": 37.5,
+        "FT%": 83.6,
+        "min%": 63.16
+    },
+    "Malik Monk": {
+        "Unnamed: 0": 78,
+        "Team": "SAC",
+        "Min": 1872.3,
+        "FG%": 44.3,
+        "3P%": 35.0,
+        "FT%": 82.9,
+        "min%": 47.57
+    },
+    "Derrick White": {
+        "Unnamed: 0": 79,
+        "Team": "BOS",
+        "Min": 2381.0,
+        "FG%": 46.1,
+        "3P%": 39.6,
+        "FT%": 90.1,
+        "min%": 60.49
+    },
+    "Deni Avdija": {
+        "Unnamed: 0": 80,
+        "Team": "WAS",
+        "Min": 2256.6,
+        "FG%": 50.6,
+        "3P%": 37.4,
+        "FT%": 74.0,
+        "min%": 57.33
+    },
+    "Julius Randle": {
+        "Unnamed: 0": 80,
+        "Team": "NYK",
+        "Min": 1630.1,
+        "FG%": 47.2,
+        "3P%": 31.1,
+        "FT%": 78.1,
+        "min%": 41.42
+    },
+    "Naz Reid": {
+        "Unnamed: 0": 82,
+        "Team": "MIN",
+        "Min": 1963.8,
+        "FG%": 47.7,
+        "3P%": 41.4,
+        "FT%": 73.6,
+        "min%": 49.89
+    },
+    "Keldon Johnson": {
+        "Unnamed: 0": 83,
+        "Team": "SAS",
+        "Min": 2038.4,
+        "FG%": 45.4,
+        "3P%": 34.6,
+        "FT%": 79.2,
+        "min%": 51.79
+    },
+    "Corey Kispert": {
+        "Unnamed: 0": 84,
+        "Team": "WAS",
+        "Min": 2067.4,
+        "FG%": 48.6,
+        "3P%": 38.3,
+        "FT%": 72.6,
+        "min%": 52.53
+    },
+    "Rudy Gobert": {
+        "Unnamed: 0": 85,
+        "Team": "MIN",
+        "Min": 2593.1,
+        "FG%": 66.1,
+        "3P%": 0.0,
+        "FT%": 63.8,
+        "min%": 65.88
+    },
+    "Norman Powell": {
+        "Unnamed: 0": 86,
+        "Team": "LAC",
+        "Min": 1990.4,
+        "FG%": 48.6,
+        "3P%": 43.5,
+        "FT%": 83.1,
+        "min%": 50.57
+    },
+    "Kelly Oubre Jr.": {
+        "Unnamed: 0": 87,
+        "Team": "PHI",
+        "Min": 2055.3,
+        "FG%": 44.1,
+        "3P%": 31.1,
+        "FT%": 75.0,
+        "min%": 52.22
+    },
+    "Jabari Smith Jr.": {
+        "Unnamed: 0": 88,
+        "Team": "HOU",
+        "Min": 2423.8,
+        "FG%": 45.4,
+        "3P%": 36.3,
+        "FT%": 81.1,
+        "min%": 61.58
+    },
+    "Anfernee Simons": {
+        "Unnamed: 0": 89,
+        "Team": "POR",
+        "Min": 1581.7,
+        "FG%": 43.0,
+        "3P%": 38.5,
+        "FT%": 91.6,
+        "min%": 40.19
+    },
+    "Darius Garland": {
+        "Unnamed: 0": 90,
+        "Team": "CLE",
+        "Min": 1900.4,
+        "FG%": 44.6,
+        "3P%": 37.1,
+        "FT%": 83.4,
+        "min%": 48.28
+    },
+    "John Collins": {
+        "Unnamed: 0": 91,
+        "Team": "UTA",
+        "Min": 1901.1,
+        "FG%": 53.2,
+        "3P%": 37.1,
+        "FT%": 79.5,
+        "min%": 48.3
+    },
+    "Grayson Allen": {
+        "Unnamed: 0": 92,
+        "Team": "PHX",
+        "Min": 2513.3,
+        "FG%": 49.9,
+        "3P%": 46.1,
+        "FT%": 87.8,
+        "min%": 63.85
+    },
+    "Aaron Gordon": {
+        "Unnamed: 0": 93,
+        "Team": "DEN",
+        "Min": 2296.8,
+        "FG%": 55.6,
+        "3P%": 29.0,
+        "FT%": 65.8,
+        "min%": 58.35
+    },
+    "Buddy Hield": {
+        "Unnamed: 0": 93,
+        "Team": "PHI",
+        "Min": 2159.9,
+        "FG%": 43.6,
+        "3P%": 38.6,
+        "FT%": 88.1,
+        "min%": 54.88
+    },
+    "Jonas Valan\u010di\u016bnas": {
+        "Unnamed: 0": 95,
+        "Team": "NOP",
+        "Min": 1924.8,
+        "FG%": 55.9,
+        "3P%": 30.8,
+        "FT%": 78.5,
+        "min%": 48.9
+    },
+    "Harrison Barnes": {
+        "Unnamed: 0": 96,
+        "Team": "SAC",
+        "Min": 2380.9,
+        "FG%": 47.4,
+        "3P%": 38.7,
+        "FT%": 80.1,
+        "min%": 60.49
+    },
+    "Desmond Bane": {
+        "Unnamed: 0": 97,
+        "Team": "MEM",
+        "Min": 1442.8,
+        "FG%": 46.4,
+        "3P%": 38.1,
+        "FT%": 87.0,
+        "min%": 36.66
+    },
+    "Brook Lopez": {
+        "Unnamed: 0": 98,
+        "Team": "MIL",
+        "Min": 2411.2,
+        "FG%": 48.5,
+        "3P%": 36.6,
+        "FT%": 82.1,
+        "min%": 61.26
+    },
+    "Josh Giddey": {
+        "Unnamed: 0": 99,
+        "Team": "OKC",
+        "Min": 2011.6,
+        "FG%": 47.5,
+        "3P%": 33.7,
+        "FT%": 80.6,
+        "min%": 51.11
+    },
+    "Gary Trent Jr.": {
+        "Unnamed: 0": 100,
+        "Team": "TOR",
+        "Min": 1993.6,
+        "FG%": 42.6,
+        "3P%": 39.3,
+        "FT%": 77.1,
+        "min%": 50.65
+    },
+    "Keyonte George": {
+        "Unnamed: 0": 100,
+        "Team": "UTA",
+        "Min": 2022.6,
+        "FG%": 39.1,
+        "3P%": 33.4,
+        "FT%": 84.8,
+        "min%": 51.39
+    },
+    "Bradley Beal": {
+        "Unnamed: 0": 102,
+        "Team": "PHX",
+        "Min": 1766.7,
+        "FG%": 51.3,
+        "3P%": 43.0,
+        "FT%": 81.3,
+        "min%": 44.89
+    },
+    "Caris LeVert": {
+        "Unnamed: 0": 103,
+        "Team": "CLE",
+        "Min": 1958.1,
+        "FG%": 42.1,
+        "3P%": 32.5,
+        "FT%": 76.6,
+        "min%": 49.75
+    },
+    "Jalen Suggs": {
+        "Unnamed: 0": 104,
+        "Team": "ORL",
+        "Min": 2024.6,
+        "FG%": 47.1,
+        "3P%": 39.7,
+        "FT%": 75.6,
+        "min%": 51.44
+    },
+    "Jordan Clarkson": {
+        "Unnamed: 0": 105,
+        "Team": "UTA",
+        "Min": 1682.3,
+        "FG%": 41.3,
+        "3P%": 29.4,
+        "FT%": 88.1,
+        "min%": 42.74
+    },
+    "Andrew Wiggins": {
+        "Unnamed: 0": 106,
+        "Team": "GSW",
+        "Min": 1920.4,
+        "FG%": 45.3,
+        "3P%": 35.8,
+        "FT%": 75.1,
+        "min%": 48.79
+    },
+    "P.J. Washington": {
+        "Unnamed: 0": 106,
+        "Team": "DAL",
+        "Min": 2220.7,
+        "FG%": 43.6,
+        "3P%": 32.0,
+        "FT%": 68.3,
+        "min%": 56.42
+    },
+    "Cole Anthony": {
+        "Unnamed: 0": 108,
+        "Team": "ORL",
+        "Min": 1817.3,
+        "FG%": 43.5,
+        "3P%": 33.8,
+        "FT%": 82.6,
+        "min%": 46.17
+    },
+    "Ayo Dosunmu": {
+        "Unnamed: 0": 109,
+        "Team": "CHI",
+        "Min": 2212.5,
+        "FG%": 50.1,
+        "3P%": 40.3,
+        "FT%": 81.0,
+        "min%": 56.21
+    },
+    "Rui Hachimura": {
+        "Unnamed: 0": 110,
+        "Team": "LAL",
+        "Min": 1825.5,
+        "FG%": 53.7,
+        "3P%": 42.2,
+        "FT%": 73.9,
+        "min%": 46.38
+    },
+    "Deandre Ayton": {
+        "Unnamed: 0": 111,
+        "Team": "POR",
+        "Min": 1783.5,
+        "FG%": 57.0,
+        "3P%": 10.0,
+        "FT%": 82.3,
+        "min%": 45.31
+    },
+    "Dillon Brooks": {
+        "Unnamed: 0": 112,
+        "Team": "HOU",
+        "Min": 2226.7,
+        "FG%": 42.8,
+        "3P%": 35.9,
+        "FT%": 84.4,
+        "min%": 56.57
+    },
+    "Jalen Johnson": {
+        "Unnamed: 0": 113,
+        "Team": "ATL",
+        "Min": 1888.9,
+        "FG%": 51.1,
+        "3P%": 35.5,
+        "FT%": 72.8,
+        "min%": 47.99
+    },
+    "De'Andre Hunter": {
+        "Unnamed: 0": 114,
+        "Team": "ATL",
+        "Min": 1681.1,
+        "FG%": 45.9,
+        "3P%": 38.5,
+        "FT%": 84.7,
+        "min%": 42.71
+    },
+    "Jaime Jaquez Jr.": {
+        "Unnamed: 0": 115,
+        "Team": "MIA",
+        "Min": 2113.2,
+        "FG%": 48.9,
+        "3P%": 32.2,
+        "FT%": 81.1,
+        "min%": 53.69
+    },
+    "Malik Beasley": {
+        "Unnamed: 0": 115,
+        "Team": "MIL",
+        "Min": 2337.4,
+        "FG%": 44.3,
+        "3P%": 41.3,
+        "FT%": 71.4,
+        "min%": 59.39
+    },
+    "Aaron Nesmith": {
+        "Unnamed: 0": 117,
+        "Team": "IND",
+        "Min": 1994.7,
+        "FG%": 49.6,
+        "3P%": 41.9,
+        "FT%": 78.1,
+        "min%": 50.68
+    },
+    "Duncan Robinson": {
+        "Unnamed: 0": 118,
+        "Team": "MIA",
+        "Min": 1905.4,
+        "FG%": 45.0,
+        "3P%": 39.5,
+        "FT%": 88.9,
+        "min%": 48.41
+    },
+    "Tyler Herro": {
+        "Unnamed: 0": 118,
+        "Team": "MIA",
+        "Min": 1407.1,
+        "FG%": 44.1,
+        "3P%": 39.6,
+        "FT%": 85.6,
+        "min%": 35.75
+    },
+    "Mike Conley": {
+        "Unnamed: 0": 120,
+        "Team": "MIN",
+        "Min": 2193.5,
+        "FG%": 45.7,
+        "3P%": 44.2,
+        "FT%": 91.1,
+        "min%": 55.73
+    },
+    "Bojan Bogdanovi\u0107": {
+        "Unnamed: 0": 121,
+        "Team": "NYK",
+        "Min": 1478.0,
+        "FG%": 45.4,
+        "3P%": 39.8,
+        "FT%": 78.5,
+        "min%": 37.55
+    },
+    "Moritz Wagner": {
+        "Unnamed: 0": 121,
+        "Team": "ORL",
+        "Min": 1414.7,
+        "FG%": 60.1,
+        "3P%": 33.0,
+        "FT%": 81.4,
+        "min%": 35.94
+    },
+    "Scoot Henderson": {
+        "Unnamed: 0": 121,
+        "Team": "POR",
+        "Min": 1765.4,
+        "FG%": 38.5,
+        "3P%": 32.5,
+        "FT%": 81.9,
+        "min%": 44.85
+    },
+    "Saddiq Bey": {
+        "Unnamed: 0": 124,
+        "Team": "ATL",
+        "Min": 2061.7,
+        "FG%": 41.6,
+        "3P%": 31.6,
+        "FT%": 83.7,
+        "min%": 52.38
+    },
+    "Jeremy Sochan": {
+        "Unnamed: 0": 125,
+        "Team": "SAS",
+        "Min": 2193.1,
+        "FG%": 43.8,
+        "3P%": 30.8,
+        "FT%": 77.1,
+        "min%": 55.72
+    },
+    "Jrue Holiday": {
+        "Unnamed: 0": 126,
+        "Team": "BOS",
+        "Min": 2263.3,
+        "FG%": 48.0,
+        "3P%": 42.9,
+        "FT%": 83.3,
+        "min%": 57.5
+    },
+    "Luguentz Dort": {
+        "Unnamed: 0": 126,
+        "Team": "OKC",
+        "Min": 2246.0,
+        "FG%": 43.8,
+        "3P%": 39.4,
+        "FT%": 82.6,
+        "min%": 57.06
+    },
+    "Bennedict Mathurin": {
+        "Unnamed: 0": 128,
+        "Team": "IND",
+        "Min": 1538.4,
+        "FG%": 44.6,
+        "3P%": 37.4,
+        "FT%": 82.1,
+        "min%": 39.09
+    },
+    "Max Strus": {
+        "Unnamed: 0": 129,
+        "Team": "CLE",
+        "Min": 2239.2,
+        "FG%": 41.8,
+        "3P%": 35.1,
+        "FT%": 79.4,
+        "min%": 56.89
+    },
+    "Obi Toppin": {
+        "Unnamed: 0": 130,
+        "Team": "IND",
+        "Min": 1730.6,
+        "FG%": 57.3,
+        "3P%": 40.3,
+        "FT%": 77.0,
+        "min%": 43.97
+    },
+    "Trey Murphy III": {
+        "Unnamed: 0": 131,
+        "Team": "NOP",
+        "Min": 1690.3,
+        "FG%": 44.3,
+        "3P%": 38.0,
+        "FT%": 81.5,
+        "min%": 42.94
+    },
+    "Jalen Duren": {
+        "Unnamed: 0": 132,
+        "Team": "DET",
+        "Min": 1777.5,
+        "FG%": 61.9,
+        "3P%": 0.0,
+        "FT%": 79.0,
+        "min%": 45.16
+    },
+    "Nic Claxton": {
+        "Unnamed: 0": 132,
+        "Team": "BKN",
+        "Min": 2115.7,
+        "FG%": 62.9,
+        "3P%": 20.0,
+        "FT%": 55.1,
+        "min%": 53.75
+    },
+    "Herbert Jones": {
+        "Unnamed: 0": 134,
+        "Team": "NOP",
+        "Min": 2321.4,
+        "FG%": 49.8,
+        "3P%": 41.8,
+        "FT%": 86.7,
+        "min%": 58.98
+    },
+    "Clint Capela": {
+        "Unnamed: 0": 135,
+        "Team": "ATL",
+        "Min": 1883.1,
+        "FG%": 57.1,
+        "3P%": 0.0,
+        "FT%": 63.1,
+        "min%": 47.84
+    },
+    "Reggie Jackson": {
+        "Unnamed: 0": 136,
+        "Team": "DEN",
+        "Min": 1816.8,
+        "FG%": 43.1,
+        "3P%": 35.9,
+        "FT%": 80.6,
+        "min%": 46.16
+    },
+    "Jusuf Nurki\u0107": {
+        "Unnamed: 0": 137,
+        "Team": "PHX",
+        "Min": 2078.0,
+        "FG%": 51.0,
+        "3P%": 24.4,
+        "FT%": 64.0,
+        "min%": 52.79
+    },
+    "Khris Middleton": {
+        "Unnamed: 0": 138,
+        "Team": "MIL",
+        "Min": 1487.3,
+        "FG%": 49.3,
+        "3P%": 38.1,
+        "FT%": 83.3,
+        "min%": 37.79
+    },
+    "Daniel Gafford": {
+        "Unnamed: 0": 139,
+        "Team": "DAL",
+        "Min": 1814.4,
+        "FG%": 72.5,
+        "3P%": 0.0,
+        "FT%": 67.4,
+        "min%": 46.1
+    },
+    "Spencer Dinwiddie": {
+        "Unnamed: 0": 140,
+        "Team": "LAL",
+        "Min": 2152.4,
+        "FG%": 39.2,
+        "3P%": 33.7,
+        "FT%": 80.5,
+        "min%": 54.68
+    },
+    "Ivica Zubac": {
+        "Unnamed: 0": 141,
+        "Team": "LAC",
+        "Min": 1794.4,
+        "FG%": 64.9,
+        "3P%": 0.0,
+        "FT%": 72.3,
+        "min%": 45.59
+    },
+    "Tyus Jones": {
+        "Unnamed: 0": 142,
+        "Team": "WAS",
+        "Min": 1932.7,
+        "FG%": 48.9,
+        "3P%": 41.4,
+        "FT%": 80.0,
+        "min%": 49.1
+    },
+    "Payton Pritchard": {
+        "Unnamed: 0": 143,
+        "Team": "BOS",
+        "Min": 1825.7,
+        "FG%": 46.8,
+        "3P%": 38.5,
+        "FT%": 82.1,
+        "min%": 46.38
+    },
+    "Evan Mobley": {
+        "Unnamed: 0": 144,
+        "Team": "CLE",
+        "Min": 1532.3,
+        "FG%": 58.0,
+        "3P%": 37.3,
+        "FT%": 71.9,
+        "min%": 38.93
+    },
+    "Grant Williams": {
+        "Unnamed: 0": 145,
+        "Team": "CHA",
+        "Min": 2129.6,
+        "FG%": 45.6,
+        "3P%": 37.5,
+        "FT%": 75.7,
+        "min%": 54.11
+    },
+    "Cameron Johnson": {
+        "Unnamed: 0": 146,
+        "Team": "BKN",
+        "Min": 1599.0,
+        "FG%": 44.6,
+        "3P%": 39.1,
+        "FT%": 78.9,
+        "min%": 40.63
+    },
+    "Zach Collins": {
+        "Unnamed: 0": 146,
+        "Team": "SAS",
+        "Min": 1525.7,
+        "FG%": 48.4,
+        "3P%": 32.0,
+        "FT%": 75.3,
+        "min%": 38.76
+    },
+    "Tre Jones": {
+        "Unnamed: 0": 148,
+        "Team": "SAS",
+        "Min": 2138.2,
+        "FG%": 50.5,
+        "3P%": 33.5,
+        "FT%": 85.6,
+        "min%": 54.32
+    },
+    "Georges Niang": {
+        "Unnamed: 0": 149,
+        "Team": "CLE",
+        "Min": 1831.1,
+        "FG%": 44.9,
+        "3P%": 37.6,
+        "FT%": 85.0,
+        "min%": 46.52
+    },
+    "Kentavious Caldwell-Pope": {
+        "Unnamed: 0": 150,
+        "Team": "DEN",
+        "Min": 2401.8,
+        "FG%": 46.0,
+        "3P%": 40.6,
+        "FT%": 89.4,
+        "min%": 61.02
+    },
+    "Kelly Olynyk": {
+        "Unnamed: 0": 151,
+        "Team": "TOR",
+        "Min": 1758.7,
+        "FG%": 55.5,
+        "3P%": 38.7,
+        "FT%": 83.3,
+        "min%": 44.68
+    },
+    "Josh Hart": {
+        "Unnamed: 0": 152,
+        "Team": "NYK",
+        "Min": 2706.8,
+        "FG%": 43.4,
+        "3P%": 31.0,
+        "FT%": 79.1,
+        "min%": 68.77
+    },
+    "Jaden McDaniels": {
+        "Unnamed: 0": 153,
+        "Team": "MIN",
+        "Min": 2105.5,
+        "FG%": 48.9,
+        "3P%": 33.7,
+        "FT%": 72.2,
+        "min%": 53.49
+    },
+    "Russell Westbrook": {
+        "Unnamed: 0": 154,
+        "Team": "LAC",
+        "Min": 1528.8,
+        "FG%": 45.4,
+        "3P%": 27.3,
+        "FT%": 68.8,
+        "min%": 38.84
+    },
+    "Eric Gordon": {
+        "Unnamed: 0": 155,
+        "Team": "PHX",
+        "Min": 1892.6,
+        "FG%": 44.3,
+        "3P%": 37.8,
+        "FT%": 79.7,
+        "min%": 48.08
+    },
+    "OG Anunoby": {
+        "Unnamed: 0": 156,
+        "Team": "NYK",
+        "Min": 1702.0,
+        "FG%": 48.9,
+        "3P%": 38.2,
+        "FT%": 75.3,
+        "min%": 43.24
+    },
+    "T.J. McConnell": {
+        "Unnamed: 0": 157,
+        "Team": "IND",
+        "Min": 1291.0,
+        "FG%": 55.6,
+        "3P%": 40.9,
+        "FT%": 79.0,
+        "min%": 32.8
+    },
+    "Bruce Brown": {
+        "Unnamed: 0": 158,
+        "Team": "TOR",
+        "Min": 1865.4,
+        "FG%": 47.8,
+        "3P%": 32.3,
+        "FT%": 82.4,
+        "min%": 47.39
+    },
+    "Alex Caruso": {
+        "Unnamed: 0": 159,
+        "Team": "CHI",
+        "Min": 2040.3,
+        "FG%": 46.8,
+        "3P%": 40.8,
+        "FT%": 76.0,
+        "min%": 51.84
+    },
+    "Sam Hauser": {
+        "Unnamed: 0": 160,
+        "Team": "BOS",
+        "Min": 1740.6,
+        "FG%": 44.6,
+        "3P%": 42.4,
+        "FT%": 89.5,
+        "min%": 44.22
+    },
+    "GG Jackson": {
+        "Unnamed: 0": 161,
+        "Team": "MEM",
+        "Min": 1233.2,
+        "FG%": 42.8,
+        "3P%": 35.7,
+        "FT%": 75.2,
+        "min%": 31.33
+    },
+    "Taurean Prince": {
+        "Unnamed: 0": 162,
+        "Team": "LAL",
+        "Min": 2107.6,
+        "FG%": 44.2,
+        "3P%": 39.6,
+        "FT%": 73.5,
+        "min%": 53.55
+    },
+    "Simone Fontecchio": {
+        "Unnamed: 0": 163,
+        "Team": "DET",
+        "Min": 1643.9,
+        "FG%": 46.0,
+        "3P%": 40.1,
+        "FT%": 81.8,
+        "min%": 41.77
+    },
+    "Malaki Branham": {
+        "Unnamed: 0": 164,
+        "Team": "SAS",
+        "Min": 1594.3,
+        "FG%": 43.2,
+        "3P%": 34.7,
+        "FT%": 87.3,
+        "min%": 40.51
+    },
+    "Alec Burks": {
+        "Unnamed: 0": 165,
+        "Team": "NYK",
+        "Min": 1211.5,
+        "FG%": 36.9,
+        "3P%": 37.6,
+        "FT%": 86.8,
+        "min%": 30.78
+    },
+    "Brandin Podziemski": {
+        "Unnamed: 0": 166,
+        "Team": "GSW",
+        "Min": 1968.3,
+        "FG%": 45.4,
+        "3P%": 38.5,
+        "FT%": 63.3,
+        "min%": 50.01
+    },
+    "Andre Drummond": {
+        "Unnamed: 0": 167,
+        "Team": "CHI",
+        "Min": 1351.3,
+        "FG%": 55.6,
+        "3P%": 0.0,
+        "FT%": 59.2,
+        "min%": 34.33
+    },
+    "Terance Mann": {
+        "Unnamed: 0": 168,
+        "Team": "LAC",
+        "Min": 1872.9,
+        "FG%": 51.5,
+        "3P%": 34.8,
+        "FT%": 83.2,
+        "min%": 47.58
+    },
+    "Derrick Jones Jr.": {
+        "Unnamed: 0": 169,
+        "Team": "DAL",
+        "Min": 1782.9,
+        "FG%": 48.3,
+        "3P%": 34.3,
+        "FT%": 71.3,
+        "min%": 45.3
+    },
+    "Kevin Huerter": {
+        "Unnamed: 0": 170,
+        "Team": "SAC",
+        "Min": 1562.2,
+        "FG%": 44.3,
+        "3P%": 36.1,
+        "FT%": 76.6,
+        "min%": 39.69
+    },
+    "Nickeil Alexander-Walker": {
+        "Unnamed: 0": 170,
+        "Team": "MIN",
+        "Min": 1920.9,
+        "FG%": 43.9,
+        "3P%": 39.1,
+        "FT%": 80.0,
+        "min%": 48.8
+    },
+    "Santi Aldama": {
+        "Unnamed: 0": 172,
+        "Team": "MEM",
+        "Min": 1618.1,
+        "FG%": 43.5,
+        "3P%": 34.9,
+        "FT%": 62.1,
+        "min%": 41.11
+    },
+    "Nick Richards": {
+        "Unnamed: 0": 173,
+        "Team": "CHA",
+        "Min": 1758.7,
+        "FG%": 69.1,
+        "3P%": 0.0,
+        "FT%": 73.7,
+        "min%": 44.68
+    },
+    "Isaac Okoro": {
+        "Unnamed: 0": 174,
+        "Team": "CLE",
+        "Min": 1887.1,
+        "FG%": 49.0,
+        "3P%": 39.1,
+        "FT%": 67.9,
+        "min%": 47.94
+    },
+    "Caleb Martin": {
+        "Unnamed: 0": 175,
+        "Team": "MIA",
+        "Min": 1756.6,
+        "FG%": 43.1,
+        "3P%": 34.9,
+        "FT%": 77.8,
+        "min%": 44.63
+    },
+    "Jabari Walker": {
+        "Unnamed: 0": 176,
+        "Team": "POR",
+        "Min": 1700.6,
+        "FG%": 46.0,
+        "3P%": 29.5,
+        "FT%": 75.4,
+        "min%": 43.21
+    },
+    "Isaiah Joe": {
+        "Unnamed: 0": 177,
+        "Team": "OKC",
+        "Min": 1444.9,
+        "FG%": 45.8,
+        "3P%": 41.6,
+        "FT%": 86.5,
+        "min%": 36.71
+    },
+    "Andrew Nembhard": {
+        "Unnamed: 0": 178,
+        "Team": "IND",
+        "Min": 1696.7,
+        "FG%": 49.8,
+        "3P%": 35.7,
+        "FT%": 80.4,
+        "min%": 43.11
+    },
+    "Duop Reath": {
+        "Unnamed: 0": 179,
+        "Team": "POR",
+        "Min": 1214.1,
+        "FG%": 46.1,
+        "3P%": 35.9,
+        "FT%": 74.2,
+        "min%": 30.85
+    },
+    "Malcolm Brogdon": {
+        "Unnamed: 0": 180,
+        "Team": "POR",
+        "Min": 1120.8,
+        "FG%": 44.0,
+        "3P%": 41.2,
+        "FT%": 81.9,
+        "min%": 28.48
+    },
+    "Royce O'Neale": {
+        "Unnamed: 0": 181,
+        "Team": "PHX",
+        "Min": 1954.2,
+        "FG%": 39.7,
+        "3P%": 37.0,
+        "FT%": 68.6,
+        "min%": 49.65
+    },
+    "Wendell Carter Jr.": {
+        "Unnamed: 0": 182,
+        "Team": "ORL",
+        "Min": 1406.3,
+        "FG%": 52.5,
+        "3P%": 37.4,
+        "FT%": 69.4,
+        "min%": 35.73
+    },
+    "Jalen Smith": {
+        "Unnamed: 0": 183,
+        "Team": "IND",
+        "Min": 1046.6,
+        "FG%": 59.2,
+        "3P%": 42.4,
+        "FT%": 69.2,
+        "min%": 26.59
+    },
+    "Christian Braun": {
+        "Unnamed: 0": 184,
+        "Team": "DEN",
+        "Min": 1655.6,
+        "FG%": 46.0,
+        "3P%": 38.4,
+        "FT%": 69.4,
+        "min%": 42.06
+    },
+    "Paul Reed": {
+        "Unnamed: 0": 184,
+        "Team": "PHI",
+        "Min": 1589.5,
+        "FG%": 54.0,
+        "3P%": 36.8,
+        "FT%": 71.8,
+        "min%": 40.38
+    },
+    "Amen Thompson": {
+        "Unnamed: 0": 186,
+        "Team": "HOU",
+        "Min": 1388.5,
+        "FG%": 53.6,
+        "3P%": 13.8,
+        "FT%": 68.4,
+        "min%": 35.28
+    },
+    "Marcus Sasser": {
+        "Unnamed: 0": 187,
+        "Team": "DET",
+        "Min": 1351.1,
+        "FG%": 42.8,
+        "3P%": 37.5,
+        "FT%": 87.9,
+        "min%": 34.33
+    },
+    "Marvin Bagley III": {
+        "Unnamed: 0": 188,
+        "Team": "WAS",
+        "Min": 1053.4,
+        "FG%": 58.6,
+        "3P%": 39.1,
+        "FT%": 76.2,
+        "min%": 26.76
+    },
+    "Isaiah Hartenstein": {
+        "Unnamed: 0": 189,
+        "Team": "NYK",
+        "Min": 1896.3,
+        "FG%": 64.4,
+        "3P%": 33.3,
+        "FT%": 70.7,
+        "min%": 48.18
+    },
+    "Dorian Finney-Smith": {
+        "Unnamed: 0": 190,
+        "Team": "BKN",
+        "Min": 1934.6,
+        "FG%": 42.1,
+        "3P%": 34.8,
+        "FT%": 71.7,
+        "min%": 49.15
+    },
+    "Cam Whitmore": {
+        "Unnamed: 0": 191,
+        "Team": "HOU",
+        "Min": 880.3,
+        "FG%": 45.4,
+        "3P%": 35.9,
+        "FT%": 67.9,
+        "min%": 22.37
+    },
+    "Cameron Payne": {
+        "Unnamed: 0": 192,
+        "Team": "PHI",
+        "Min": 1304.1,
+        "FG%": 43.2,
+        "3P%": 39.0,
+        "FT%": 86.6,
+        "min%": 33.13
+    },
+    "Lonnie Walker IV": {
+        "Unnamed: 0": 193,
+        "Team": "BKN",
+        "Min": 1011.1,
+        "FG%": 42.3,
+        "3P%": 38.4,
+        "FT%": 76.3,
+        "min%": 25.69
+    },
+    "Precious Achiuwa": {
+        "Unnamed: 0": 193,
+        "Team": "NYK",
+        "Min": 1623.8,
+        "FG%": 50.1,
+        "3P%": 26.8,
+        "FT%": 61.6,
+        "min%": 41.26
+    },
+    "Al Horford": {
+        "Unnamed: 0": 195,
+        "Team": "BOS",
+        "Min": 1739.8,
+        "FG%": 51.1,
+        "3P%": 41.9,
+        "FT%": 86.7,
+        "min%": 44.2
+    },
+    "Miles McBride": {
+        "Unnamed: 0": 195,
+        "Team": "NYK",
+        "Min": 1327.7,
+        "FG%": 45.2,
+        "3P%": 41.0,
+        "FT%": 86.0,
+        "min%": 33.73
+    },
+    "Cason Wallace": {
+        "Unnamed: 0": 197,
+        "Team": "OKC",
+        "Min": 1691.9,
+        "FG%": 49.1,
+        "3P%": 41.9,
+        "FT%": 78.4,
+        "min%": 42.99
+    },
+    "Onyeka Okongwu": {
+        "Unnamed: 0": 197,
+        "Team": "ATL",
+        "Min": 1404.7,
+        "FG%": 61.1,
+        "3P%": 33.3,
+        "FT%": 79.3,
+        "min%": 35.69
+    },
+    "Dalano Banton": {
+        "Unnamed: 0": 199,
+        "Team": "POR",
+        "Min": 1046.8,
+        "FG%": 40.4,
+        "3P%": 29.6,
+        "FT%": 78.3,
+        "min%": 26.6
+    },
+    "Ausar Thompson": {
+        "Unnamed: 0": 200,
+        "Team": "DET",
+        "Min": 1582.8,
+        "FG%": 48.3,
+        "3P%": 18.6,
+        "FT%": 59.7,
+        "min%": 40.21
+    },
+    "Jakob Poeltl": {
+        "Unnamed: 0": 201,
+        "Team": "TOR",
+        "Min": 1319.1,
+        "FG%": 65.6,
+        "3P%": 0.0,
+        "FT%": 55.1,
+        "min%": 33.51
+    },
+    "Aaron Wiggins": {
+        "Unnamed: 0": 202,
+        "Team": "OKC",
+        "Min": 1227.9,
+        "FG%": 56.2,
+        "3P%": 49.2,
+        "FT%": 78.9,
+        "min%": 31.2
+    },
+    "Trayce Jackson-Davis": {
+        "Unnamed: 0": 203,
+        "Team": "GSW",
+        "Min": 1130.5,
+        "FG%": 70.2,
+        "3P%": 0.0,
+        "FT%": 56.1,
+        "min%": 28.72
+    },
+    "Chris Paul": {
+        "Unnamed: 0": 204,
+        "Team": "GSW",
+        "Min": 1530.9,
+        "FG%": 44.1,
+        "3P%": 37.1,
+        "FT%": 82.7,
+        "min%": 38.89
+    },
+    "Moses Moody": {
+        "Unnamed: 0": 204,
+        "Team": "GSW",
+        "Min": 1155.9,
+        "FG%": 46.2,
+        "3P%": 36.0,
+        "FT%": 78.5,
+        "min%": 29.37
+    },
+    "Bilal Coulibaly": {
+        "Unnamed: 0": 206,
+        "Team": "WAS",
+        "Min": 1715.3,
+        "FG%": 43.5,
+        "3P%": 34.6,
+        "FT%": 70.2,
+        "min%": 43.58
+    },
+    "Peyton Watson": {
+        "Unnamed: 0": 206,
+        "Team": "DEN",
+        "Min": 1487.8,
+        "FG%": 46.5,
+        "3P%": 29.6,
+        "FT%": 67.0,
+        "min%": 37.8
+    },
+    "Jaden Hardy": {
+        "Unnamed: 0": 208,
+        "Team": "DAL",
+        "Min": 989.2,
+        "FG%": 40.7,
+        "3P%": 36.2,
+        "FT%": 77.6,
+        "min%": 25.13
+    },
+    "Toumani Camara": {
+        "Unnamed: 0": 209,
+        "Team": "POR",
+        "Min": 1739.3,
+        "FG%": 45.0,
+        "3P%": 33.7,
+        "FT%": 75.8,
+        "min%": 44.19
+    },
+    "LaMelo Ball": {
+        "Unnamed: 0": 210,
+        "Team": "CHA",
+        "Min": 711.4,
+        "FG%": 43.3,
+        "3P%": 35.5,
+        "FT%": 86.5,
+        "min%": 18.07
+    },
+    "Jordan Hawkins": {
+        "Unnamed: 0": 211,
+        "Team": "NOP",
+        "Min": 1160.6,
+        "FG%": 38.2,
+        "3P%": 36.6,
+        "FT%": 83.8,
+        "min%": 29.49
+    },
+    "Vince Williams Jr.": {
+        "Unnamed: 0": 212,
+        "Team": "MEM",
+        "Min": 1436.5,
+        "FG%": 44.6,
+        "3P%": 37.8,
+        "FT%": 80.0,
+        "min%": 36.5
+    },
+    "Walker Kessler": {
+        "Unnamed: 0": 213,
+        "Team": "UTA",
+        "Min": 1493.1,
+        "FG%": 65.4,
+        "3P%": 21.1,
+        "FT%": 60.2,
+        "min%": 37.93
+    },
+    "Talen Horton-Tucker": {
+        "Unnamed: 0": 214,
+        "Team": "UTA",
+        "Min": 1008.7,
+        "FG%": 39.6,
+        "3P%": 33.0,
+        "FT%": 80.7,
+        "min%": 25.63
+    },
+    "Dario \u0160ari\u0107": {
+        "Unnamed: 0": 215,
+        "Team": "GSW",
+        "Min": 1097.8,
+        "FG%": 46.6,
+        "3P%": 37.6,
+        "FT%": 84.9,
+        "min%": 27.89
+    },
+    "Aaron Holiday": {
+        "Unnamed: 0": 216,
+        "Team": "HOU",
+        "Min": 1269.3,
+        "FG%": 44.6,
+        "3P%": 38.7,
+        "FT%": 92.1,
+        "min%": 32.25
+    },
+    "Gradey Dick": {
+        "Unnamed: 0": 217,
+        "Team": "TOR",
+        "Min": 1267.7,
+        "FG%": 42.5,
+        "3P%": 36.5,
+        "FT%": 86.3,
+        "min%": 32.21
+    },
+    "Shaedon Sharpe": {
+        "Unnamed: 0": 217,
+        "Team": "POR",
+        "Min": 1059.0,
+        "FG%": 40.6,
+        "3P%": 33.3,
+        "FT%": 82.4,
+        "min%": 26.91
+    },
+    "Jeff Green": {
+        "Unnamed: 0": 219,
+        "Team": "HOU",
+        "Min": 1307.3,
+        "FG%": 45.6,
+        "3P%": 33.1,
+        "FT%": 81.9,
+        "min%": 33.21
+    },
+    "Kyle Anderson": {
+        "Unnamed: 0": 220,
+        "Team": "MIN",
+        "Min": 1781.9,
+        "FG%": 46.0,
+        "3P%": 22.9,
+        "FT%": 70.8,
+        "min%": 45.27
+    },
+    "Julian Champagnie": {
+        "Unnamed: 0": 221,
+        "Team": "SAS",
+        "Min": 1467.9,
+        "FG%": 40.8,
+        "3P%": 36.5,
+        "FT%": 81.5,
+        "min%": 37.29
+    },
+    "Isaiah Stewart": {
+        "Unnamed: 0": 222,
+        "Team": "DET",
+        "Min": 1422.8,
+        "FG%": 48.7,
+        "3P%": 38.3,
+        "FT%": 75.3,
+        "min%": 36.15
+    },
+    "Gordon Hayward": {
+        "Unnamed: 0": 223,
+        "Team": "OKC",
+        "Min": 1245.3,
+        "FG%": 46.4,
+        "3P%": 41.1,
+        "FT%": 74.2,
+        "min%": 31.64
+    },
+    "Cedi Osman": {
+        "Unnamed: 0": 224,
+        "Team": "SAS",
+        "Min": 1268.8,
+        "FG%": 47.9,
+        "3P%": 38.9,
+        "FT%": 67.3,
+        "min%": 32.24
+    },
+    "Kyle Lowry": {
+        "Unnamed: 0": 225,
+        "Team": "PHI",
+        "Min": 1689.8,
+        "FG%": 43.2,
+        "3P%": 39.2,
+        "FT%": 84.0,
+        "min%": 42.93
+    },
+    "Zach LaVine": {
+        "Unnamed: 0": 225,
+        "Team": "CHI",
+        "Min": 871.9,
+        "FG%": 45.2,
+        "3P%": 34.9,
+        "FT%": 85.4,
+        "min%": 22.15
+    },
+    "Kevin Love": {
+        "Unnamed: 0": 227,
+        "Team": "MIA",
+        "Min": 924.3,
+        "FG%": 44.0,
+        "3P%": 34.4,
+        "FT%": 78.7,
+        "min%": 23.48
+    },
+    "Sam Merrill": {
+        "Unnamed: 0": 227,
+        "Team": "CLE",
+        "Min": 1068.9,
+        "FG%": 40.2,
+        "3P%": 40.4,
+        "FT%": 92.9,
+        "min%": 27.16
+    },
+    "Dereck Lively II": {
+        "Unnamed: 0": 229,
+        "Team": "DAL",
+        "Min": 1294.3,
+        "FG%": 74.7,
+        "3P%": 0.0,
+        "FT%": 50.6,
+        "min%": 32.88
+    },
+    "Draymond Green": {
+        "Unnamed: 0": 230,
+        "Team": "GSW",
+        "Min": 1490.2,
+        "FG%": 49.7,
+        "3P%": 39.5,
+        "FT%": 73.0,
+        "min%": 37.86
+    },
+    "Josh Green": {
+        "Unnamed: 0": 231,
+        "Team": "DAL",
+        "Min": 1504.7,
+        "FG%": 47.9,
+        "3P%": 38.5,
+        "FT%": 68.4,
+        "min%": 38.23
+    },
+    "Naji Marshall": {
+        "Unnamed: 0": 232,
+        "Team": "NOP",
+        "Min": 1257.1,
+        "FG%": 46.3,
+        "3P%": 38.7,
+        "FT%": 79.1,
+        "min%": 31.94
+    },
+    "Amir Coffey": {
+        "Unnamed: 0": 233,
+        "Team": "LAC",
+        "Min": 1460.6,
+        "FG%": 47.2,
+        "3P%": 38.0,
+        "FT%": 85.9,
+        "min%": 37.11
+    },
+    "Ochai Agbaji": {
+        "Unnamed: 0": 234,
+        "Team": "TOR",
+        "Min": 1641.6,
+        "FG%": 41.1,
+        "3P%": 29.4,
+        "FT%": 66.1,
+        "min%": 41.71
+    },
+    "Patrick Beverley": {
+        "Unnamed: 0": 235,
+        "Team": "MIL",
+        "Min": 1462.5,
+        "FG%": 41.7,
+        "3P%": 33.7,
+        "FT%": 82.2,
+        "min%": 37.16
+    },
+    "James Wiseman": {
+        "Unnamed: 0": 236,
+        "Team": "DET",
+        "Min": 1091.0,
+        "FG%": 61.3,
+        "3P%": 0.0,
+        "FT%": 70.6,
+        "min%": 27.72
+    },
+    "Trendon Watford": {
+        "Unnamed: 0": 237,
+        "Team": "BKN",
+        "Min": 856.5,
+        "FG%": 52.7,
+        "3P%": 39.7,
+        "FT%": 79.4,
+        "min%": 21.76
+    },
+    "Luke Kennard": {
+        "Unnamed: 0": 238,
+        "Team": "MEM",
+        "Min": 999.0,
+        "FG%": 44.8,
+        "3P%": 45.0,
+        "FT%": 88.9,
+        "min%": 25.38
+    },
+    "Patrick Williams": {
+        "Unnamed: 0": 238,
+        "Team": "CHI",
+        "Min": 1174.1,
+        "FG%": 44.3,
+        "3P%": 39.9,
+        "FT%": 78.8,
+        "min%": 29.83
+    },
+    "Dant\u00e9 Exum": {
+        "Unnamed: 0": 240,
+        "Team": "DAL",
+        "Min": 1087.6,
+        "FG%": 53.3,
+        "3P%": 49.1,
+        "FT%": 77.9,
+        "min%": 27.63
+    },
+    "Pat Connaughton": {
+        "Unnamed: 0": 240,
+        "Team": "MIL",
+        "Min": 1676.3,
+        "FG%": 43.5,
+        "3P%": 34.5,
+        "FT%": 75.9,
+        "min%": 42.59
+    },
+    "David Roddy": {
+        "Unnamed: 0": 242,
+        "Team": "PHX",
+        "Min": 1177.0,
+        "FG%": 40.3,
+        "3P%": 29.3,
+        "FT%": 69.1,
+        "min%": 29.9
+    },
+    "Josh Richardson": {
+        "Unnamed: 0": 242,
+        "Team": "MIA",
+        "Min": 1102.8,
+        "FG%": 44.4,
+        "3P%": 34.7,
+        "FT%": 94.4,
+        "min%": 28.02
+    },
+    "Vasilije Mici\u0107": {
+        "Unnamed: 0": 244,
+        "Team": "CHA",
+        "Min": 1175.7,
+        "FG%": 43.0,
+        "3P%": 27.9,
+        "FT%": 81.3,
+        "min%": 29.87
+    },
+    "De'Anthony Melton": {
+        "Unnamed: 0": 245,
+        "Team": "PHI",
+        "Min": 1023.3,
+        "FG%": 38.6,
+        "3P%": 36.0,
+        "FT%": 83.5,
+        "min%": 26.0
+    },
+    "Ziaire Williams": {
+        "Unnamed: 0": 246,
+        "Team": "MEM",
+        "Min": 1037.7,
+        "FG%": 39.7,
+        "3P%": 30.7,
+        "FT%": 82.7,
+        "min%": 26.36
+    },
+    "Trey Lyles": {
+        "Unnamed: 0": 247,
+        "Team": "SAC",
+        "Min": 1158.2,
+        "FG%": 44.5,
+        "3P%": 38.4,
+        "FT%": 70.0,
+        "min%": 29.43
+    },
+    "Day'Ron Sharpe": {
+        "Unnamed: 0": 248,
+        "Team": "BKN",
+        "Min": 920.6,
+        "FG%": 57.1,
+        "3P%": 26.7,
+        "FT%": 61.0,
+        "min%": 23.39
+    },
+    "Haywood Highsmith": {
+        "Unnamed: 0": 249,
+        "Team": "MIA",
+        "Min": 1365.8,
+        "FG%": 46.5,
+        "3P%": 39.6,
+        "FT%": 63.9,
+        "min%": 34.7
+    },
+    "Jose Alvarado": {
+        "Unnamed: 0": 250,
+        "Team": "NOP",
+        "Min": 1028.4,
+        "FG%": 41.2,
+        "3P%": 37.7,
+        "FT%": 67.3,
+        "min%": 26.13
+    },
+    "Jonathan Isaac": {
+        "Unnamed: 0": 251,
+        "Team": "ORL",
+        "Min": 914.6,
+        "FG%": 51.0,
+        "3P%": 37.5,
+        "FT%": 72.0,
+        "min%": 23.24
+    },
+    "Isaiah Jackson": {
+        "Unnamed: 0": 252,
+        "Team": "IND",
+        "Min": 770.9,
+        "FG%": 66.5,
+        "3P%": 0.0,
+        "FT%": 71.6,
+        "min%": 19.59
+    },
+    "Tre Mann": {
+        "Unnamed: 0": 253,
+        "Team": "CHA",
+        "Min": 987.1,
+        "FG%": 45.9,
+        "3P%": 37.3,
+        "FT%": 76.3,
+        "min%": 25.08
+    },
+    "Malachi Flynn": {
+        "Unnamed: 0": 254,
+        "Team": "DET",
+        "Min": 876.9,
+        "FG%": 41.8,
+        "3P%": 33.1,
+        "FT%": 73.2,
+        "min%": 22.28
+    },
+    "Davion Mitchell": {
+        "Unnamed: 0": 255,
+        "Team": "SAC",
+        "Min": 1101.1,
+        "FG%": 45.2,
+        "3P%": 36.1,
+        "FT%": 71.4,
+        "min%": 27.98
+    },
+    "Drew Eubanks": {
+        "Unnamed: 0": 255,
+        "Team": "PHX",
+        "Min": 1168.7,
+        "FG%": 60.1,
+        "3P%": 100.0,
+        "FT%": 77.4,
+        "min%": 29.69
+    },
+    "Jake LaRavia": {
+        "Unnamed: 0": 255,
+        "Team": "MEM",
+        "Min": 805.5,
+        "FG%": 38.9,
+        "3P%": 34.0,
+        "FT%": 82.6,
+        "min%": 20.46
+    },
+    "Daniel Theis": {
+        "Unnamed: 0": 258,
+        "Team": "LAC",
+        "Min": 1014.8,
+        "FG%": 53.2,
+        "3P%": 36.6,
+        "FT%": 76.0,
+        "min%": 25.78
+    },
+    "Kris Murray": {
+        "Unnamed: 0": 258,
+        "Team": "POR",
+        "Min": 1348.3,
+        "FG%": 39.6,
+        "3P%": 26.8,
+        "FT%": 66.1,
+        "min%": 34.26
+    },
+    "Gary Harris": {
+        "Unnamed: 0": 260,
+        "Team": "ORL",
+        "Min": 1297.3,
+        "FG%": 44.1,
+        "3P%": 37.1,
+        "FT%": 75.6,
+        "min%": 32.96
+    },
+    "Dennis Smith Jr.": {
+        "Unnamed: 0": 261,
+        "Team": "BKN",
+        "Min": 1058.7,
+        "FG%": 43.5,
+        "3P%": 29.4,
+        "FT%": 74.1,
+        "min%": 26.9
+    },
+    "Jordan Goodwin": {
+        "Unnamed: 0": 262,
+        "Team": "MEM",
+        "Min": 1055.8,
+        "FG%": 36.9,
+        "3P%": 29.8,
+        "FT%": 74.6,
+        "min%": 26.82
+    },
+    "Jordan Nwora": {
+        "Unnamed: 0": 263,
+        "Team": "TOR",
+        "Min": 711.4,
+        "FG%": 46.2,
+        "3P%": 33.6,
+        "FT%": 83.0,
+        "min%": 18.07
+    },
+    "Quentin Grimes": {
+        "Unnamed: 0": 264,
+        "Team": "DET",
+        "Min": 1024.9,
+        "FG%": 37.2,
+        "3P%": 33.8,
+        "FT%": 75.6,
+        "min%": 26.04
+    },
+    "Jevon Carter": {
+        "Unnamed: 0": 265,
+        "Team": "CHI",
+        "Min": 1003.6,
+        "FG%": 37.8,
+        "3P%": 32.9,
+        "FT%": 57.1,
+        "min%": 25.5
+    },
+    "Kris Dunn": {
+        "Unnamed: 0": 265,
+        "Team": "UTA",
+        "Min": 1249.2,
+        "FG%": 47.0,
+        "3P%": 36.9,
+        "FT%": 68.8,
+        "min%": 31.74
+    },
+    "Dyson Daniels": {
+        "Unnamed: 0": 267,
+        "Team": "NOP",
+        "Min": 1358.5,
+        "FG%": 44.7,
+        "3P%": 31.1,
+        "FT%": 64.2,
+        "min%": 34.51
+    },
+    "Matisse Thybulle": {
+        "Unnamed: 0": 267,
+        "Team": "POR",
+        "Min": 1487.4,
+        "FG%": 39.7,
+        "3P%": 34.6,
+        "FT%": 75.9,
+        "min%": 37.79
+    },
+    "Nikola Jovi\u0107": {
+        "Unnamed: 0": 269,
+        "Team": "MIA",
+        "Min": 896.2,
+        "FG%": 45.2,
+        "3P%": 39.9,
+        "FT%": 70.2,
+        "min%": 22.77
+    },
+    "Doug McDermott": {
+        "Unnamed: 0": 270,
+        "Team": "IND",
+        "Min": 904.5,
+        "FG%": 43.3,
+        "3P%": 41.0,
+        "FT%": 57.9,
+        "min%": 22.98
+    },
+    "Larry Nance Jr.": {
+        "Unnamed: 0": 271,
+        "Team": "NOP",
+        "Min": 1216.1,
+        "FG%": 57.3,
+        "3P%": 41.5,
+        "FT%": 77.0,
+        "min%": 30.9
+    },
+    "Christian Wood": {
+        "Unnamed: 0": 272,
+        "Team": "LAL",
+        "Min": 871.9,
+        "FG%": 46.6,
+        "3P%": 30.7,
+        "FT%": 70.2,
+        "min%": 22.15
+    },
+    "Markelle Fultz": {
+        "Unnamed: 0": 273,
+        "Team": "ORL",
+        "Min": 909.9,
+        "FG%": 47.2,
+        "3P%": 22.2,
+        "FT%": 69.7,
+        "min%": 23.12
+    },
+    "Kevon Looney": {
+        "Unnamed: 0": 274,
+        "Team": "GSW",
+        "Min": 1194.4,
+        "FG%": 59.7,
+        "3P%": 0.0,
+        "FT%": 67.5,
+        "min%": 30.35
+    },
+    "Luke Kornet": {
+        "Unnamed: 0": 274,
+        "Team": "BOS",
+        "Min": 983.3,
+        "FG%": 70.0,
+        "3P%": 100.0,
+        "FT%": 90.7,
+        "min%": 24.98
+    },
+    "Chimezie Metu": {
+        "Unnamed: 0": 276,
+        "Team": "DET",
+        "Min": 858.9,
+        "FG%": 50.4,
+        "3P%": 29.8,
+        "FT%": 90.6,
+        "min%": 21.82
+    },
+    "Landry Shamet": {
+        "Unnamed: 0": 277,
+        "Team": "WAS",
+        "Min": 726.5,
+        "FG%": 43.1,
+        "3P%": 33.8,
+        "FT%": 82.6,
+        "min%": 18.46
+    },
+    "Garrison Mathews": {
+        "Unnamed: 0": 278,
+        "Team": "ATL",
+        "Min": 992.1,
+        "FG%": 45.6,
+        "3P%": 44.0,
+        "FT%": 81.0,
+        "min%": 25.21
+    },
+    "Kenrich Williams": {
+        "Unnamed: 0": 278,
+        "Team": "OKC",
+        "Min": 1029.0,
+        "FG%": 46.8,
+        "3P%": 39.7,
+        "FT%": 50.0,
+        "min%": 26.14
+    },
+    "Chris Boucher": {
+        "Unnamed: 0": 280,
+        "Team": "TOR",
+        "Min": 704.9,
+        "FG%": 50.7,
+        "3P%": 33.0,
+        "FT%": 77.2,
+        "min%": 17.91
+    },
+    "Nicolas Batum": {
+        "Unnamed: 0": 281,
+        "Team": "PHI",
+        "Min": 1529.6,
+        "FG%": 45.3,
+        "3P%": 39.5,
+        "FT%": 71.4,
+        "min%": 38.86
+    },
+    "Anthony Black": {
+        "Unnamed: 0": 282,
+        "Team": "ORL",
+        "Min": 1164.2,
+        "FG%": 46.6,
+        "3P%": 39.4,
+        "FT%": 61.3,
+        "min%": 29.58
+    },
+    "Marcus Morris Sr.": {
+        "Unnamed: 0": 282,
+        "Team": "CLE",
+        "Min": 817.0,
+        "FG%": 43.9,
+        "3P%": 40.3,
+        "FT%": 81.8,
+        "min%": 20.76
+    },
+    "Jae Crowder": {
+        "Unnamed: 0": 284,
+        "Team": "MIL",
+        "Min": 1155.7,
+        "FG%": 42.2,
+        "3P%": 34.9,
+        "FT%": 72.2,
+        "min%": 29.36
+    },
+    "Goga Bitadze": {
+        "Unnamed: 0": 285,
+        "Team": "ORL",
+        "Min": 957.1,
+        "FG%": 60.3,
+        "3P%": 14.3,
+        "FT%": 65.5,
+        "min%": 24.32
+    },
+    "Keon Ellis": {
+        "Unnamed: 0": 286,
+        "Team": "SAC",
+        "Min": 978.5,
+        "FG%": 46.1,
+        "3P%": 41.7,
+        "FT%": 74.3,
+        "min%": 24.86
+    },
+    "Jaxson Hayes": {
+        "Unnamed: 0": 287,
+        "Team": "LAL",
+        "Min": 877.1,
+        "FG%": 72.0,
+        "3P%": 0.0,
+        "FT%": 62.2,
+        "min%": 22.28
+    },
+    "Torrey Craig": {
+        "Unnamed: 0": 287,
+        "Team": "CHI",
+        "Min": 1048.6,
+        "FG%": 43.0,
+        "3P%": 39.2,
+        "FT%": 75.0,
+        "min%": 26.64
+    },
+    "Bryce McGowens": {
+        "Unnamed: 0": 289,
+        "Team": "CHA",
+        "Min": 881.6,
+        "FG%": 43.9,
+        "3P%": 33.3,
+        "FT%": 77.6,
+        "min%": 22.4
+    },
+    "Nick Smith Jr.": {
+        "Unnamed: 0": 289,
+        "Team": "CHA",
+        "Min": 728.7,
+        "FG%": 39.1,
+        "3P%": 43.2,
+        "FT%": 86.7,
+        "min%": 18.51
+    },
+    "Joe Ingles": {
+        "Unnamed: 0": 291,
+        "Team": "ORL",
+        "Min": 1169.0,
+        "FG%": 43.6,
+        "3P%": 43.5,
+        "FT%": 82.4,
+        "min%": 29.7
+    },
+    "Taylor Hendricks": {
+        "Unnamed: 0": 292,
+        "Team": "UTA",
+        "Min": 856.4,
+        "FG%": 45.0,
+        "3P%": 37.9,
+        "FT%": 79.3,
+        "min%": 21.76
+    },
+    "Dean Wade": {
+        "Unnamed: 0": 293,
+        "Team": "CLE",
+        "Min": 1108.1,
+        "FG%": 41.4,
+        "3P%": 39.1,
+        "FT%": 76.9,
+        "min%": 28.15
+    },
+    "D\u0101vis Bert\u0101ns": {
+        "Unnamed: 0": 294,
+        "Team": "CHA",
+        "Min": 674.1,
+        "FG%": 39.3,
+        "3P%": 38.0,
+        "FT%": 90.9,
+        "min%": 17.13
+    },
+    "Killian Hayes": {
+        "Unnamed: 0": 295,
+        "Team": "DET",
+        "Min": 1007.7,
+        "FG%": 41.3,
+        "3P%": 29.7,
+        "FT%": 66.0,
+        "min%": 25.6
+    },
+    "Marcus Smart": {
+        "Unnamed: 0": 295,
+        "Team": "MEM",
+        "Min": 604.8,
+        "FG%": 43.0,
+        "3P%": 31.3,
+        "FT%": 76.8,
+        "min%": 15.37
+    },
+    "Craig Porter Jr.": {
+        "Unnamed: 0": 297,
+        "Team": "CLE",
+        "Min": 649.4,
+        "FG%": 50.9,
+        "3P%": 35.3,
+        "FT%": 73.2,
+        "min%": 16.5
+    },
+    "Max Christie": {
+        "Unnamed: 0": 298,
+        "Team": "LAL",
+        "Min": 944.3,
+        "FG%": 42.7,
+        "3P%": 35.6,
+        "FT%": 78.3,
+        "min%": 23.99
+    },
+    "Xavier Tillman": {
+        "Unnamed: 0": 298,
+        "Team": "BOS",
+        "Min": 974.6,
+        "FG%": 43.4,
+        "3P%": 24.7,
+        "FT%": 44.0,
+        "min%": 24.76
+    },
+    "Bruno Fernando": {
+        "Unnamed: 0": 300,
+        "Team": "ATL",
+        "Min": 682.3,
+        "FG%": 58.3,
+        "3P%": 0.0,
+        "FT%": 66.7,
+        "min%": 17.33
+    },
+    "Danilo Gallinari": {
+        "Unnamed: 0": 301,
+        "Team": "MIL",
+        "Min": 629.3,
+        "FG%": 43.7,
+        "3P%": 32.3,
+        "FT%": 85.7,
+        "min%": 15.99
+    },
+    "Josh Okogie": {
+        "Unnamed: 0": 302,
+        "Team": "PHX",
+        "Min": 959.7,
+        "FG%": 41.7,
+        "3P%": 30.9,
+        "FT%": 74.5,
+        "min%": 24.38
+    },
+    "Jaylin Williams": {
+        "Unnamed: 0": 303,
+        "Team": "OKC",
+        "Min": 896.9,
+        "FG%": 41.7,
+        "3P%": 36.8,
+        "FT%": 80.5,
+        "min%": 22.79
+    },
+    "Jock Landale": {
+        "Unnamed: 0": 304,
+        "Team": "HOU",
+        "Min": 763.5,
+        "FG%": 51.5,
+        "3P%": 25.0,
+        "FT%": 80.0,
+        "min%": 19.4
+    },
+    "Lamar Stevens": {
+        "Unnamed: 0": 305,
+        "Team": "MEM",
+        "Min": 559.0,
+        "FG%": 45.0,
+        "3P%": 30.4,
+        "FT%": 77.8,
+        "min%": 14.2
+    },
+    "Scotty Pippen Jr.": {
+        "Unnamed: 0": 306,
+        "Team": "MEM",
+        "Min": 526.8,
+        "FG%": 49.3,
+        "3P%": 41.7,
+        "FT%": 74.5,
+        "min%": 13.38
+    },
+    "Blake Wesley": {
+        "Unnamed: 0": 307,
+        "Team": "SAS",
+        "Min": 875.9,
+        "FG%": 47.4,
+        "3P%": 21.8,
+        "FT%": 66.7,
+        "min%": 22.25
+    },
+    "Jae'Sean Tate": {
+        "Unnamed: 0": 308,
+        "Team": "HOU",
+        "Min": 1031.5,
+        "FG%": 47.2,
+        "3P%": 29.9,
+        "FT%": 66.7,
+        "min%": 26.21
+    },
+    "Cam Reddish": {
+        "Unnamed: 0": 309,
+        "Team": "LAL",
+        "Min": 984.1,
+        "FG%": 38.9,
+        "3P%": 33.6,
+        "FT%": 75.9,
+        "min%": 25.0
+    },
+    "Bones Hyland": {
+        "Unnamed: 0": 310,
+        "Team": "LAC",
+        "Min": 540.2,
+        "FG%": 38.6,
+        "3P%": 32.6,
+        "FT%": 78.3,
+        "min%": 13.72
+    },
+    "Caleb Houstan": {
+        "Unnamed: 0": 311,
+        "Team": "ORL",
+        "Min": 815.3,
+        "FG%": 38.8,
+        "3P%": 37.3,
+        "FT%": 80.8,
+        "min%": 20.71
+    },
+    "Mo Bamba": {
+        "Unnamed: 0": 311,
+        "Team": "PHI",
+        "Min": 740.4,
+        "FG%": 49.0,
+        "3P%": 39.1,
+        "FT%": 68.0,
+        "min%": 18.81
+    },
+    "AJ Green": {
+        "Unnamed: 0": 313,
+        "Team": "MIL",
+        "Min": 614.3,
+        "FG%": 42.3,
+        "3P%": 40.8,
+        "FT%": 89.5,
+        "min%": 15.61
+    },
+    "Ben Sheppard": {
+        "Unnamed: 0": 313,
+        "Team": "IND",
+        "Min": 814.3,
+        "FG%": 39.3,
+        "3P%": 31.4,
+        "FT%": 88.5,
+        "min%": 20.69
+    },
+    "Jared Butler": {
+        "Unnamed: 0": 315,
+        "Team": "WAS",
+        "Min": 565.7,
+        "FG%": 48.8,
+        "3P%": 30.8,
+        "FT%": 86.1,
+        "min%": 14.37
+    },
+    "Troy Brown Jr.": {
+        "Unnamed: 0": 316,
+        "Team": "DET",
+        "Min": 826.5,
+        "FG%": 37.2,
+        "3P%": 33.3,
+        "FT%": 86.5,
+        "min%": 21.0
+    },
+    "Mason Plumlee": {
+        "Unnamed: 0": 317,
+        "Team": "LAC",
+        "Min": 673.9,
+        "FG%": 56.9,
+        "3P%": 0.0,
+        "FT%": 70.7,
+        "min%": 17.12
+    },
+    "Mark Williams": {
+        "Unnamed: 0": 318,
+        "Team": "CHA",
+        "Min": 508.4,
+        "FG%": 64.9,
+        "3P%": 0.0,
+        "FT%": 71.9,
+        "min%": 12.92
+    },
+    "Brice Sensabaugh": {
+        "Unnamed: 0": 319,
+        "Team": "UTA",
+        "Min": 584.4,
+        "FG%": 39.0,
+        "3P%": 29.6,
+        "FT%": 90.2,
+        "min%": 14.85
+    },
+    "Gary Payton II": {
+        "Unnamed: 0": 320,
+        "Team": "GSW",
+        "Min": 679.9,
+        "FG%": 56.3,
+        "3P%": 36.4,
+        "FT%": 60.9,
+        "min%": 17.27
+    },
+    "John Konchar": {
+        "Unnamed: 0": 321,
+        "Team": "MEM",
+        "Min": 1173.6,
+        "FG%": 42.3,
+        "3P%": 31.7,
+        "FT%": 84.0,
+        "min%": 29.82
+    },
+    "Justin Holiday": {
+        "Unnamed: 0": 322,
+        "Team": "DEN",
+        "Min": 862.0,
+        "FG%": 45.4,
+        "3P%": 40.4,
+        "FT%": 75.0,
+        "min%": 21.9
+    },
+    "Chris Duarte": {
+        "Unnamed: 0": 323,
+        "Team": "SAC",
+        "Min": 719.5,
+        "FG%": 38.1,
+        "3P%": 34.6,
+        "FT%": 78.8,
+        "min%": 18.28
+    },
+    "Julian Strawther": {
+        "Unnamed: 0": 324,
+        "Team": "DEN",
+        "Min": 545.4,
+        "FG%": 36.9,
+        "3P%": 29.7,
+        "FT%": 71.0,
+        "min%": 13.86
+    },
+    "Ja Morant": {
+        "Unnamed: 0": 325,
+        "Team": "MEM",
+        "Min": 317.9,
+        "FG%": 47.1,
+        "3P%": 27.5,
+        "FT%": 81.3,
+        "min%": 8.08
+    },
+    "Seth Curry": {
+        "Unnamed: 0": 325,
+        "Team": "CHA",
+        "Min": 615.4,
+        "FG%": 39.2,
+        "3P%": 35.2,
+        "FT%": 90.3,
+        "min%": 15.64
+    },
+    "Sasha Vezenkov": {
+        "Unnamed: 0": 327,
+        "Team": "SAC",
+        "Min": 511.1,
+        "FG%": 44.0,
+        "3P%": 37.5,
+        "FT%": 80.0,
+        "min%": 12.99
+    },
+    "KJ Martin": {
+        "Unnamed: 0": 328,
+        "Team": "PHI",
+        "Min": 746.5,
+        "FG%": 53.6,
+        "3P%": 28.6,
+        "FT%": 53.7,
+        "min%": 18.97
+    },
+    "Bol Bol": {
+        "Unnamed: 0": 329,
+        "Team": "PHX",
+        "Min": 469.0,
+        "FG%": 61.6,
+        "3P%": 42.3,
+        "FT%": 78.9,
+        "min%": 11.92
+    },
+    "Kevin Knox II": {
+        "Unnamed: 0": 329,
+        "Team": "DET",
+        "Min": 560.2,
+        "FG%": 46.2,
+        "3P%": 33.0,
+        "FT%": 90.9,
+        "min%": 14.23
+    },
+    "Omer Yurtseven": {
+        "Unnamed: 0": 331,
+        "Team": "UTA",
+        "Min": 545.1,
+        "FG%": 53.8,
+        "3P%": 20.8,
+        "FT%": 67.9,
+        "min%": 13.85
+    },
+    "Evan Fournier": {
+        "Unnamed: 0": 332,
+        "Team": "DET",
+        "Min": 579.7,
+        "FG%": 35.7,
+        "3P%": 25.4,
+        "FT%": 80.6,
+        "min%": 14.73
+    },
+    "Thomas Bryant": {
+        "Unnamed: 0": 333,
+        "Team": "MIA",
+        "Min": 441.4,
+        "FG%": 57.7,
+        "3P%": 18.2,
+        "FT%": 87.2,
+        "min%": 11.21
+    },
+    "Shake Milton": {
+        "Unnamed: 0": 334,
+        "Team": "NYK",
+        "Min": 581.2,
+        "FG%": 40.5,
+        "3P%": 28.1,
+        "FT%": 81.6,
+        "min%": 14.77
+    },
+    "Tari Eason": {
+        "Unnamed: 0": 335,
+        "Team": "HOU",
+        "Min": 480.1,
+        "FG%": 46.6,
+        "3P%": 36.0,
+        "FT%": 63.6,
+        "min%": 12.2
+    },
+    "Jalen Wilson": {
+        "Unnamed: 0": 336,
+        "Team": "BKN",
+        "Min": 664.5,
+        "FG%": 42.5,
+        "3P%": 32.4,
+        "FT%": 82.6,
+        "min%": 16.88
+    },
+    "Cody Martin": {
+        "Unnamed: 0": 337,
+        "Team": "CHA",
+        "Min": 753.0,
+        "FG%": 38.1,
+        "3P%": 31.4,
+        "FT%": 60.6,
+        "min%": 19.13
+    },
+    "MarJon Beauchamp": {
+        "Unnamed: 0": 337,
+        "Team": "MIL",
+        "Min": 607.7,
+        "FG%": 48.8,
+        "3P%": 40.0,
+        "FT%": 67.9,
+        "min%": 15.44
+    },
+    "Delon Wright": {
+        "Unnamed: 0": 339,
+        "Team": "MIA",
+        "Min": 741.6,
+        "FG%": 39.4,
+        "3P%": 36.8,
+        "FT%": 82.2,
+        "min%": 18.84
+    },
+    "Dwight Powell": {
+        "Unnamed: 0": 340,
+        "Team": "DAL",
+        "Min": 836.3,
+        "FG%": 67.9,
+        "3P%": 33.3,
+        "FT%": 70.8,
+        "min%": 21.25
+    },
+    "Eugene Omoruyi": {
+        "Unnamed: 0": 341,
+        "Team": "WAS",
+        "Min": 393.3,
+        "FG%": 48.5,
+        "3P%": 28.3,
+        "FT%": 65.3,
+        "min%": 9.99
+    },
+    "Oshae Brissett": {
+        "Unnamed: 0": 342,
+        "Team": "BOS",
+        "Min": 630.2,
+        "FG%": 44.4,
+        "3P%": 27.3,
+        "FT%": 60.2,
+        "min%": 16.01
+    },
+    "JT Thor": {
+        "Unnamed: 0": 343,
+        "Team": "CHA",
+        "Min": 780.6,
+        "FG%": 43.7,
+        "3P%": 34.6,
+        "FT%": 55.0,
+        "min%": 19.83
+    },
+    "Richaun Holmes": {
+        "Unnamed: 0": 343,
+        "Team": "WAS",
+        "Min": 554.1,
+        "FG%": 55.8,
+        "3P%": 33.3,
+        "FT%": 72.3,
+        "min%": 14.08
+    },
+    "Keita Bates-Diop": {
+        "Unnamed: 0": 345,
+        "Team": "BKN",
+        "Min": 664.6,
+        "FG%": 43.4,
+        "3P%": 30.4,
+        "FT%": 76.2,
+        "min%": 16.89
+    },
+    "Jordan McLaughlin": {
+        "Unnamed: 0": 346,
+        "Team": "MIN",
+        "Min": 626.1,
+        "FG%": 48.3,
+        "3P%": 47.2,
+        "FT%": 72.2,
+        "min%": 15.91
+    },
+    "Derrick Rose": {
+        "Unnamed: 0": 347,
+        "Team": "MEM",
+        "Min": 399.3,
+        "FG%": 46.1,
+        "3P%": 36.6,
+        "FT%": 88.9,
+        "min%": 10.14
+    },
+    "Maxi Kleber": {
+        "Unnamed: 0": 347,
+        "Team": "DAL",
+        "Min": 871.4,
+        "FG%": 43.2,
+        "3P%": 34.8,
+        "FT%": 70.2,
+        "min%": 22.14
+    },
+    "Sandro Mamukelashvili": {
+        "Unnamed: 0": 349,
+        "Team": "SAS",
+        "Min": 451.0,
+        "FG%": 47.1,
+        "3P%": 29.7,
+        "FT%": 73.5,
+        "min%": 11.46
+    },
+    "Anthony Gill": {
+        "Unnamed: 0": 350,
+        "Team": "WAS",
+        "Min": 466.5,
+        "FG%": 46.9,
+        "3P%": 24.4,
+        "FT%": 80.6,
+        "min%": 11.85
+    },
+    "Zeke Nnaji": {
+        "Unnamed: 0": 351,
+        "Team": "DEN",
+        "Min": 576.1,
+        "FG%": 46.3,
+        "3P%": 26.1,
+        "FT%": 67.7,
+        "min%": 14.64
+    },
+    "JaVale McGee": {
+        "Unnamed: 0": 352,
+        "Team": "SAC",
+        "Min": 339.4,
+        "FG%": 59.8,
+        "3P%": 14.3,
+        "FT%": 57.8,
+        "min%": 8.62
+    },
+    "Dalen Terry": {
+        "Unnamed: 0": 353,
+        "Team": "CHI",
+        "Min": 680.7,
+        "FG%": 43.9,
+        "3P%": 23.0,
+        "FT%": 58.1,
+        "min%": 17.29
+    },
+    "Luka Samanic": {
+        "Unnamed: 0": 354,
+        "Team": "UTA",
+        "Min": 404.4,
+        "FG%": 38.0,
+        "3P%": 20.3,
+        "FT%": 78.6,
+        "min%": 10.27
+    },
+    "Bismack Biyombo": {
+        "Unnamed: 0": 355,
+        "Team": "OKC",
+        "Min": 791.5,
+        "FG%": 56.5,
+        "3P%": 0.0,
+        "FT%": 48.1,
+        "min%": 20.11
+    },
+    "Jacob Gilyard": {
+        "Unnamed: 0": 356,
+        "Team": "BKN",
+        "Min": 698.4,
+        "FG%": 40.0,
+        "3P%": 40.5,
+        "FT%": 100.0,
+        "min%": 17.74
+    },
+    "Mitchell Robinson": {
+        "Unnamed: 0": 356,
+        "Team": "NYK",
+        "Min": 768.1,
+        "FG%": 57.5,
+        "3P%": 0.0,
+        "FT%": 40.9,
+        "min%": 19.51
+    },
+    "Ricky Council IV": {
+        "Unnamed: 0": 356,
+        "Team": "PHI",
+        "Min": 288.6,
+        "FG%": 48.2,
+        "3P%": 37.5,
+        "FT%": 74.6,
+        "min%": 7.33
+    },
+    "Trey Jemison III": {
+        "Unnamed: 0": 359,
+        "Team": "MEM",
+        "Min": 574.0,
+        "FG%": 55.1,
+        "3P%": 0.0,
+        "FT%": 84.0,
+        "min%": 14.58
+    },
+    "Jalen McDaniels": {
+        "Unnamed: 0": 360,
+        "Team": "TOR",
+        "Min": 538.0,
+        "FG%": 34.4,
+        "3P%": 16.9,
+        "FT%": 73.0,
+        "min%": 13.67
+    },
+    "Patrick Baldwin Jr.": {
+        "Unnamed: 0": 361,
+        "Team": "WAS",
+        "Min": 493.5,
+        "FG%": 38.1,
+        "3P%": 32.0,
+        "FT%": 67.9,
+        "min%": 12.54
+    },
+    "Brandon Boston": {
+        "Unnamed: 0": 362,
+        "Team": "LAC",
+        "Min": 345.2,
+        "FG%": 40.4,
+        "3P%": 26.9,
+        "FT%": 69.7,
+        "min%": 8.77
+    },
+    "Lester Quinones": {
+        "Unnamed: 0": 363,
+        "Team": "GSW",
+        "Min": 394.5,
+        "FG%": 39.7,
+        "3P%": 36.4,
+        "FT%": 69.0,
+        "min%": 10.02
+    },
+    "Mont\u00e9 Morris": {
+        "Unnamed: 0": 363,
+        "Team": "MIN",
+        "Min": 476.0,
+        "FG%": 40.5,
+        "3P%": 38.6,
+        "FT%": 68.4,
+        "min%": 12.09
+    },
+    "Jaden Springer": {
+        "Unnamed: 0": 365,
+        "Team": "BOS",
+        "Min": 507.0,
+        "FG%": 39.9,
+        "3P%": 20.8,
+        "FT%": 83.3,
+        "min%": 12.88
+    },
+    "Svi Mykhailiuk": {
+        "Unnamed: 0": 366,
+        "Team": "BOS",
+        "Min": 413.2,
+        "FG%": 41.6,
+        "3P%": 38.9,
+        "FT%": 66.7,
+        "min%": 10.5
+    },
+    "Tristan Thompson": {
+        "Unnamed: 0": 367,
+        "Team": "CLE",
+        "Min": 548.9,
+        "FG%": 61.3,
+        "3P%": 0.0,
+        "FT%": 28.8,
+        "min%": 13.95
+    },
+    "Mike Muscala": {
+        "Unnamed: 0": 368,
+        "Team": "OKC",
+        "Min": 600.2,
+        "FG%": 35.9,
+        "3P%": 29.2,
+        "FT%": 68.0,
+        "min%": 15.25
+    },
+    "Rayan Rupert": {
+        "Unnamed: 0": 369,
+        "Team": "POR",
+        "Min": 633.2,
+        "FG%": 33.5,
+        "3P%": 35.9,
+        "FT%": 76.0,
+        "min%": 16.09
+    },
+    "Skylar Mays": {
+        "Unnamed: 0": 369,
+        "Team": "LAL",
+        "Min": 433.3,
+        "FG%": 39.6,
+        "3P%": 29.6,
+        "FT%": 76.5,
+        "min%": 11.01
+    },
+    "Neemias Queta": {
+        "Unnamed: 0": 371,
+        "Team": "BOS",
+        "Min": 333.2,
+        "FG%": 64.4,
+        "3P%": 0.0,
+        "FT%": 71.4,
+        "min%": 8.47
+    },
+    "Javon Freeman-Liberty": {
+        "Unnamed: 0": 372,
+        "Team": "TOR",
+        "Min": 403.0,
+        "FG%": 44.4,
+        "3P%": 23.8,
+        "FT%": 91.7,
+        "min%": 10.24
+    },
+    "Johnny Davis": {
+        "Unnamed: 0": 373,
+        "Team": "WAS",
+        "Min": 613.5,
+        "FG%": 40.3,
+        "3P%": 35.0,
+        "FT%": 58.3,
+        "min%": 15.59
+    },
+    "Matt Ryan": {
+        "Unnamed: 0": 373,
+        "Team": "NOP",
+        "Min": 390.4,
+        "FG%": 43.4,
+        "3P%": 45.1,
+        "FT%": 92.9,
+        "min%": 9.92
+    },
+    "Nassir Little": {
+        "Unnamed: 0": 373,
+        "Team": "PHX",
+        "Min": 458.3,
+        "FG%": 46.0,
+        "3P%": 30.0,
+        "FT%": 85.0,
+        "min%": 11.64
+    },
+    "Jarred Vanderbilt": {
+        "Unnamed: 0": 376,
+        "Team": "LAL",
+        "Min": 581.2,
+        "FG%": 51.8,
+        "3P%": 29.6,
+        "FT%": 66.7,
+        "min%": 14.77
+    },
+    "Aleksej Pokusevski": {
+        "Unnamed: 0": 377,
+        "Team": "CHA",
+        "Min": 405.4,
+        "FG%": 40.5,
+        "3P%": 32.7,
+        "FT%": 73.2,
+        "min%": 10.3
+    },
+    "Danuel House Jr.": {
+        "Unnamed: 0": 378,
+        "Team": "PHI",
+        "Min": 509.1,
+        "FG%": 44.8,
+        "3P%": 30.0,
+        "FT%": 76.1,
+        "min%": 12.93
+    },
+    "Dominick Barlow": {
+        "Unnamed: 0": 378,
+        "Team": "SAS",
+        "Min": 419.5,
+        "FG%": 49.6,
+        "3P%": 33.3,
+        "FT%": 69.0,
+        "min%": 10.66
+    },
+    "Johnny Juzang": {
+        "Unnamed: 0": 378,
+        "Team": "UTA",
+        "Min": 371.8,
+        "FG%": 46.4,
+        "3P%": 41.6,
+        "FT%": 71.4,
+        "min%": 9.45
+    },
+    "DeAndre Jordan": {
+        "Unnamed: 0": 381,
+        "Team": "DEN",
+        "Min": 395.7,
+        "FG%": 62.4,
+        "3P%": 0.0,
+        "FT%": 49.1,
+        "min%": 10.05
+    },
+    "Ish Smith": {
+        "Unnamed: 0": 382,
+        "Team": "CHA",
+        "Min": 740.8,
+        "FG%": 41.8,
+        "3P%": 50.0,
+        "FT%": 75.0,
+        "min%": 18.82
+    },
+    "Lindy Waters III": {
+        "Unnamed: 0": 383,
+        "Team": "OKC",
+        "Min": 280.2,
+        "FG%": 47.1,
+        "3P%": 43.5,
+        "FT%": 100.0,
+        "min%": 7.12
+    },
+    "Thaddeus Young": {
+        "Unnamed: 0": 383,
+        "Team": "PHX",
+        "Min": 439.5,
+        "FG%": 60.2,
+        "3P%": 14.3,
+        "FT%": 40.0,
+        "min%": 11.17
+    },
+    "A.J. Lawson": {
+        "Unnamed: 0": 385,
+        "Team": "DAL",
+        "Min": 310.9,
+        "FG%": 44.6,
+        "3P%": 26.0,
+        "FT%": 65.2,
+        "min%": 7.9
+    },
+    "V\u00edt Krej\u010d\u00ed": {
+        "Unnamed: 0": 386,
+        "Team": "ATL",
+        "Min": 541.3,
+        "FG%": 49.0,
+        "3P%": 41.2,
+        "FT%": 83.3,
+        "min%": 13.75
+    },
+    "Noah Clowney": {
+        "Unnamed: 0": 387,
+        "Team": "BKN",
+        "Min": 369.9,
+        "FG%": 53.8,
+        "3P%": 36.4,
+        "FT%": 70.0,
+        "min%": 9.4
+    },
+    "Ousmane Dieng": {
+        "Unnamed: 0": 387,
+        "Team": "OKC",
+        "Min": 365.0,
+        "FG%": 42.2,
+        "3P%": 30.0,
+        "FT%": 87.5,
+        "min%": 9.27
+    },
+    "Patty Mills": {
+        "Unnamed: 0": 389,
+        "Team": "MIA",
+        "Min": 415.3,
+        "FG%": 35.1,
+        "3P%": 27.6,
+        "FT%": 100.0,
+        "min%": 10.55
+    },
+    "Robert Covington": {
+        "Unnamed: 0": 389,
+        "Team": "PHI",
+        "Min": 488.4,
+        "FG%": 43.9,
+        "3P%": 33.9,
+        "FT%": 84.6,
+        "min%": 12.41
+    },
+    "Stanley Umude": {
+        "Unnamed: 0": 389,
+        "Team": "DET",
+        "Min": 307.1,
+        "FG%": 44.0,
+        "3P%": 45.3,
+        "FT%": 90.6,
+        "min%": 7.8
+    },
+    "Andre Jackson Jr.": {
+        "Unnamed: 0": 392,
+        "Team": "MIL",
+        "Min": 572.3,
+        "FG%": 50.0,
+        "3P%": 37.0,
+        "FT%": 72.7,
+        "min%": 14.54
+    },
+    "Olivier-Maxence Prosper": {
+        "Unnamed: 0": 393,
+        "Team": "DAL",
+        "Min": 336.2,
+        "FG%": 38.5,
+        "3P%": 28.9,
+        "FT%": 68.3,
+        "min%": 8.54
+    },
+    "Alex Len": {
+        "Unnamed: 0": 394,
+        "Team": "SAC",
+        "Min": 444.2,
+        "FG%": 61.7,
+        "3P%": 0.0,
+        "FT%": 58.8,
+        "min%": 11.29
+    },
+    "Jarace Walker": {
+        "Unnamed: 0": 394,
+        "Team": "IND",
+        "Min": 340.4,
+        "FG%": 40.9,
+        "3P%": 40.0,
+        "FT%": 88.9,
+        "min%": 8.65
+    },
+    "Yuta Watanabe": {
+        "Unnamed: 0": 396,
+        "Team": "MEM",
+        "Min": 464.4,
+        "FG%": 35.3,
+        "3P%": 29.4,
+        "FT%": 58.8,
+        "min%": 11.8
+    },
+    "Jeremiah Robinson-Earl": {
+        "Unnamed: 0": 397,
+        "Team": "NOP",
+        "Min": 334.3,
+        "FG%": 47.4,
+        "3P%": 33.3,
+        "FT%": 75.0,
+        "min%": 8.49
+    },
+    "Jontay Porter": {
+        "Unnamed: 0": 397,
+        "Team": "TOR",
+        "Min": 359.7,
+        "FG%": 38.5,
+        "3P%": 33.3,
+        "FT%": 83.3,
+        "min%": 9.14
+    },
+    "Devonte' Graham": {
+        "Unnamed: 0": 399,
+        "Team": "SAS",
+        "Min": 312.9,
+        "FG%": 35.2,
+        "3P%": 30.1,
+        "FT%": 81.3,
+        "min%": 7.95
+    },
+    "Isaiah Livers": {
+        "Unnamed: 0": 399,
+        "Team": "DET",
+        "Min": 469.4,
+        "FG%": 34.5,
+        "3P%": 28.6,
+        "FT%": 66.7,
+        "min%": 11.93
+    },
+    "Javonte Green": {
+        "Unnamed: 0": 401,
+        "Team": "CHI",
+        "Min": 230.4,
+        "FG%": 60.0,
+        "3P%": 37.0,
+        "FT%": 76.9,
+        "min%": 5.85
+    },
+    "Wesley Matthews": {
+        "Unnamed: 0": 401,
+        "Team": "ATL",
+        "Min": 412.9,
+        "FG%": 35.1,
+        "3P%": 34.8,
+        "FT%": 75.0,
+        "min%": 10.49
+    },
+    "Chuma Okeke": {
+        "Unnamed: 0": 403,
+        "Team": "ORL",
+        "Min": 431.7,
+        "FG%": 35.7,
+        "3P%": 28.0,
+        "FT%": 57.1,
+        "min%": 10.97
+    },
+    "Damian Jones": {
+        "Unnamed: 0": 403,
+        "Team": "CLE",
+        "Min": 269.7,
+        "FG%": 59.7,
+        "3P%": 21.4,
+        "FT%": 85.7,
+        "min%": 6.85
+    },
+    "Tosan Evbuomwan": {
+        "Unnamed: 0": 405,
+        "Team": "DET",
+        "Min": 366.6,
+        "FG%": 50.7,
+        "3P%": 37.5,
+        "FT%": 68.0,
+        "min%": 9.31
+    },
+    "Luka Garza": {
+        "Unnamed: 0": 406,
+        "Team": "MIN",
+        "Min": 121.8,
+        "FG%": 48.0,
+        "3P%": 28.1,
+        "FT%": 72.0,
+        "min%": 3.09
+    },
+    "Orlando Robinson": {
+        "Unnamed: 0": 406,
+        "Team": "MIA",
+        "Min": 303.7,
+        "FG%": 50.0,
+        "3P%": 53.3,
+        "FT%": 76.0,
+        "min%": 7.72
+    },
+    "Jamal Cain": {
+        "Unnamed: 0": 408,
+        "Team": "MIA",
+        "Min": 259.1,
+        "FG%": 43.0,
+        "3P%": 35.5,
+        "FT%": 78.3,
+        "min%": 6.58
+    },
+    "Kenneth Lofton Jr.": {
+        "Unnamed: 0": 409,
+        "Team": "UTA",
+        "Min": 198.3,
+        "FG%": 46.2,
+        "3P%": 29.2,
+        "FT%": 65.4,
+        "min%": 5.04
+    },
+    "Reggie Bullock Jr.": {
+        "Unnamed: 0": 409,
+        "Team": "HOU",
+        "Min": 417.5,
+        "FG%": 41.5,
+        "3P%": 40.3,
+        "FT%": 100.0,
+        "min%": 10.61
+    },
+    "Kessler Edwards": {
+        "Unnamed: 0": 411,
+        "Team": "SAC",
+        "Min": 274.7,
+        "FG%": 41.5,
+        "3P%": 38.5,
+        "FT%": 55.6,
+        "min%": 6.98
+    },
+    "Ben Simmons": {
+        "Unnamed: 0": 412,
+        "Team": "BKN",
+        "Min": 358.9,
+        "FG%": 58.1,
+        "3P%": 0.0,
+        "FT%": 40.0,
+        "min%": 9.12
+    },
+    "Jericho Sims": {
+        "Unnamed: 0": 412,
+        "Team": "NYK",
+        "Min": 584.8,
+        "FG%": 69.1,
+        "3P%": 0.0,
+        "FT%": 66.7,
+        "min%": 14.86
+    },
+    "Julian Phillips": {
+        "Unnamed: 0": 414,
+        "Team": "CHI",
+        "Min": 322.6,
+        "FG%": 41.6,
+        "3P%": 31.6,
+        "FT%": 68.4,
+        "min%": 8.2
+    },
+    "Justin Champagnie": {
+        "Unnamed: 0": 414,
+        "Team": "WAS",
+        "Min": 234.8,
+        "FG%": 41.0,
+        "3P%": 28.9,
+        "FT%": 80.0,
+        "min%": 5.97
+    },
+    "Kira Lewis Jr.": {
+        "Unnamed: 0": 414,
+        "Team": "UTA",
+        "Min": 264.2,
+        "FG%": 37.0,
+        "3P%": 12.1,
+        "FT%": 85.0,
+        "min%": 6.71
+    },
+    "Kobe Brown": {
+        "Unnamed: 0": 414,
+        "Team": "LAC",
+        "Min": 394.0,
+        "FG%": 41.1,
+        "3P%": 29.2,
+        "FT%": 50.0,
+        "min%": 10.01
+    },
+    "Furkan Korkmaz": {
+        "Unnamed: 0": 418,
+        "Team": "PHI",
+        "Min": 299.9,
+        "FG%": 39.5,
+        "3P%": 35.0,
+        "FT%": 70.0,
+        "min%": 7.62
+    },
+    "Garrett Temple": {
+        "Unnamed: 0": 418,
+        "Team": "TOR",
+        "Min": 288.8,
+        "FG%": 37.2,
+        "3P%": 30.0,
+        "FT%": 81.8,
+        "min%": 7.34
+    },
+    "Collin Gillespie": {
+        "Unnamed: 0": 420,
+        "Team": "DEN",
+        "Min": 225.4,
+        "FG%": 46.4,
+        "3P%": 39.5,
+        "FT%": 66.7,
+        "min%": 5.73
+    },
+    "Tristan Vukcevic": {
+        "Unnamed: 0": 421,
+        "Team": "WAS",
+        "Min": 153.4,
+        "FG%": 43.3,
+        "3P%": 27.8,
+        "FT%": 77.3,
+        "min%": 3.9
+    },
+    "Jared Rhoden": {
+        "Unnamed: 0": 422,
+        "Team": "DET",
+        "Min": 245.0,
+        "FG%": 50.0,
+        "3P%": 38.7,
+        "FT%": 62.5,
+        "min%": 6.22
+    },
+    "Trent Forrest": {
+        "Unnamed: 0": 422,
+        "Team": "ATL",
+        "Min": 413.8,
+        "FG%": 37.8,
+        "3P%": 20.0,
+        "FT%": 76.5,
+        "min%": 10.51
+    },
+    "Gui Santos": {
+        "Unnamed: 0": 424,
+        "Team": "GSW",
+        "Min": 192.1,
+        "FG%": 50.9,
+        "3P%": 37.0,
+        "FT%": 94.1,
+        "min%": 4.88
+    },
+    "Jaylen Nowell": {
+        "Unnamed: 0": 425,
+        "Team": "DET",
+        "Min": 213.8,
+        "FG%": 43.6,
+        "3P%": 20.7,
+        "FT%": 77.8,
+        "min%": 5.43
+    },
+    "Kobe Bufkin": {
+        "Unnamed: 0": 425,
+        "Team": "ATL",
+        "Min": 196.0,
+        "FG%": 37.0,
+        "3P%": 22.5,
+        "FT%": 50.0,
+        "min%": 4.98
+    },
+    "Ashton Hagans": {
+        "Unnamed: 0": 427,
+        "Team": "POR",
+        "Min": 315.6,
+        "FG%": 40.8,
+        "3P%": 32.0,
+        "FT%": 82.4,
+        "min%": 8.02
+    },
+    "Onuralp Bitim": {
+        "Unnamed: 0": 427,
+        "Team": "CHI",
+        "Min": 268.0,
+        "FG%": 38.1,
+        "3P%": 27.3,
+        "FT%": 80.0,
+        "min%": 6.81
+    },
+    "Cody Zeller": {
+        "Unnamed: 0": 429,
+        "Team": "NOP",
+        "Min": 319.7,
+        "FG%": 41.9,
+        "3P%": 33.3,
+        "FT%": 60.5,
+        "min%": 8.12
+    },
+    "Moses Brown": {
+        "Unnamed: 0": 430,
+        "Team": "POR",
+        "Min": 200.0,
+        "FG%": 50.8,
+        "3P%": 0.0,
+        "FT%": 29.0,
+        "min%": 5.08
+    },
+    "Jules Bernard": {
+        "Unnamed: 0": 431,
+        "Team": "WAS",
+        "Min": 149.3,
+        "FG%": 45.3,
+        "3P%": 37.9,
+        "FT%": 55.6,
+        "min%": 3.79
+    },
+    "Saben Lee": {
+        "Unnamed: 0": 432,
+        "Team": "PHX",
+        "Min": 185.0,
+        "FG%": 36.4,
+        "3P%": 12.5,
+        "FT%": 74.4,
+        "min%": 4.7
+    },
+    "Leaky Black": {
+        "Unnamed: 0": 433,
+        "Team": "CHA",
+        "Min": 284.1,
+        "FG%": 48.1,
+        "3P%": 45.0,
+        "FT%": 66.7,
+        "min%": 7.22
+    },
+    "Brandon Clarke": {
+        "Unnamed: 0": 434,
+        "Team": "MEM",
+        "Min": 134.3,
+        "FG%": 55.9,
+        "3P%": 16.7,
+        "FT%": 14.3,
+        "min%": 3.41
+    },
+    "Markieff Morris": {
+        "Unnamed: 0": 435,
+        "Team": "DAL",
+        "Min": 216.4,
+        "FG%": 33.8,
+        "3P%": 35.7,
+        "FT%": 83.3,
+        "min%": 5.5
+    },
+    "Colby Jones": {
+        "Unnamed: 0": 436,
+        "Team": "SAC",
+        "Min": 191.7,
+        "FG%": 39.4,
+        "3P%": 9.1,
+        "FT%": 54.5,
+        "min%": 4.87
+    },
+    "Charles Bassey": {
+        "Unnamed: 0": 437,
+        "Team": "SAS",
+        "Min": 205.3,
+        "FG%": 72.5,
+        "3P%": 0.0,
+        "FT%": 83.3,
+        "min%": 5.22
+    },
+    "Cory Joseph": {
+        "Unnamed: 0": 437,
+        "Team": "GSW",
+        "Min": 295.9,
+        "FG%": 35.9,
+        "3P%": 31.0,
+        "FT%": 57.1,
+        "min%": 7.52
+    },
+    "Nate Williams": {
+        "Unnamed: 0": 437,
+        "Team": "HOU",
+        "Min": 129.4,
+        "FG%": 54.0,
+        "3P%": 40.0,
+        "FT%": 53.8,
+        "min%": 3.29
+    },
+    "Justin Minaya": {
+        "Unnamed: 0": 440,
+        "Team": "POR",
+        "Min": 381.0,
+        "FG%": 29.7,
+        "3P%": 24.5,
+        "FT%": 55.6,
+        "min%": 9.68
+    },
+    "Theo Maledon": {
+        "Unnamed: 0": 441,
+        "Team": "PHX",
+        "Min": 213.2,
+        "FG%": 28.6,
+        "3P%": 16.7,
+        "FT%": 93.3,
+        "min%": 5.42
+    },
+    "Harry Giles III": {
+        "Unnamed: 0": 442,
+        "Team": "LAL",
+        "Min": 99.9,
+        "FG%": 46.0,
+        "3P%": 21.4,
+        "FT%": 53.8,
+        "min%": 2.54
+    },
+    "Brandon Williams": {
+        "Unnamed: 0": 443,
+        "Team": "DAL",
+        "Min": 112.9,
+        "FG%": 37.0,
+        "3P%": 20.0,
+        "FT%": 64.7,
+        "min%": 2.87
+    },
+    "Micah Potter": {
+        "Unnamed: 0": 444,
+        "Team": "UTA",
+        "Min": 186.1,
+        "FG%": 47.5,
+        "3P%": 42.9,
+        "FT%": 75.0,
+        "min%": 4.73
+    },
+    "Jeff Dowtin Jr.": {
+        "Unnamed: 0": 445,
+        "Team": "PHI",
+        "Min": 142.0,
+        "FG%": 55.6,
+        "3P%": 47.4,
+        "FT%": 75.0,
+        "min%": 3.61
+    },
+    "P.J. Tucker": {
+        "Unnamed: 0": 445,
+        "Team": "LAC",
+        "Min": 486.3,
+        "FG%": 36.0,
+        "3P%": 37.1,
+        "FT%": 100.0,
+        "min%": 12.36
+    },
+    "Terquavion Smith": {
+        "Unnamed: 0": 445,
+        "Team": "PHI",
+        "Min": 84.5,
+        "FG%": 39.1,
+        "3P%": 37.1,
+        "FT%": 60.0,
+        "min%": 2.15
+    },
+    "James Bouknight": {
+        "Unnamed: 0": 448,
+        "Team": "CHA",
+        "Min": 80.9,
+        "FG%": 43.9,
+        "3P%": 43.3,
+        "FT%": 50.0,
+        "min%": 2.06
+    },
+    "Josh Minott": {
+        "Unnamed: 0": 448,
+        "Team": "MIN",
+        "Min": 91.4,
+        "FG%": 47.2,
+        "3P%": 40.0,
+        "FT%": 85.7,
+        "min%": 2.32
+    },
+    "AJ Griffin": {
+        "Unnamed: 0": 450,
+        "Team": "ATL",
+        "Min": 170.7,
+        "FG%": 29.0,
+        "3P%": 25.6,
+        "FT%": 100.0,
+        "min%": 4.34
+    },
+    "Darius Bazley": {
+        "Unnamed: 0": 450,
+        "Team": "UTA",
+        "Min": 151.8,
+        "FG%": 60.0,
+        "3P%": 25.0,
+        "FT%": 83.3,
+        "min%": 3.86
+    },
+    "Maozinha Pereira": {
+        "Unnamed: 0": 450,
+        "Team": "MEM",
+        "Min": 121.6,
+        "FG%": 51.4,
+        "3P%": 38.5,
+        "FT%": 70.0,
+        "min%": 3.09
+    },
+    "Jahmi'us Ramsey": {
+        "Unnamed: 0": 453,
+        "Team": "TOR",
+        "Min": 121.1,
+        "FG%": 43.9,
+        "3P%": 27.3,
+        "FT%": 83.3,
+        "min%": 3.08
+    },
+    "Terry Taylor": {
+        "Unnamed: 0": 454,
+        "Team": "CHI",
+        "Min": 187.6,
+        "FG%": 51.3,
+        "3P%": 22.2,
+        "FT%": 80.0,
+        "min%": 4.77
+    },
+    "Boban Marjanovi\u0107": {
+        "Unnamed: 0": 455,
+        "Team": "HOU",
+        "Min": 70.9,
+        "FG%": 52.9,
+        "3P%": 0.0,
+        "FT%": 64.3,
+        "min%": 1.8
+    },
+    "Sidy Cissoko": {
+        "Unnamed: 0": 455,
+        "Team": "SAS",
+        "Min": 140.9,
+        "FG%": 48.5,
+        "3P%": 8.3,
+        "FT%": 80.0,
+        "min%": 3.58
+    },
+    "Ryan Rollins": {
+        "Unnamed: 0": 457,
+        "Team": "MIL",
+        "Min": 77.8,
+        "FG%": 51.9,
+        "3P%": 75.0,
+        "FT%": 76.5,
+        "min%": 1.98
+    },
+    "DeJon Jarreau": {
+        "Unnamed: 0": 458,
+        "Team": "MEM",
+        "Min": 149.5,
+        "FG%": 34.0,
+        "3P%": 30.8,
+        "FT%": 45.5,
+        "min%": 3.8
+    },
+    "Dylan Windler": {
+        "Unnamed: 0": 458,
+        "Team": "ATL",
+        "Min": 108.4,
+        "FG%": 50.0,
+        "3P%": 48.1,
+        "FT%": 0.0,
+        "min%": 2.75
+    },
+    "Armoni Brooks": {
+        "Unnamed: 0": 460,
+        "Team": "BKN",
+        "Min": 104.0,
+        "FG%": 32.6,
+        "3P%": 34.4,
+        "FT%": 50.0,
+        "min%": 2.64
+    },
+    "Cole Swider": {
+        "Unnamed: 0": 460,
+        "Team": "MIA",
+        "Min": 86.8,
+        "FG%": 39.5,
+        "3P%": 33.3,
+        "FT%": 100.0,
+        "min%": 2.21
+    },
+    "Jalen Pickett": {
+        "Unnamed: 0": 460,
+        "Team": "DEN",
+        "Min": 121.8,
+        "FG%": 42.9,
+        "3P%": 36.0,
+        "FT%": 75.0,
+        "min%": 3.09
+    },
+    "Zavier Simpson": {
+        "Unnamed: 0": 460,
+        "Team": "MEM",
+        "Min": 161.4,
+        "FG%": 31.5,
+        "3P%": 29.4,
+        "FT%": 75.0,
+        "min%": 4.1
+    },
+    "Emoni Bates": {
+        "Unnamed: 0": 464,
+        "Team": "CLE",
+        "Min": 132.8,
+        "FG%": 30.6,
+        "3P%": 30.3,
+        "FT%": 25.0,
+        "min%": 3.37
+    },
+    "Robert Williams III": {
+        "Unnamed: 0": 464,
+        "Team": "POR",
+        "Min": 118.8,
+        "FG%": 65.4,
+        "3P%": 0.0,
+        "FT%": 77.8,
+        "min%": 3.02
+    },
+    "T.J. Warren": {
+        "Unnamed: 0": 464,
+        "Team": "MIN",
+        "Min": 124.7,
+        "FG%": 43.9,
+        "3P%": 15.4,
+        "FT%": 75.0,
+        "min%": 3.17
+    },
+    "Trevelin Queen": {
+        "Unnamed: 0": 467,
+        "Team": "ORL",
+        "Min": 164.7,
+        "FG%": 36.8,
+        "3P%": 17.6,
+        "FT%": 75.0,
+        "min%": 4.18
+    },
+    "Dru Smith": {
+        "Unnamed: 0": 468,
+        "Team": "MIA",
+        "Min": 130.9,
+        "FG%": 45.5,
+        "3P%": 41.2,
+        "FT%": 100.0,
+        "min%": 3.33
+    },
+    "Joe Harris": {
+        "Unnamed: 0": 468,
+        "Team": "DET",
+        "Min": 170.0,
+        "FG%": 35.9,
+        "3P%": 33.3,
+        "FT%": 50.0,
+        "min%": 4.32
+    },
+    "Otto Porter Jr.": {
+        "Unnamed: 0": 468,
+        "Team": "TOR",
+        "Min": 174.1,
+        "FG%": 42.4,
+        "3P%": 34.8,
+        "FT%": 100.0,
+        "min%": 4.42
+    },
+    "Marques Bolden": {
+        "Unnamed: 0": 471,
+        "Team": "CHA",
+        "Min": 121.3,
+        "FG%": 68.0,
+        "3P%": 0.0,
+        "FT%": 75.0,
+        "min%": 3.08
+    },
+    "Adama Sanogo": {
+        "Unnamed: 0": 472,
+        "Team": "CHI",
+        "Min": 65.8,
+        "FG%": 51.9,
+        "3P%": 0.0,
+        "FT%": 66.7,
+        "min%": 1.67
+    },
+    "Udoka Azubuike": {
+        "Unnamed: 0": 473,
+        "Team": "PHX",
+        "Min": 112.8,
+        "FG%": 69.6,
+        "3P%": 0.0,
+        "FT%": 23.1,
+        "min%": 2.87
+    },
+    "Buddy Boeheim": {
+        "Unnamed: 0": 474,
+        "Team": "DET",
+        "Min": 84.0,
+        "FG%": 31.0,
+        "3P%": 32.0,
+        "FT%": 80.0,
+        "min%": 2.13
+    },
+    "Gabe Vincent": {
+        "Unnamed: 0": 474,
+        "Team": "LAL",
+        "Min": 217.6,
+        "FG%": 30.6,
+        "3P%": 10.7,
+        "FT%": 50.0,
+        "min%": 5.53
+    },
+    "Ibou Badji": {
+        "Unnamed: 0": 474,
+        "Team": "POR",
+        "Min": 225.8,
+        "FG%": 63.6,
+        "3P%": 0.0,
+        "FT%": 50.0,
+        "min%": 5.74
+    },
+    "Jalen Hood-Schifino": {
+        "Unnamed: 0": 474,
+        "Team": "LAL",
+        "Min": 109.0,
+        "FG%": 22.2,
+        "3P%": 13.3,
+        "FT%": 60.0,
+        "min%": 2.77
+    },
+    "Olivier Sarr": {
+        "Unnamed: 0": 474,
+        "Team": "OKC",
+        "Min": 98.2,
+        "FG%": 57.9,
+        "3P%": 33.3,
+        "FT%": 66.7,
+        "min%": 2.49
+    },
+    "Taj Gibson": {
+        "Unnamed: 0": 474,
+        "Team": "DET",
+        "Min": 204.5,
+        "FG%": 40.5,
+        "3P%": 20.0,
+        "FT%": 100.0,
+        "min%": 5.2
+    },
+    "Nate Hinton": {
+        "Unnamed: 0": 480,
+        "Team": "HOU",
+        "Min": 74.6,
+        "FG%": 42.3,
+        "3P%": 50.0,
+        "FT%": 80.0,
+        "min%": 1.9
+    },
+    "Nathan Mensah": {
+        "Unnamed: 0": 480,
+        "Team": "CHA",
+        "Min": 306.6,
+        "FG%": 42.9,
+        "3P%": 0.0,
+        "FT%": 75.0,
+        "min%": 7.79
+    },
+    "Xavier Moon": {
+        "Unnamed: 0": 480,
+        "Team": "LAC",
+        "Min": 119.3,
+        "FG%": 32.6,
+        "3P%": 11.8,
+        "FT%": 50.0,
+        "min%": 3.03
+    },
+    "Matt Hurt": {
+        "Unnamed: 0": 483,
+        "Team": "MEM",
+        "Min": 113.2,
+        "FG%": 35.3,
+        "3P%": 25.0,
+        "FT%": 100.0,
+        "min%": 2.88
+    },
+    "Thanasis Antetokounmpo": {
+        "Unnamed: 0": 483,
+        "Team": "MIL",
+        "Min": 155.4,
+        "FG%": 53.3,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 3.95
+    },
+    "Jerome Robinson": {
+        "Unnamed: 0": 485,
+        "Team": "GSW",
+        "Min": 80.7,
+        "FG%": 33.3,
+        "3P%": 11.8,
+        "FT%": 63.6,
+        "min%": 2.05
+    },
+    "Keon Johnson": {
+        "Unnamed: 0": 485,
+        "Team": "BKN",
+        "Min": 61.4,
+        "FG%": 38.1,
+        "3P%": 40.0,
+        "FT%": 91.7,
+        "min%": 1.56
+    },
+    "Jett Howard": {
+        "Unnamed: 0": 487,
+        "Team": "ORL",
+        "Min": 66.5,
+        "FG%": 33.3,
+        "3P%": 28.0,
+        "FT%": 50.0,
+        "min%": 1.69
+    },
+    "Leonard Miller": {
+        "Unnamed: 0": 487,
+        "Team": "MIN",
+        "Min": 52.4,
+        "FG%": 65.0,
+        "3P%": 40.0,
+        "FT%": 50.0,
+        "min%": 1.33
+    },
+    "Moussa Diabat\u00e9": {
+        "Unnamed: 0": 487,
+        "Team": "LAC",
+        "Min": 64.2,
+        "FG%": 52.6,
+        "3P%": 0.0,
+        "FT%": 64.3,
+        "min%": 1.63
+    },
+    "Daishen Nix": {
+        "Unnamed: 0": 490,
+        "Team": "MIN",
+        "Min": 49.8,
+        "FG%": 37.5,
+        "3P%": 35.3,
+        "FT%": 50.0,
+        "min%": 1.27
+    },
+    "Admiral Schofield": {
+        "Unnamed: 0": 491,
+        "Team": "ORL",
+        "Min": 84.4,
+        "FG%": 38.5,
+        "3P%": 37.5,
+        "FT%": 0.0,
+        "min%": 2.14
+    },
+    "Chris Livingston": {
+        "Unnamed: 0": 491,
+        "Team": "MIL",
+        "Min": 90.5,
+        "FG%": 50.0,
+        "3P%": 20.0,
+        "FT%": 75.0,
+        "min%": 2.3
+    },
+    "David Duke Jr.": {
+        "Unnamed: 0": 491,
+        "Team": "SAS",
+        "Min": 51.4,
+        "FG%": 55.6,
+        "3P%": 50.0,
+        "FT%": 100.0,
+        "min%": 1.31
+    },
+    "Mouhamadou Gueye": {
+        "Unnamed: 0": 491,
+        "Team": "TOR",
+        "Min": 119.9,
+        "FG%": 28.9,
+        "3P%": 0.0,
+        "FT%": 44.4,
+        "min%": 3.05
+    },
+    "Oscar Tshiebwe": {
+        "Unnamed: 0": 491,
+        "Team": "IND",
+        "Min": 41.9,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 75.0,
+        "min%": 1.06
+    },
+    "Colin Castleton": {
+        "Unnamed: 0": 496,
+        "Team": "LAL",
+        "Min": 59.1,
+        "FG%": 56.3,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 1.5
+    },
+    "Mouhamed Gueye": {
+        "Unnamed: 0": 496,
+        "Team": "ATL",
+        "Min": 72.8,
+        "FG%": 34.8,
+        "3P%": 33.3,
+        "FT%": 83.3,
+        "min%": 1.85
+    },
+    "Amari Bailey": {
+        "Unnamed: 0": 498,
+        "Team": "CHA",
+        "Min": 64.6,
+        "FG%": 33.3,
+        "3P%": 12.5,
+        "FT%": 85.7,
+        "min%": 1.64
+    },
+    "Isaiah Mobley": {
+        "Unnamed: 0": 498,
+        "Team": "CLE",
+        "Min": 71.9,
+        "FG%": 41.7,
+        "3P%": 30.0,
+        "FT%": 0.0,
+        "min%": 1.83
+    },
+    "Ish Wainright": {
+        "Unnamed: 0": 498,
+        "Team": "PHX",
+        "Min": 62.4,
+        "FG%": 29.2,
+        "3P%": 35.0,
+        "FT%": 100.0,
+        "min%": 1.59
+    },
+    "Jay Huff": {
+        "Unnamed: 0": 498,
+        "Team": "DEN",
+        "Min": 49.3,
+        "FG%": 60.0,
+        "3P%": 33.3,
+        "FT%": 100.0,
+        "min%": 1.25
+    },
+    "RaiQuan Gray": {
+        "Unnamed: 0": 498,
+        "Team": "SAS",
+        "Min": 39.0,
+        "FG%": 58.8,
+        "3P%": 42.9,
+        "FT%": 0.0,
+        "min%": 0.99
+    },
+    "Braxton Key": {
+        "Unnamed: 0": 503,
+        "Team": "DEN",
+        "Min": 60.0,
+        "FG%": 41.2,
+        "3P%": 40.0,
+        "FT%": 75.0,
+        "min%": 1.52
+    },
+    "Dexter Dennis": {
+        "Unnamed: 0": 503,
+        "Team": "DAL",
+        "Min": 29.9,
+        "FG%": 52.6,
+        "3P%": 12.5,
+        "FT%": 33.3,
+        "min%": 0.76
+    },
+    "Jamaree Bouyea": {
+        "Unnamed: 0": 505,
+        "Team": "SAS",
+        "Min": 94.9,
+        "FG%": 35.7,
+        "3P%": 11.1,
+        "FT%": 0.0,
+        "min%": 2.41
+    },
+    "Kendall Brown": {
+        "Unnamed: 0": 505,
+        "Team": "IND",
+        "Min": 62.5,
+        "FG%": 53.3,
+        "3P%": 0.0,
+        "FT%": 62.5,
+        "min%": 1.59
+    },
+    "Hunter Tyson": {
+        "Unnamed: 0": 507,
+        "Team": "DEN",
+        "Min": 48.0,
+        "FG%": 40.0,
+        "3P%": 28.6,
+        "FT%": 0.0,
+        "min%": 1.22
+    },
+    "Jermaine Samuels Jr.": {
+        "Unnamed: 0": 507,
+        "Team": "HOU",
+        "Min": 60.1,
+        "FG%": 64.3,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 1.53
+    },
+    "Kobi Simmons": {
+        "Unnamed: 0": 507,
+        "Team": "TOR",
+        "Min": 67.4,
+        "FG%": 42.9,
+        "3P%": 25.0,
+        "FT%": 0.0,
+        "min%": 1.71
+    },
+    "Malik Williams": {
+        "Unnamed: 0": 510,
+        "Team": "TOR",
+        "Min": 106.5,
+        "FG%": 26.5,
+        "3P%": 20.0,
+        "FT%": 0.0,
+        "min%": 2.71
+    },
+    "Robin Lopez": {
+        "Unnamed: 0": 511,
+        "Team": "MIL",
+        "Min": 64.7,
+        "FG%": 36.8,
+        "3P%": 25.0,
+        "FT%": 100.0,
+        "min%": 1.64
+    },
+    "Taz\u00e9 Moore": {
+        "Unnamed: 0": 511,
+        "Team": "POR",
+        "Min": 40.3,
+        "FG%": 42.1,
+        "3P%": 14.3,
+        "FT%": 50.0,
+        "min%": 1.02
+    },
+    "Wendell Moore Jr.": {
+        "Unnamed: 0": 511,
+        "Team": "MIN",
+        "Min": 75.1,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 1.91
+    },
+    "Wenyen Gabriel": {
+        "Unnamed: 0": 514,
+        "Team": "MEM",
+        "Min": 81.0,
+        "FG%": 36.4,
+        "3P%": 16.7,
+        "FT%": 0.0,
+        "min%": 2.06
+    },
+    "JD Davison": {
+        "Unnamed: 0": 515,
+        "Team": "BOS",
+        "Min": 39.0,
+        "FG%": 41.7,
+        "3P%": 42.9,
+        "FT%": 75.0,
+        "min%": 0.99
+    },
+    "Alex Fudge": {
+        "Unnamed: 0": 516,
+        "Team": "DAL",
+        "Min": 40.2,
+        "FG%": 40.0,
+        "3P%": 20.0,
+        "FT%": 100.0,
+        "min%": 1.02
+    },
+    "Greg Brown III": {
+        "Unnamed: 0": 516,
+        "Team": "DAL",
+        "Min": 39.7,
+        "FG%": 45.5,
+        "3P%": 33.3,
+        "FT%": 44.4,
+        "min%": 1.01
+    },
+    "Jordan Walsh": {
+        "Unnamed: 0": 516,
+        "Team": "BOS",
+        "Min": 83.5,
+        "FG%": 40.0,
+        "3P%": 22.2,
+        "FT%": 50.0,
+        "min%": 2.12
+    },
+    "D'Moi Hodge": {
+        "Unnamed: 0": 519,
+        "Team": "LAL",
+        "Min": 41.2,
+        "FG%": 33.3,
+        "3P%": 25.0,
+        "FT%": 50.0,
+        "min%": 1.05
+    },
+    "DaQuan Jeffries": {
+        "Unnamed: 0": 519,
+        "Team": "NYK",
+        "Min": 46.0,
+        "FG%": 35.3,
+        "3P%": 20.0,
+        "FT%": 0.0,
+        "min%": 1.17
+    },
+    "Dereon Seabron": {
+        "Unnamed: 0": 519,
+        "Team": "NOP",
+        "Min": 55.1,
+        "FG%": 30.8,
+        "3P%": 50.0,
+        "FT%": 83.3,
+        "min%": 1.4
+    },
+    "Seth Lundy": {
+        "Unnamed: 0": 519,
+        "Team": "ATL",
+        "Min": 52.0,
+        "FG%": 23.5,
+        "3P%": 23.1,
+        "FT%": 75.0,
+        "min%": 1.32
+    },
+    "TyTy Washington Jr.": {
+        "Unnamed: 0": 519,
+        "Team": "MIL",
+        "Min": 55.9,
+        "FG%": 30.0,
+        "3P%": 33.3,
+        "FT%": 0.0,
+        "min%": 1.42
+    },
+    "Jacob Toppin": {
+        "Unnamed: 0": 524,
+        "Team": "NYK",
+        "Min": 38.2,
+        "FG%": 55.6,
+        "3P%": 25.0,
+        "FT%": 100.0,
+        "min%": 0.97
+    },
+    "Jordan Miller": {
+        "Unnamed: 0": 524,
+        "Team": "LAC",
+        "Min": 28.2,
+        "FG%": 55.6,
+        "3P%": 50.0,
+        "FT%": 100.0,
+        "min%": 0.72
+    },
+    "Timmy Allen": {
+        "Unnamed: 0": 524,
+        "Team": "MEM",
+        "Min": 125.5,
+        "FG%": 26.1,
+        "3P%": 0.0,
+        "FT%": 50.0,
+        "min%": 3.19
+    },
+    "Jason Preston": {
+        "Unnamed: 0": 527,
+        "Team": "UTA",
+        "Min": 71.1,
+        "FG%": 31.6,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 1.81
+    },
+    "Jordan Ford": {
+        "Unnamed: 0": 527,
+        "Team": "SAC",
+        "Min": 21.8,
+        "FG%": 57.1,
+        "3P%": 66.7,
+        "FT%": 100.0,
+        "min%": 0.55
+    },
+    "Mamadi Diakite": {
+        "Unnamed: 0": 527,
+        "Team": "NYK",
+        "Min": 24.4,
+        "FG%": 66.7,
+        "3P%": 0.0,
+        "FT%": 66.7,
+        "min%": 0.62
+    },
+    "D.J. Carton": {
+        "Unnamed: 0": 530,
+        "Team": "TOR",
+        "Min": 35.5,
+        "FG%": 37.5,
+        "3P%": 25.0,
+        "FT%": 80.0,
+        "min%": 0.9
+    },
+    "Drew Peterson": {
+        "Unnamed: 0": 530,
+        "Team": "BOS",
+        "Min": 22.7,
+        "FG%": 66.7,
+        "3P%": 60.0,
+        "FT%": 0.0,
+        "min%": 0.58
+    },
+    "Henri Drell": {
+        "Unnamed: 0": 530,
+        "Team": "CHI",
+        "Min": 29.9,
+        "FG%": 40.0,
+        "3P%": 33.3,
+        "FT%": 50.0,
+        "min%": 0.76
+    },
+    "Keyontae Johnson": {
+        "Unnamed: 0": 530,
+        "Team": "OKC",
+        "Min": 66.2,
+        "FG%": 31.3,
+        "3P%": 33.3,
+        "FT%": 0.0,
+        "min%": 1.68
+    },
+    "Maxwell Lewis": {
+        "Unnamed: 0": 530,
+        "Team": "LAL",
+        "Min": 102.8,
+        "FG%": 19.0,
+        "3P%": 11.1,
+        "FT%": 66.7,
+        "min%": 2.61
+    },
+    "D.J. Wilson": {
+        "Unnamed: 0": 535,
+        "Team": "PHI",
+        "Min": 15.5,
+        "FG%": 66.7,
+        "3P%": 100.0,
+        "FT%": 0.0,
+        "min%": 0.39
+    },
+    "R.J. Hampton": {
+        "Unnamed: 0": 535,
+        "Team": "MIA",
+        "Min": 76.0,
+        "FG%": 28.6,
+        "3P%": 12.5,
+        "FT%": 50.0,
+        "min%": 1.93
+    },
+    "Isaiah Thomas": {
+        "Unnamed: 0": 537,
+        "Team": "PHX",
+        "Min": 19.4,
+        "FG%": 30.0,
+        "3P%": 50.0,
+        "FT%": 0.0,
+        "min%": 0.49
+    },
+    "Jalen Slawson": {
+        "Unnamed: 0": 537,
+        "Team": "SAC",
+        "Min": 37.0,
+        "FG%": 66.7,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.94
+    },
+    "James Johnson": {
+        "Unnamed: 0": 537,
+        "Team": "IND",
+        "Min": 47.2,
+        "FG%": 30.0,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 1.2
+    },
+    "Juan Toscano-Anderson": {
+        "Unnamed: 0": 540,
+        "Team": "SAC",
+        "Min": 52.7,
+        "FG%": 25.0,
+        "3P%": 25.0,
+        "FT%": 0.0,
+        "min%": 1.34
+    },
+    "Mason Jones": {
+        "Unnamed: 0": 540,
+        "Team": "SAC",
+        "Min": 27.7,
+        "FG%": 25.0,
+        "3P%": 28.6,
+        "FT%": 50.0,
+        "min%": 0.7
+    },
+    "Charlie Brown Jr.": {
+        "Unnamed: 0": 542,
+        "Team": "NYK",
+        "Min": 37.3,
+        "FG%": 20.0,
+        "3P%": 28.6,
+        "FT%": 0.0,
+        "min%": 0.95
+    },
+    "Jack White": {
+        "Unnamed: 0": 542,
+        "Team": "MEM",
+        "Min": 63.6,
+        "FG%": 12.5,
+        "3P%": 20.0,
+        "FT%": 0.0,
+        "min%": 1.62
+    },
+    "Lindell Wigginton": {
+        "Unnamed: 0": 542,
+        "Team": "MIL",
+        "Min": 7.6,
+        "FG%": 40.0,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 0.19
+    },
+    "Alondes Williams": {
+        "Unnamed: 0": 545,
+        "Team": "MIA",
+        "Min": 15.6,
+        "FG%": 25.0,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 0.4
+    },
+    "Frank Ntilikina": {
+        "Unnamed: 0": 545,
+        "Team": "CHA",
+        "Min": 42.9,
+        "FG%": 11.1,
+        "3P%": 12.5,
+        "FT%": 100.0,
+        "min%": 1.09
+    },
+    "E.J. Liddell": {
+        "Unnamed: 0": 547,
+        "Team": "NOP",
+        "Min": 23.1,
+        "FG%": 16.7,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 0.59
+    },
+    "Izaiah Brockington": {
+        "Unnamed: 0": 547,
+        "Team": "NOP",
+        "Min": 3.4,
+        "FG%": 40.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.09
+    },
+    "Kevon Harris": {
+        "Unnamed: 0": 547,
+        "Team": "ORL",
+        "Min": 6.0,
+        "FG%": 66.7,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.15
+    },
+    "Pat Spencer": {
+        "Unnamed: 0": 547,
+        "Team": "GSW",
+        "Min": 25.6,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.65
+    },
+    "Ty Jerome": {
+        "Unnamed: 0": 547,
+        "Team": "CLE",
+        "Min": 14.8,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.38
+    },
+    "Adam Flagler": {
+        "Unnamed: 0": 552,
+        "Team": "OKC",
+        "Min": 14.0,
+        "FG%": 14.3,
+        "3P%": 16.7,
+        "FT%": 0.0,
+        "min%": 0.36
+    },
+    "Dariq Whitehead": {
+        "Unnamed: 0": 552,
+        "Team": "BKN",
+        "Min": 24.0,
+        "FG%": 20.0,
+        "3P%": 0.0,
+        "FT%": 50.0,
+        "min%": 0.61
+    },
+    "Filip Petrusev": {
+        "Unnamed: 0": 552,
+        "Team": "SAC",
+        "Min": 9.3,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 50.0,
+        "min%": 0.24
+    },
+    "Pete Nance": {
+        "Unnamed: 0": 552,
+        "Team": "CLE",
+        "Min": 27.4,
+        "FG%": 16.7,
+        "3P%": 100.0,
+        "FT%": 0.0,
+        "min%": 0.7
+    },
+    "Usman Garuba": {
+        "Unnamed: 0": 552,
+        "Team": "GSW",
+        "Min": 17.8,
+        "FG%": 16.7,
+        "3P%": 0.0,
+        "FT%": 50.0,
+        "min%": 0.45
+    },
+    "Hamidou Diallo": {
+        "Unnamed: 0": 557,
+        "Team": "WAS",
+        "Min": 4.8,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.12
+    },
+    "Isaiah Wong": {
+        "Unnamed: 0": 557,
+        "Team": "IND",
+        "Min": 4.3,
+        "FG%": 33.3,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.11
+    },
+    "Joshua Primo": {
+        "Unnamed: 0": 557,
+        "Team": "LAC",
+        "Min": 10.3,
+        "FG%": 33.3,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.26
+    },
+    "Markquis Nowell": {
+        "Unnamed: 0": 557,
+        "Team": "TOR",
+        "Min": 3.5,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 0.09
+    },
+    "Quenton Jackson": {
+        "Unnamed: 0": 557,
+        "Team": "IND",
+        "Min": 10.5,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 100.0,
+        "min%": 0.27
+    },
+    "Shaquille Harrison": {
+        "Unnamed: 0": 557,
+        "Team": "MEM",
+        "Min": 6.0,
+        "FG%": 50.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.15
+    },
+    "Andrew Funk": {
+        "Unnamed: 0": 563,
+        "Team": "CHI",
+        "Min": 13.4,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.34
+    },
+    "Danny Green": {
+        "Unnamed: 0": 563,
+        "Team": "PHI",
+        "Min": 18.4,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.47
+    },
+    "Dmytro Skapintsev": {
+        "Unnamed: 0": 563,
+        "Team": "NYK",
+        "Min": 2.1,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.05
+    },
+    "Jalen Crutcher": {
+        "Unnamed: 0": 563,
+        "Team": "NOP",
+        "Min": 2.6,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.07
+    },
+    "Javonte Smart": {
+        "Unnamed: 0": 563,
+        "Team": "PHI",
+        "Min": 0.7,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.02
+    },
+    "Justin Jackson": {
+        "Unnamed: 0": 563,
+        "Team": "MIN",
+        "Min": 0.7,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.02
+    },
+    "Kaiser Gates": {
+        "Unnamed: 0": 563,
+        "Team": "NOP",
+        "Min": 7.4,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.19
+    },
+    "Malcolm Cazalon": {
+        "Unnamed: 0": 563,
+        "Team": "DET",
+        "Min": 2.6,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.07
+    },
+    "Ron Harper Jr.": {
+        "Unnamed: 0": 563,
+        "Team": "TOR",
+        "Min": 3.6,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 0.09
+    },
+    "Ryan Arcidiacono": {
+        "Unnamed: 0": 563,
+        "Team": "NYK",
+        "Min": 45.2,
+        "FG%": 0.0,
+        "3P%": 0.0,
+        "FT%": 0.0,
+        "min%": 1.15
+    }
+}
