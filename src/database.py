@@ -30,6 +30,10 @@ def init_database():
         player_name TEXT,
         team TEXT,
         points INTEGER,
+        `2pt` INTEGER,
+        `3pt` INTEGER,
+        free_throws INTEGER,
+        turnovers INTEGER,
         rebounds INTEGER,
         assists INTEGER,
         steals INTEGER,
@@ -74,9 +78,9 @@ def save_game_to_db(game_id, result):
     if 'player_stats' in result:
         for player, stats in result['player_stats'].items():
             cursor.execute(
-                "INSERT INTO player_stats (game_id, player_name, team, points, rebounds, assists, steals, blocks) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (game_id, player, stats['team'], stats['points'], stats['rebounds'], 
-                 stats['assists'], stats['steals'], stats['blocks'])
+                "INSERT INTO player_stats (game_id, player_name, team, points, `2pt`, `3pt`, free_throws, turnovers, rebounds, assists, steals, blocks) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                (game_id, player, stats['team'], stats['points'], stats['2pt'], stats['3pt'], stats['free_throws'], 
+                 stats['turnovers'], stats['rebounds'], stats['assists'], stats['steals'], stats['blocks'])
             )
     
     conn.commit()

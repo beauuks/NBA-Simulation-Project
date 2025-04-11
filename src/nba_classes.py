@@ -3,9 +3,14 @@ import time
 import threading
 import logging
 import datetime
+import json
 
 from src.globals import game_lock, game_results, NBA_PLAYERS
 from src.database import save_game_to_db
+
+# load player stats from JSON file
+with open('data/player_stats.json', 'r') as f:
+    player_stats = json.load(f)
 
 def get_team_roster(team_id):
     """Get player roster for a team"""
@@ -21,12 +26,14 @@ class Player:
         self.team = team
         self.stats = {
             'points': 0,
+            '2pt': 0,
+            '3pt': 0,
+            'free_throws': 0,
+            'turnovers': 0,
             'rebounds': 0,
             'assists': 0,
             'steals': 0,
-            'blocks': 0,
-            'fouls': 0,
-            'minutes': 0
+            'blocks': 0
         }
     
     def update_stat(self, stat_name, value=1):
@@ -43,13 +50,13 @@ class Player:
 class NBA_Game(threading.Thread):
     def __init__(self, team1, team2, game_id, arena=None, date=None, team1_id=None, team2_id=None):
         super().__init__(name=f"Game-{team1}-vs-{team2}")
+        self.game_id = game_id
         self.team1 = team1
         self.team2 = team2
-        self.game_id = game_id
-        self.arena = arena or f"{team1} Arena"
-        self.date = date or datetime.now().strftime('%Y-%m-%d')
         self.team1_id = team1_id
         self.team2_id = team2_id
+        self.arena = arena or f"{team1} Arena"
+        self.date = date or datetime.now().strftime('%Y-%m-%d')
         
         self.score = {team1: 0, team2: 0}
         self.quarters_completed = 0
@@ -64,12 +71,12 @@ class NBA_Game(threading.Thread):
     def initialize_players(self):
         """Initialize player rosters for both teams"""
         # Team 1 players
-        roster1 = get_team_roster(self.team1_id) if self.team1_id else [f"{self.team1}Player{i}" for i in range(1, 16)]
+        roster1 = get_team_roster(self.team1_id) 
         for player_name in roster1:
             self.players[player_name] = Player(player_name, self.team1)
         
         # Team 2 players
-        roster2 = get_team_roster(self.team2_id) if self.team2_id else [f"{self.team2}Player{i}" for i in range(1, 16)]
+        roster2 = get_team_roster(self.team2_id) 
         for player_name in roster2:
             self.players[player_name] = Player(player_name, self.team2)
     
@@ -80,9 +87,10 @@ class NBA_Game(threading.Thread):
     
     def get_random_player(self, team):
         """Get a random player from a team"""
-        team_players = [p for p_name, p in self.players.items() if p.team == team]
+        team_players = [p for p in self.players.values() if p.team == team]
         return random.choice(team_players) if team_players else None
-    
+
+    # TODO: Implement player stats (fg, 3pt, ft)
     def simulate_quarter(self, quarter):
         """Simulate a quarter of basketball"""
         self.add_event(f"Quarter {quarter} started")
@@ -107,10 +115,11 @@ class NBA_Game(threading.Thread):
             )[0]
             
             if play_type == '2PT':
-                success = random.random() < 0.45  # 45% success rate
+                success = random.random() < player_stats[offense_player]['2p%']  
                 if success:
                     self.score[offense_team] += 2
                     offense_player.update_stat('points', 2)
+                    offense_player.update_stat('2pt', 1)
                     
                     # Possible assist
                     if random.random() < 0.6:  # 60% of made shots are assisted
@@ -134,10 +143,11 @@ class NBA_Game(threading.Thread):
                             self.add_event(f"{offense_player.name} misses a shot, offensive rebound by {rebounder.name}")
             
             elif play_type == '3PT':
-                success = random.random() < 0.35  # 35% success rate
+                success = random.random() < player_stats[offense_player]['3p%'] 
                 if success:
                     self.score[offense_team] += 3
                     offense_player.update_stat('points', 3)
+                    offense_player.update_stat('3pt', 1)
                     
                     # Possible assist
                     if random.random() < 0.8:  # 80% of 3PT are assisted
@@ -164,7 +174,7 @@ class NBA_Game(threading.Thread):
                 shots = random.randint(1, 3)
                 made = 0
                 for _ in range(shots):
-                    if random.random() < 0.75:  # 75% free throw success
+                    if random.random() < player_stats[offense_player]['ft%']:  # 75% free throw success
                         made += 1
                 
                 if made > 0:
@@ -174,6 +184,7 @@ class NBA_Game(threading.Thread):
                 self.add_event(f"{offense_player.name} makes {made} of {shots} free throws")
             
             elif play_type == 'TO':
+                offense_player.update_stat('turnovers')
                 self.add_event(f"{offense_player.name} turns the ball over to {defense_team}")
             
             elif play_type == 'STEAL':
@@ -184,7 +195,7 @@ class NBA_Game(threading.Thread):
                 defense_player.update_stat('blocks')
                 self.add_event(f"{defense_player.name} blocks {offense_player.name}'s shot")
             
-            # Short sleep to simulate real-time
+            # Short sleep
             time.sleep(0.05)
         
         self.add_event(f"Quarter {quarter} ended. Score: {self.team1} {self.score[self.team1]} - {self.team2} {self.score[self.team2]}")

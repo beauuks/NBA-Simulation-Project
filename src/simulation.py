@@ -10,6 +10,7 @@ from src.nba_classes import NBA_Game
 from src.stadium_ops import StadiumOperation
 from src.globals import NBA_TEAMS
 
+# TODO: Generate a more realistic schedule based in actual NBA scheduling logic
 def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82):
     """Generates a simplified, but more realistic NBA schedule with game IDs."""
 
