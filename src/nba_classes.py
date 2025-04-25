@@ -26,8 +26,8 @@ class Player:
         self.team = team
         self.stats = {
             'points': 0,
-            '2pt': 0,
-            '3pt': 0,
+            'two_pt': 0,
+            'three_pt': 0,
             'free_throws': 0,
             'turnovers': 0,
             'rebounds': 0,
@@ -90,7 +90,6 @@ class NBA_Game(threading.Thread):
         team_players = [p for p in self.players.values() if p.team == team]
         return random.choice(team_players) if team_players else None
 
-    # TODO: Implement player stats (fg, 3pt, ft)
     def simulate_quarter(self, quarter):
         """Simulate a quarter of basketball"""
         self.add_event(f"Quarter {quarter} started")
@@ -119,7 +118,7 @@ class NBA_Game(threading.Thread):
                 if success:
                     self.score[offense_team] += 2
                     offense_player.update_stat('points', 2)
-                    offense_player.update_stat('2pt', 1)
+                    offense_player.update_stat('two_pt', 1)
                     
                     # Possible assist
                     if random.random() < 0.6:  # 60% of made shots are assisted
@@ -147,7 +146,7 @@ class NBA_Game(threading.Thread):
                 if success:
                     self.score[offense_team] += 3
                     offense_player.update_stat('points', 3)
-                    offense_player.update_stat('3pt', 1)
+                    offense_player.update_stat('three_pt', 1)
                     
                     # Possible assist
                     if random.random() < 0.8:  # 80% of 3PT are assisted

@@ -4,7 +4,7 @@ from src.globals import game_results, game_lock, stats_queue, playoff_results, p
 from src.database import init_database, generate_stats_report
 from src.nba_classes import NBA_Game, Player
 from src.stadium_ops import StadiumOperation
-from src.simulation import generate_nba_schedule, simulate_parallel_games, simulate_conferences
+from src.regular_season import generate_nba_schedule, simulate_parallel_games, simulate_conferences
 from src.playoffs import determine_top_conference_teams, simulate_full_playoffs, generate_playoff_summary, create_playoff_bracket, create_realistic_playoff_schedule
 
 
