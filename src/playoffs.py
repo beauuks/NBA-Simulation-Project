@@ -1,34 +1,73 @@
 import random
 from datetime import datetime, timedelta
 import logging
+import sqlite3
 
 from src.nba_classes import NBA_Game
 from src.globals import NBA_TEAMS
 
+def get_win_percentage(team):
+    """Calculate the win percentage for a team."""
+    if team['wins'] + team['losses'] > 0:
+        return team['wins'] / (team['wins'] + team['losses'])
+    return 0.0
 
-def determine_top_conference_teams(teams, NBA_TEAMS):
+def determine_top_conference_teams(NBA_TEAMS):
     """Determine the top 8 teams from each conference."""
 
+    # get all games from the db
+    conn = sqlite3.connect('nba_simulation.db')
+    cursor = conn.cursor()
+
+    cursor.execute('SELECT team1, team2, winner FROM games')
+    games = cursor.fetchall()
+
+    eastern_teams = list(NBA_TEAMS.keys())[:15]
+    western_teams = list(NBA_TEAMS.keys())[15:]
+
+    # initialize team stats
+    team_stats = {}
+    for team_abbr, team_info in NBA_TEAMS.items():
+        conference = 'East' if team_abbr in eastern_teams else 'West'
+        team_stats[team_abbr] = {
+            'abbr': team_abbr,
+            'name': team_info['name'],
+            'arena': team_info['arena'],
+            'conference': conference,
+            'wins': 0,
+            'losses': 0
+        }
+
+    # calculate wins and losses for each team
+    for team1, team2, winner in games:
+        if team1 in team_stats and team2 in team_stats:
+            if winner == team1:
+                team_stats[team1]['wins'] += 1
+                team_stats[team2]['losses'] += 1
+            elif winner == team2:
+                team_stats[team2]['wins'] += 1
+                team_stats[team1]['losses'] += 1
+        else:
+            if team1 not in team_stats:
+                print(f"Team abbreviation {team1} not found in NBA_TEAMS dictionary")
+            if team2 not in team_stats:
+                print(f"Team abbreviation {team2} not found in NBA_TEAMS dictionary")
+
+    # Separate teams by conference
     east_teams = []
     west_teams = []
+    
+    for team_abbr, stats in team_stats.items():
+        if stats['wins'] + stats['losses'] > 0:  # Only include teams that played games
+            if stats['conference'] == 'East':
+                east_teams.append(stats)
+            elif stats['conference'] == 'West':
+                west_teams.append(stats)
 
-    for team in teams:
-        team_name = team['name']
-        if team_name in NBA_TEAMS:
-            conference = NBA_TEAMS[team_name]['conference']
-            if conference == 'East':
-                east_teams.append(team)
-            elif conference == 'West':
-                west_teams.append(team)
-        else:
-            print(f"team name {team_name} not found in NBA_TEAMS dictionary")
-
-    def get_win_percentage(team):
-        return team['wins'] / (team['wins'] + team['losses'])
-
+    # get top 8 teams for each conference
     top_east = sorted(east_teams, key=get_win_percentage, reverse=True)[:8]
     top_west = sorted(west_teams, key=get_win_percentage, reverse=True)[:8]
-
+    
     return top_east, top_west
 
 def create_playoff_bracket(east_teams, west_teams):

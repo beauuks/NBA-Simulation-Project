@@ -47,16 +47,16 @@ class Player:
         return result
     
 
-class NBA_Game(threading.Thread):
+class NBA_Game():
     def __init__(self, team1, team2, game_id, arena=None, date=None, team1_id=None, team2_id=None):
-        super().__init__(name=f"Game-{team1}-vs-{team2}")
         self.game_id = game_id
         self.team1 = team1
         self.team2 = team2
         self.team1_id = team1_id
         self.team2_id = team2_id
         self.arena = arena or f"{team1} Arena"
-        self.date = date or datetime.now().strftime('%Y-%m-%d')
+        self.date = date or datetime.datetime.now().strftime('%Y-%m-%d')
+        self.name = f"Game-{team1}-vs-{team2}"
         
         self.score = {team1: 0, team2: 0}
         self.quarters_completed = 0
@@ -113,8 +113,14 @@ class NBA_Game(threading.Thread):
                 weights=[0.45, 0.25, 0.10, 0.10, 0.05, 0.05]
             )[0]
             
+            default_stats = {"2p%": 0.45, "3p%": 0.35, "ft%": 0.75}
+
             if play_type == '2PT':
-                success = random.random() < player_stats[offense_player]['2p%']  
+                try:
+                    success = random.random() < player_stats[offense_player]['2p%']  
+                except KeyError:
+                    success = random.random() < default_stats['2p%']
+
                 if success:
                     self.score[offense_team] += 2
                     offense_player.update_stat('points', 2)
@@ -142,7 +148,10 @@ class NBA_Game(threading.Thread):
                             self.add_event(f"{offense_player.name} misses a shot, offensive rebound by {rebounder.name}")
             
             elif play_type == '3PT':
-                success = random.random() < player_stats[offense_player]['3p%'] 
+                try:
+                    success = random.random() < player_stats[offense_player]['3p%'] 
+                except KeyError:
+                    success = random.random() < default_stats['3p%']
                 if success:
                     self.score[offense_team] += 3
                     offense_player.update_stat('points', 3)

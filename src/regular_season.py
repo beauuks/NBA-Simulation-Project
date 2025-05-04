@@ -1,9 +1,7 @@
-import time
-import threading
 import logging
 import uuid
 from datetime import datetime, timedelta
-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed
 import random
 
 from src.nba_classes import NBA_Game
@@ -18,14 +16,16 @@ def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82
     game_date = season_start_date
     days_between_games = 2
 
-    for _ in range(num_games * len(teams) // 2):
+    total_games = num_games * len(teams) // 2
+
+    while len(schedule) < total_games:
         home_team = random.choice(teams)
         away_team = random.choice(teams)
 
         if home_team != away_team:
-            game_id = str(uuid.uuid4()) #Generate a unique ID
+            game_id = str(uuid.uuid4()) # unique ID for each game
             schedule.append({
-                "game_id": game_id, #add game id
+                "game_id": game_id, # add game id
                 "home": home_team["name"],
                 "away": away_team["name"],
                 "arena": home_team["arena"],
@@ -38,41 +38,57 @@ def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82
 def simulate_parallel_games(game_schedule):
     """Simulate multiple NBA games in parallel using thread pool"""
     with ThreadPoolExecutor(max_workers=len(game_schedule)) as executor:
-        futures = []
-        stadium_threads = []
+        all_futures = [] 
+        stadium_ops = [] 
 
-        for game in game_schedule: #loop through schedule dictionaries.
-            game_id = game["game_id"] #access game_id from dictionary.
+        for game in game_schedule: # loop through schedule dictionaries.
+            game_id = game["game_id"] # access game_id from dictionary.
             team1 = game["home"]
             team2 = game["away"]
             arena = game["arena"]
             game_date = game["date"]
-            team1_id = None #or get them from the dictionary if you added them
+            
+            # Find team IDs based on team names
+            team1_id = None
             team2_id = None
+            
+            # Look up the team IDs using the team names
+            for id, team_info in NBA_TEAMS.items():
+                if team_info["name"] == team1:
+                    team1_id = id
+                if team_info["name"] == team2:
+                    team2_id = id
 
-            # Start stadium operations first
+            # submit stadium ops
             security = StadiumOperation(game_id, arena, "security")
             concessions = StadiumOperation(game_id, arena, "concessions")
             merchandise = StadiumOperation(game_id, arena, "merchandise")
 
-            security.start()
-            concessions.start()
-            merchandise.start()
+            stadium_ops.extend([security, concessions, merchandise])
 
-            stadium_threads.extend([security, concessions, merchandise])
+            security_future = executor.submit(security.run)
+            concessions_future = executor.submit(concessions.run)
+            merchandise_future = executor.submit(merchandise.run)
 
-            # Create and start the game
+            # submit game
             game_instance = NBA_Game(team1, team2, game_id, arena, game_date, team1_id, team2_id)
-            futures.append(executor.submit(game_instance.run))
+            game_future = executor.submit(game_instance.run)
+
+            all_futures.append(game_future)
+
+            all_futures.extend([security_future, concessions_future, merchandise_future])
 
         # Wait for all games to complete
-        for future in futures:
-            future.result()
-
-        # Stop stadium operations
-        for thread in stadium_threads:
-            thread.stop_event.set()
-            thread.join(timeout=1.0)
+        # Use as_completed to process results as they finish and catch exceptions
+        for future in as_completed([f for f in all_futures]):
+            try:
+                future.result()  # This will raise any exception that occurred during execution
+            except Exception as e:
+                logging.error(f"Error in thread: {e}")
+                
+        # Signal all stadium operations to stop
+        for op in stadium_ops:
+            op.stop_event.set()
 
 def simulate_conferences(east_schedule, west_schedule):
     """Simulate eastern and western conference games using multiprocessing"""

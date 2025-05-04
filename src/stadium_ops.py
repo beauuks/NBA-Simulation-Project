@@ -6,9 +6,8 @@ import logging
 
 from src.database import save_stadium_ops_to_db
 
-class StadiumOperation(threading.Thread):
+class StadiumOperation():
     def __init__(self, game_id, arena_name, operation_type, capacity=18000):
-        super().__init__(name=f"{arena_name}-{operation_type}")
         self.game_id = game_id
         self.arena_name = arena_name
         self.operation_type = operation_type
@@ -17,6 +16,7 @@ class StadiumOperation(threading.Thread):
         self.processed_count = 0
         self.queue = queue.Queue()
         self.details = {}
+        self.name = f"{arena_name}-{operation_type}"
     
     def run(self):
         logging.info(f"Starting {self.operation_type} at {self.arena_name}")

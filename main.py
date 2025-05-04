@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     # regular season
     logging.info("Starting NBA regular season simulation")
-    all_games = generate_nba_schedule(num_games=82)
+    all_games = generate_nba_schedule(num_games=10)
 
     # TODO: Split games based on the actual teams in each conference
     # splitting games into eastern and western conferences
@@ -34,45 +34,9 @@ if __name__ == "__main__":
     
     simulate_conferences(eastern_games, western_games)
     generate_stats_report()
-    
-    # Determine top teams for playoffs (top 8 from each conference)
-    # TODO: doesn't the function determine_top_conference_teams() already do this?
-    teams_with_records = []
-    for game in game_results.values():
-        if game.get('team1') and game.get('winner'):
-            winner = game.get('winner')
-            loser = game.get('team2') if winner == game.get('team1') else game.get('team1')
 
-            team1_exists = False
-            team2_exists = False
-
-            for team_record in teams_with_records:
-                if team_record['name'] == game.get('team1'):
-                    team1_exists = True
-                    if winner == game.get('team1'):
-                        team_record['wins'] += 1
-                    else:
-                        team_record['losses'] += 1
-                if team_record['name'] == game.get('team2'):
-                    team2_exists = True
-                    if winner == game.get('team2'):
-                        team_record['wins'] += 1
-                    else:
-                        team_record['losses'] += 1
-
-            if not team1_exists:
-                if winner == game.get('team1'):
-                    teams_with_records.append({'name': game.get('team1'), 'wins': 1, 'losses': 0})
-                else:
-                    teams_with_records.append({'name': game.get('team1'), 'wins': 0, 'losses': 1})
-
-            if not team2_exists:
-                if winner == game.get('team2'):
-                    teams_with_records.append({'name': game.get('team2'), 'wins': 1, 'losses': 0})
-                else:
-                    teams_with_records.append({'name': game.get('team2'), 'wins': 0, 'losses': 1})
-
-    east_teams, west_teams = determine_top_conference_teams(teams_with_records, NBA_TEAMS)
+    # get top teams for the playoffs
+    east_teams, west_teams = determine_top_conference_teams(NBA_TEAMS)
 
     # Simulate Playoffs
     logging.info("\nStarting NBA Playoffs Simulation")

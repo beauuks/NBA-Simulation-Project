@@ -1,7 +1,6 @@
 import sqlite3
 import logging
 from datetime import datetime
-import json
 
 # Database functions
 def init_database():
@@ -13,7 +12,7 @@ def init_database():
         # games table
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS games (
-            id INTEGER PRIMARY KEY,
+            id TEXT PRIMARY KEY,
             team1 TEXT,
             team2 TEXT,
             score1 INTEGER,
@@ -28,7 +27,7 @@ def init_database():
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS player_stats (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            game_id INTEGER,
+            game_id TEXT,
             player_name TEXT,
             team TEXT,
             points INTEGER,
@@ -48,7 +47,7 @@ def init_database():
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS stadium_ops (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            game_id INTEGER,
+            game_id TEXT,
             arena TEXT,
             operation_type TEXT,
             processed_count INTEGER,
@@ -76,10 +75,10 @@ def save_game_to_db(game_id, result):
             # Insert game result
             cursor.execute(
                 "INSERT OR REPLACE INTO games VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (game_id, result['team1'], result['team2'], 
-                result['score1'], result['score2'], result['winner'],
-                result.get('arena', 'Unknown Arena'), 
-                result.get('date', datetime.now().strftime('%Y-%m-%d')))
+                (str(game_id), str(result['team1']), str(result['team2']), 
+                int(result['score1']), int(result['score2']), str(result['winner']),
+                str(result.get('arena', 'Unknown Arena')), 
+                str(result.get('date', datetime.now().strftime('%Y-%m-%d'))))
             )
             
             # insert player stats
@@ -87,8 +86,8 @@ def save_game_to_db(game_id, result):
                 for player, stats in result['player_stats'].items():
                     cursor.execute(
                         "INSERT INTO player_stats (game_id, player_name, team, points, two_pt, three_pt, free_throws, turnovers, rebounds, assists, steals, blocks) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                        (game_id, player, stats['team'], stats['points'], stats['two_pt'], stats['three_pt'], stats['free_throws'], 
-                        stats['turnovers'], stats['rebounds'], stats['assists'], stats['steals'], stats['blocks'])
+                        (str(game_id), str(player), str(stats['team']), int(stats['points']), int(stats['two_pt']), int(stats['three_pt']), int(stats['free_throws']), 
+                        int(stats['turnovers']), int(stats['rebounds']), int(stats['assists']), int(stats['steals']), int(stats['blocks']))
                     )
 
     except sqlite3.Error as e:
