@@ -117,7 +117,7 @@ class NBA_Game():
 
             if play_type == '2PT':
                 try:
-                    success = random.random() < player_stats[offense_player]['2p%']  
+                    success = random.random() < player_stats.get(offense_player.name, default_stats)['2p%']  
                 except KeyError:
                     success = random.random() < default_stats['2p%']
 
@@ -149,7 +149,7 @@ class NBA_Game():
             
             elif play_type == '3PT':
                 try:
-                    success = random.random() < player_stats[offense_player]['3p%'] 
+                    success = random.random() < player_stats.get(offense_player.name, default_stats)['3p%'] 
                 except KeyError:
                     success = random.random() < default_stats['3p%']
                 if success:
@@ -182,7 +182,7 @@ class NBA_Game():
                 shots = random.randint(1, 3)
                 made = 0
                 for _ in range(shots):
-                    if random.random() < player_stats[offense_player]['ft%']:  # 75% free throw success
+                    if random.random() < player_stats.get(offense_player.name, {}).get('ft%', 0.75):  # 75% free throw success
                         made += 1
                 
                 if made > 0:
