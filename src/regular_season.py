@@ -8,31 +8,88 @@ from src.nba_classes import NBA_Game
 from src.stadium_ops import StadiumOperation
 from src.globals import NBA_TEAMS
 
-def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82):
-    """Generates a simplified NBA schedule with game IDs."""
+#def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82):
+#    """Generates a simplified NBA schedule with game IDs."""
+#
+#    teams = list(NBA_TEAMS.values())
+#    schedule = []
+#    game_date = season_start_date
+#    days_between_games = 2
+#
+#    total_games = num_games * len(teams) // 2
+#
+#    while len(schedule) < total_games:
+#        home_team = random.choice(teams)
+#        away_team = random.choice(teams)
+#
+#        if home_team != away_team:
+#            game_id = str(uuid.uuid4()) # unique ID for each game
+#            schedule.append({
+#                "game_id": game_id, # add game id
+#                "home": home_team["name"],
+#                "away": away_team["name"],
+#                "arena": home_team["arena"],
+#                "date": game_date.strftime("%Y-%m-%d")
+#            })
+#            game_date += timedelta(days=days_between_games)
+#
+#    return schedule
 
+def generate_nba_schedule(season_start_date=datetime(2023, 10, 24), num_games=82):
     teams = list(NBA_TEAMS.values())
     schedule = []
     game_date = season_start_date
-    days_between_games = 2
-
-    total_games = num_games * len(teams) // 2
-
-    while len(schedule) < total_games:
-        home_team = random.choice(teams)
-        away_team = random.choice(teams)
-
-        if home_team != away_team:
-            game_id = str(uuid.uuid4()) # unique ID for each game
-            schedule.append({
-                "game_id": game_id, # add game id
-                "home": home_team["name"],
-                "away": away_team["name"],
-                "arena": home_team["arena"],
-                "date": game_date.strftime("%Y-%m-%d")
-            })
-            game_date += timedelta(days=days_between_games)
-
+    
+    # Track which teams are playing on which dates
+    team_schedule = {team["name"]: [] for team in teams}
+    arena_schedule = {team["arena"]: [] for team in teams}
+    
+    while len(schedule) < (num_games * len(teams) // 2):
+        # Reset availability for this date
+        available_home_teams = [team for team in teams 
+                               if game_date.strftime("%Y-%m-%d") not in team_schedule[team["name"]]
+                               and game_date.strftime("%Y-%m-%d") not in arena_schedule[team["arena"]]]
+        
+        if not available_home_teams:
+            # No available home teams today, move to next day
+            game_date += timedelta(days=1)
+            continue
+            
+        home_team = random.choice(available_home_teams)
+        
+        # Find available away teams (not playing today and not the home team)
+        available_away_teams = [team for team in teams 
+                               if game_date.strftime("%Y-%m-%d") not in team_schedule[team["name"]]
+                               and team["name"] != home_team["name"]]
+        
+        if not available_away_teams:
+            # No available away teams, move to next day
+            game_date += timedelta(days=1)
+            continue
+            
+        away_team = random.choice(available_away_teams)
+        
+        # Add game to schedule
+        game_id = str(uuid.uuid4())
+        date_str = game_date.strftime("%Y-%m-%d")
+        
+        schedule.append({
+            "game_id": game_id,
+            "home": home_team["name"],
+            "away": away_team["name"],
+            "arena": home_team["arena"],
+            "date": date_str
+        })
+        
+        # Update team and arena availability
+        team_schedule[home_team["name"]].append(date_str)
+        team_schedule[away_team["name"]].append(date_str)
+        arena_schedule[home_team["arena"]].append(date_str)
+        
+        # If we've scheduled several games today, move to next day
+        if sum(1 for game in schedule if game["date"] == date_str) >= len(teams) // 4:
+            game_date += timedelta(days=1)
+    
     return schedule
 
 def simulate_parallel_games(game_schedule):
