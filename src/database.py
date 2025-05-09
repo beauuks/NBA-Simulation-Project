@@ -1,6 +1,7 @@
 import sqlite3
 import logging
 from datetime import datetime
+import os
 
 # Database functions
 def init_database():
@@ -151,18 +152,22 @@ def save_playoffs_game_to_db(game_id, result):
                 conference = 'Eastern Conference'
                 if 'First Round' in series:
                     round_name = 'First Round'
-                elif 'Semifinals' in series:
-                    round_name = 'Semifinals'
-                else:
+                elif 'Conference Semifinals' in series:
+                    round_name = 'Conference Semifinals'
+                elif 'Conference Finals' in series:
                     round_name = 'Conference Finals'
+                else:
+                    round_name = 'NBA Finals'
             elif 'Western Conference' in series:
                 conference = 'Western Conference'
                 if 'First Round' in series:
                     round_name = 'First Round'
-                elif 'Semifinals' in series:
-                    round_name = 'Semifinals'
-                else:
+                elif 'Conference Semifinals' in series:
+                    round_name = 'Conference Semifinals'
+                elif 'Conference Finals' in series:
                     round_name = 'Conference Finals'
+                else:
+                    round_name = 'NBA Finals'
 
             # Insert playoff game result
             cursor.execute(
@@ -366,8 +371,7 @@ def generate_playoffs_report():
             os.makedirs(logs_dir)
         
         # Create a file handler for the playoffs stats log
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_filename = os.path.join(logs_dir, f"playoffs_stats_{timestamp}.log")
+        log_filename = os.path.join(logs_dir, f"playoffs_stats.log")
         file_handler = logging.FileHandler(log_filename)
         file_handler.setLevel(logging.INFO)
         
@@ -382,7 +386,6 @@ def generate_playoffs_report():
         # Store all log messages to display both to console and file
         report_messages = []
         report_messages.append("\n===== 🏆 NBA PLAYOFFS REPORT 🏆 =====")
-        report_messages.append(f"Report generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         
         with sqlite3.connect('nba_simulation.db') as conn:
             cursor = conn.cursor()
@@ -475,8 +478,6 @@ def generate_playoffs_report():
         # Remove the file handler after logging
         root_logger.removeHandler(file_handler)
         file_handler.close()
-        
-        logging.info(f"Playoffs stats report saved to {log_filename}")
 
     except sqlite3.Error as e:
         logging.error(f"Database error: {e}")
