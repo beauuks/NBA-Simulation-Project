@@ -93,12 +93,25 @@ class NBA_Game():
     def simulate_quarter(self, quarter):
         """Simulate a quarter of basketball"""
         self.add_event(f"Quarter {quarter} started")
-        
+
+        # home team advantage
+        home_shooting_boost = 0.03  # 3 percent better shooting
+        home_possession_advantage = 0.52  # 52 percent chance of getting possession vs 48
+        home_rebound_boost = 0.05  # 5 percent better rebounding at home
+    
+        home_team = self.team1
+        away_team = self.team2
+
         # Simulate possessions for this quarter
         possessions = random.randint(20, 30)
         for _ in range(possessions):
-            offense_team = random.choice([self.team1, self.team2])
-            defense_team = self.team2 if offense_team == self.team1 else self.team1
+            # home court possesion advantage
+            if random.random() < home_possession_advantage:
+                offense_team = home_team
+                defense_team = away_team
+            else:
+                offense_team = away_team
+                defense_team = home_team
             
             # Get random players for this play
             offense_player = self.get_random_player(offense_team)
@@ -107,19 +120,36 @@ class NBA_Game():
             if not offense_player or not defense_player:
                 continue
             
+            if offense_team == home_team:
+                # home team gets fewer turnovers
+                play_weights = [0.46, 0.26, 0.10, 0.08, 0.05, 0.05]  
+            else:
+                # Away team gets more turnovers
+                play_weights = [0.44, 0.24, 0.10, 0.12, 0.05, 0.05]  
+            
             # Simulate a possession
             play_type = random.choices(
                 ['2PT', '3PT', 'FT', 'TO', 'STEAL', 'BLOCK'], 
-                weights=[0.45, 0.25, 0.10, 0.10, 0.05, 0.05]
+                weights=play_weights
             )[0]
             
             default_stats = {"2p%": 0.45, "3p%": 0.35, "ft%": 0.75}
 
             if play_type == '2PT':
                 try:
-                    success = random.random() < player_stats.get(offense_player.name, default_stats)['2p%']  
+                    base_percentage = player_stats.get(offense_player.name, default_stats)['2p%']
+                    # home court advantage 
+                    if offense_team == home_team:
+                        success_chance = base_percentage + home_shooting_boost
+                    else:
+                        success_chance = base_percentage
+                    success = random.random() < success_chance
                 except KeyError:
-                    success = random.random() < default_stats['2p%']
+                    # apply home court advantage to default percentage
+                    if offense_team == home_team:
+                        success = random.random() < (default_stats['2p%'] + home_shooting_boost)
+                    else:
+                        success = random.random() < default_stats['2p%']
 
                 if success:
                     self.score[offense_team] += 2
@@ -135,8 +165,16 @@ class NBA_Game():
                     else:
                         self.add_event(f"{offense_player.name} scores 2 points")
                 else:
-                    # Rebound opportunity
-                    if random.random() < 0.7:  # 70% defensive rebounds
+                    # Rebound opportunity with home court advantage
+                    rebound_defensive_chance = 0.7  # Base 70 percent defensive rebound chance (based on stats)
+                    
+                    # chance based on home/away status
+                    if defense_team == home_team:
+                        rebound_defensive_chance += home_rebound_boost  # Home defense gets rebound boost
+                    else:
+                        rebound_defensive_chance -= home_rebound_boost  # Away defense gets rebound penalty
+                    
+                    if random.random() < rebound_defensive_chance:
                         rebounder = self.get_random_player(defense_team)
                         if rebounder:
                             rebounder.update_stat('rebounds')
@@ -146,12 +184,23 @@ class NBA_Game():
                         if rebounder:
                             rebounder.update_stat('rebounds')
                             self.add_event(f"{offense_player.name} misses a shot, offensive rebound by {rebounder.name}")
-            
+                
             elif play_type == '3PT':
                 try:
-                    success = random.random() < player_stats.get(offense_player.name, default_stats)['3p%'] 
+                    base_percentage = player_stats.get(offense_player.name, default_stats)['3p%']
+                    # home court advantage 
+                    if offense_team == home_team:
+                        success_chance = base_percentage + home_shooting_boost
+                    else:
+                        success_chance = base_percentage
+                    success = random.random() < success_chance
                 except KeyError:
-                    success = random.random() < default_stats['3p%']
+                    # home court advantage + default percentage
+                    if offense_team == home_team:
+                        success = random.random() < (default_stats['3p%'] + home_shooting_boost)
+                    else:
+                        success = random.random() < default_stats['3p%']
+
                 if success:
                     self.score[offense_team] += 3
                     offense_player.update_stat('points', 3)
@@ -182,7 +231,14 @@ class NBA_Game():
                 shots = random.randint(1, 3)
                 made = 0
                 for _ in range(shots):
-                    if random.random() < player_stats.get(offense_player.name, {}).get('ft%', 0.75):  # 75% free throw success
+                    base_ft_percentage = player_stats.get(offense_player.name, {}).get('ft%', 0.75)
+                    # smaller home court advantage for free throws (half the boost)
+                    if offense_team == home_team:
+                        ft_success_chance = base_ft_percentage + (home_shooting_boost/2) 
+                    else:
+                        ft_success_chance = base_ft_percentage
+                        
+                    if random.random() < ft_success_chance:
                         made += 1
                 
                 if made > 0:
