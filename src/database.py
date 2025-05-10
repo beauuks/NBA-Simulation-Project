@@ -144,31 +144,12 @@ def save_playoffs_game_to_db(game_id, result):
             series = result.get('series', '')
             game_number = result.get('game_number', 0)
             
-            # Determine conference and round from series name
-            conference = 'NBA Finals'
-            round_name = 'Finals'
-            
-            if 'Eastern Conference' in series:
-                conference = 'Eastern Conference'
-                if 'First Round' in series:
-                    round_name = 'First Round'
-                elif 'Conference Semifinals' in series:
-                    round_name = 'Conference Semifinals'
-                elif 'Conference Finals' in series:
-                    round_name = 'Conference Finals'
-                else:
-                    round_name = 'NBA Finals'
-            elif 'Western Conference' in series:
-                conference = 'Western Conference'
-                if 'First Round' in series:
-                    round_name = 'First Round'
-                elif 'Conference Semifinals' in series:
-                    round_name = 'Conference Semifinals'
-                elif 'Conference Finals' in series:
-                    round_name = 'Conference Finals'
-                else:
-                    round_name = 'NBA Finals'
+            # Determine conference and round 
+            conference = result.get('conference', 'NBA Finals')
+            round_name = result.get('round', 'First Round')
 
+            logging.info(f"Saving playoff game: {game_id}, Series: {series}, Round: {round_name}")
+            
             # Insert playoff game result
             cursor.execute(
                 "INSERT OR REPLACE INTO playoffs_games VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
@@ -284,8 +265,7 @@ def generate_stats_report():
             os.makedirs(logs_dir)
         
         # Create a file handler for the stats report
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_filename = os.path.join(logs_dir, f"regular_season_stats_{timestamp}.log")
+        log_filename = os.path.join(logs_dir, f"regular_season_stats.log")
         file_handler = logging.FileHandler(log_filename)
         file_handler.setLevel(logging.INFO)
         
@@ -300,7 +280,6 @@ def generate_stats_report():
         # Store all log messages to display both to console and file
         report_messages = []
         report_messages.append("\n===== NBA SIMULATION STATS REPORT =====")
-        report_messages.append(f"Report generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         
         with sqlite3.connect('nba_simulation.db') as conn:
             cursor = conn.cursor()
@@ -354,8 +333,6 @@ def generate_stats_report():
         # Remove the file handler after logging
         root_logger.removeHandler(file_handler)
         file_handler.close()
-        
-        logging.info(f"Regular season stats report saved to {log_filename}")
 
     except sqlite3.Error as e:
         logging.error(f"Database error: {e}")

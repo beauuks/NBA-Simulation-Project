@@ -67,11 +67,11 @@ def create_playoff_bracket():
     # Log the seeding for debugging
     logging.info("Eastern Conference Playoff Teams (1-8):")
     for i, team in enumerate(top_east):
-        logging.info(f"{i+1}. {team['name']} ({team['wins']}-{team['losses']})")
+        logging.info(f"{i+1}. {team['name']} (wins: {team['wins']} - losses: {team['losses']})")
         
     logging.info("Western Conference Playoff Teams (1-8):")
     for i, team in enumerate(top_west):
-        logging.info(f"{i+1}. {team['name']} ({team['wins']}-{team['losses']})")
+        logging.info(f"{i+1}. {team['name']} (wins: {team['wins']} - losses: {team['losses']})")
     
     # Create matchups - standard NBA playoff format (1v8, 2v7, 3v6, 4v5)
     east_matchups = [
@@ -243,6 +243,37 @@ def simulate_game_with_stadium_ops(game):
         result['series'] = game['series']
         result['game_number'] = game['game_num']
         
+        series_name = game['series']
+        
+        # Default values
+        conference = "NBA Finals"
+        round_name = "Finals"
+        
+        # Determine the round and conference based on the series name
+        if "NBA Finals" in series_name:
+            conference = "NBA Finals"
+            round_name = "Finals"
+        elif "Eastern Conference" in series_name:
+            conference = "Eastern Conference"
+            if "First Round" in series_name:
+                round_name = "First Round"
+            elif "Conference Semifinals" in series_name:
+                round_name = "Semifinals"
+            elif "Conference Finals" in series_name:
+                round_name = "Conference Finals"
+        elif "Western Conference" in series_name:
+            conference = "Western Conference"
+            if "First Round" in series_name:
+                round_name = "First Round"
+            elif "Conference Semifinals" in series_name:
+                round_name = "Semifinals"
+            elif "Conference Finals" in series_name:
+                round_name = "Conference Finals"
+            
+        # Add explicit round information
+        result['round'] = round_name
+        result['conference'] = conference
+        
         # Save to playoffs database
         save_playoffs_game_to_db(game['game_id'], result)
         
@@ -385,15 +416,15 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
     logging.info(f"East winners: {east_winners}")
     logging.info(f"West winners: {west_winners}")
     
-    # Create second round matchups - ensure we have exactly 4 winners per conference
+    # ensure we have exactly 4 winners per conference
     if len(east_winners) != 4:
         logging.error(f"Incorrect number of Eastern Conference winners: {len(east_winners)}")
     
     if len(west_winners) != 4:
         logging.error(f"Incorrect number of Western Conference winners: {len(west_winners)}")
-    
-    # Create semifinal matchups with proper seeding (1vs4, 2vs3)
-    # For simplicity, using the order they appear in the winners list
+
+    # Second round 
+    # Create conference semifinal matchups 
     conf_semifinals = {
         'Eastern Conference': [
             (east_winners[0], east_winners[3]), 
@@ -452,6 +483,7 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
         logging.error(f"Incorrect number of Western Conference semifinal winners: {len(west_semifinal_winners)}")
         west_semifinal_winners = ["Los Angeles Lakers", "Denver Nuggets"][:2]
     
+    # Third round 
     # Create conference finals matchups
     conf_finals = {
         'Eastern Conference': [(east_semifinal_winners[0], east_semifinal_winners[1])],
@@ -496,6 +528,7 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
     
     logging.info(f"NBA Finals Teams: {east_winner} (East) vs {west_winner} (West)")
     
+    # final round
     # Create NBA Finals matchup
     finals = {
         'NBA Finals': [(east_winner, west_winner)]
