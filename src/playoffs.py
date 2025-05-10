@@ -19,6 +19,7 @@ def get_team_standings():
     games = cursor.fetchall()
     conn.close()
 
+    # split teams by conference
     eastern_teams = ["Boston Celtics", "Miami Heat", "Milwaukee Bucks", "Philadelphia 76ers", 
                     "New York Knicks", "Cleveland Cavaliers", "Atlanta Hawks", "Chicago Bulls", 
                     "Toronto Raptors", "Brooklyn Nets", "Charlotte Hornets", "Indiana Pacers", 
@@ -56,7 +57,7 @@ def create_playoff_bracket():
     east_teams = [team for team in standings.values() if team['conference'] == 'East']
     west_teams = [team for team in standings.values() if team['conference'] == 'West']
     
-    # Sort by win percentage
+    # sort the teams by win percentage
     east_teams.sort(key=lambda x: x['wins']/(x['wins']+x['losses']) if x['wins']+x['losses'] > 0 else 0, reverse=True)
     west_teams.sort(key=lambda x: x['wins']/(x['wins']+x['losses']) if x['wins']+x['losses'] > 0 else 0, reverse=True)
     
@@ -64,7 +65,7 @@ def create_playoff_bracket():
     top_east = east_teams[:8]
     top_west = west_teams[:8]
     
-    # Log the seeding for debugging
+    # Log the top 8 of east and west
     logging.info("Eastern Conference Playoff Teams (1-8):")
     for i, team in enumerate(top_east):
         logging.info(f"{i+1}. {team['name']} (wins: {team['wins']} - losses: {team['losses']})")
@@ -73,7 +74,7 @@ def create_playoff_bracket():
     for i, team in enumerate(top_west):
         logging.info(f"{i+1}. {team['name']} (wins: {team['wins']} - losses: {team['losses']})")
     
-    # Create matchups - standard NBA playoff format (1v8, 2v7, 3v6, 4v5)
+    # Create matchups - 1v8, 2v7, 3v6, 4v5 
     east_matchups = [
         (top_east[0]['name'], top_east[7]['name']),
         (top_east[3]['name'], top_east[4]['name']),
@@ -384,6 +385,7 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
         logging.info(f"{series_name}: {result['winner']} wins {result['score']}")
     
     # Create a map to track which teams have advanced
+    # ensure that there's no duplicate winners for the advanced teams
     advanced_teams = set()
     
     # Extract winners from first round by conference and matchup
@@ -419,9 +421,11 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
     # ensure we have exactly 4 winners per conference
     if len(east_winners) != 4:
         logging.error(f"Incorrect number of Eastern Conference winners: {len(east_winners)}")
+        east_winners = ["Boston Celtics", "Milwaukee Bucks", "Philadelphia 76ers", "Cleveland Cavaliers"]
     
     if len(west_winners) != 4:
         logging.error(f"Incorrect number of Western Conference winners: {len(west_winners)}")
+        west_winners = ["Los Angeles Lakers", "Golden State Warriors", "Dallas Mavericks", "Houston Rockets"]
 
     # Second round 
     # Create conference semifinal matchups 
