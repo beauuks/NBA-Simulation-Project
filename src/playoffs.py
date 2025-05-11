@@ -110,94 +110,89 @@ def generate_playoff_schedule(playoff_bracket, start_date=datetime(2024, 4, 20))
     
     # Determine which round we're scheduling based on the bracket structure
     if "NBA Finals" in playoff_bracket:
-        rounds = [{"name": "NBA Finals", "matchups": {"NBA Finals": playoff_bracket["NBA Finals"]}}]
+        round_name = "NBA Finals"
+        round_data = playoff_bracket
         round_index = 3
-    elif any("Conference Finals" in key for key in playoff_bracket.keys()):
-        rounds = []
-        for conference in ["Eastern Conference", "Western Conference"]:
-            if conference in playoff_bracket:
-                rounds.append({"name": "Conference Finals", "matchups": {conference: playoff_bracket[conference]}})
+    elif any(("Conference Finals" in key) for key in playoff_bracket.keys()):
+        round_name = "Conference Finals"
+        round_data = playoff_bracket
         round_index = 2
-    elif any("Conference Semifinals" in key for key in playoff_bracket.keys()):
-        rounds = []
-        for conference in ["Eastern Conference", "Western Conference"]:
-            if conference in playoff_bracket:
-                rounds.append({"name": "Conference Semifinals", "matchups": {conference: playoff_bracket[conference]}})
+    elif any(("Conference Semifinals" in key) for key in playoff_bracket.keys()):
+        round_name = "Conference Semifinals"
+        round_data = playoff_bracket
         round_index = 1
     else:
         # Standard first round format from create_playoff_bracket
-        rounds = [{"name": "First Round", "matchups": playoff_bracket}]
+        round_name = "First Round"
+        round_data = playoff_bracket 
         round_index = 0
     
-    # Process each round
-    for round_data in rounds:
-        round_name = round_data["name"]
+    # Process the round
+    for conference, matchups in round_data.items():
+        # For NBA Finals, the conference is just "NBA Finals"
+        conf_short = "NBA" if conference == "NBA Finals" else conference.split()[0]
         
-        for conference, matchups in round_data["matchups"].items():
-            # For NBA Finals, the conference is just "NBA Finals"
-            conf_short = "NBA" if conference == "NBA Finals" else conference.split()[0]
+        # Round prefix for game_id
+        round_prefix = {
+            0: "R1",  # First Round
+            1: "SF",  # Conference Semifinals
+            2: "CF",  # Conference Finals
+            3: "F"    # NBA Finals
+        }[round_index]
+        
+        for i, (team1, team2) in enumerate(matchups):
+            # Find team IDs and arenas
+            team1_info = next(info for info in NBA_TEAMS.values() if info['name'] == team1)
+            team2_info = next(info for info in NBA_TEAMS.values() if info['name'] == team2)
             
-            # Round prefix for game_id
-            round_prefix = {
-                0: "R1",  # First Round
-                1: "SF",  # Conference Semifinals
-                2: "CF",  # Conference Finals
-                3: "F"    # NBA Finals
-            }[round_index]
+            # Alternate home court - higher seed gets games 1, 2, 5, 7
+            home_games = [0, 1, 4, 6]  # Games 1, 2, 5, 7 at home court
             
-            for i, (team1, team2) in enumerate(matchups):
-                # Find team IDs and arenas
-                team1_info = next(info for info in NBA_TEAMS.values() if info['name'] == team1)
-                team2_info = next(info for info in NBA_TEAMS.values() if info['name'] == team2)
+            # Schedule all potential games in the series
+            for game_num in range(1, series_games + 1):
+                home_team = team1 if game_num - 1 in home_games else team2
+                away_team = team2 if home_team == team1 else team1
+                arena = team1_info['arena'] if home_team == team1 else team2_info['arena']
                 
-                # Alternate home court - higher seed gets games 1, 2, 5, 7
-                home_games = [0, 1, 4, 6]  # Games 1, 2, 5, 7 at home court
+                # Create appropriate game_id based on the round
+                if round_name == "NBA Finals":
+                    game_id = f"F-G{game_num}"
+                    series_desc = f"NBA Finals: {team1} vs {team2}"
+                else:
+                    game_id = f"{conf_short}-{round_prefix}-{i+1}-G{game_num}"
+                    series_desc = f"{conf_short} {round_name}: {team1} vs {team2}"
                 
-                # Schedule all potential games in the series
-                for game_num in range(1, series_games + 1):
-                    home_team = team1 if game_num - 1 in home_games else team2
-                    away_team = team2 if home_team == team1 else team1
-                    arena = team1_info['arena'] if home_team == team1 else team2_info['arena']
-                    
-                    # Create appropriate game_id based on the round
-                    if round_name == "NBA Finals":
-                        game_id = f"F-G{game_num}"
-                        series_desc = f"NBA Finals: {team1} vs {team2}"
-                    else:
-                        game_id = f"{conf_short}-{round_prefix}-{i+1}-G{game_num}"
-                        series_desc = f"{conference} {round_name}: {team1} vs {team2}"
-                    
-                    schedule.append({
-                        'game_id': game_id,
-                        'home': home_team,
-                        'away': away_team,
-                        'arena': arena,
-                        'date': current_date.strftime('%Y-%m-%d'),
-                        'series': series_desc,
-                        'game_num': game_num,
-                        'must_win': False  # Will be updated during simulation
-                    })
-                    
-                    # Add spacing between games (more rest in later rounds)
-                    days_between = {
-                        0: [1, 2],       # 1-2 days in first round
-                        1: [2, 2],       # 2 days in semifinals
-                        2: [2, 3],       # 2-3 days in conference finals
-                        3: [2, 3]        # 2-3 days in NBA finals
-                    }[round_index]
-                    
-                    current_date += timedelta(days=random.choice(days_between))
+                schedule.append({
+                    'game_id': game_id,
+                    'home': home_team,
+                    'away': away_team,
+                    'arena': arena,
+                    'date': current_date,
+                    'series': series_desc,
+                    'game_num': game_num,
+                    'must_win': False  # Will be updated during simulation
+                })
                 
-                # Add break between series (longer breaks in later rounds)
-                series_break = {
-                    0: 2,  # 2 days after first round series
-                    1: 3,  # 3 days after semifinals series
-                    2: 4,  # 4 days after conference finals
-                    3: 0   # No break after finals
+                # Add spacing between games (more rest in later rounds)
+                days_between = {
+                    0: [1, 2],       # 1-2 days in first round
+                    1: [2, 2],       # 2 days in semifinals
+                    2: [2, 3],       # 2-3 days in conference finals
+                    3: [2, 3]        # 2-3 days in NBA finals
                 }[round_index]
                 
-                current_date += timedelta(days=series_break)
-    
+                current_date += timedelta(days=random.choice(days_between))
+            
+            # Add break between series (longer breaks in later rounds)
+            series_break = {
+                0: 2,  # 2 days after first round series
+                1: 3,  # 3 days after semifinals series
+                2: 4,  # 4 days after conference finals
+                3: 0   # No break after finals
+            }[round_index]
+            
+            current_date += timedelta(days=series_break)
+
     return schedule
 
 def simulate_game_with_stadium_ops(game):
@@ -292,12 +287,21 @@ def simulate_playoff_series(series_schedule):
     """Simulate a playoff series based on the schedule"""
     series_results = {}
     
+    if not series_schedule:
+        logging.error("No games in the series schedule!")
+        return {}
+    
     # Group games by series
     series_games = {}
     for game in series_schedule:
         if game['series'] not in series_games:
             series_games[game['series']] = []
         series_games[game['series']].append(game)
+    
+    # Check if we have any series to simulate
+    if not series_games:
+        logging.error("No series found in the schedule!")
+        return {}
     
     # Simulate each series - series will run in parallel, but games within a series are sequential
     with ThreadPoolExecutor(max_workers=len(series_games)) as executor:
@@ -430,11 +434,11 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
     # Second round 
     # Create conference semifinal matchups 
     conf_semifinals = {
-        'Eastern Conference': [
+        'Eastern Conference Semifinals': [
             (east_winners[0], east_winners[3]), 
             (east_winners[1], east_winners[2])
         ],
-        'Western Conference': [
+        'Western Conference Semifinals': [
             (west_winners[0], west_winners[3]), 
             (west_winners[1], west_winners[2])
         ]
@@ -490,8 +494,8 @@ def simulate_playoffs(start_date=datetime(2024, 4, 20)):
     # Third round 
     # Create conference finals matchups
     conf_finals = {
-        'Eastern Conference': [(east_semifinal_winners[0], east_semifinal_winners[1])],
-        'Western Conference': [(west_semifinal_winners[0], west_semifinal_winners[1])]
+        'Eastern Conference Finals': [(east_semifinal_winners[0], east_semifinal_winners[1])],
+        'Western Conference Finals': [(west_semifinal_winners[0], west_semifinal_winners[1])]
     }
     
     logging.info("Conference Finals Matchups:")
