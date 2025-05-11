@@ -73,8 +73,27 @@ def init_database():
             team2_wins INTEGER,
             winner TEXT,
             conference TEXT,
-            round TEXT,
-            year INTEGER
+            round TEXT
+        )
+        ''')
+
+        # playoffs player stats table
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS playoffs_player_stats (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            game_id TEXT,
+            player_name TEXT,
+            team TEXT,
+            points INTEGER,
+            two_pt INTEGER,
+            three_pt INTEGER,
+            free_throws INTEGER,
+            turnovers INTEGER,
+            rebounds INTEGER,
+            assists INTEGER,
+            steals INTEGER,
+            blocks INTEGER,
+            FOREIGN KEY (game_id) REFERENCES games (id)
         )
         ''')
 
@@ -171,8 +190,8 @@ def save_playoffs_game_to_db(game_id, result):
             
             # Update or insert series information
             cursor.execute(
-                "SELECT id, team1_wins, team2_wins FROM playoffs_series WHERE series_name = ? AND year = ?",
-                (series, datetime.now().year)
+                "SELECT id, team1_wins, team2_wins FROM playoffs_series WHERE series_name = ?",
+                (series,)
             )
             existing_series = cursor.fetchone()
             
@@ -205,7 +224,7 @@ def save_playoffs_game_to_db(game_id, result):
                 )
             else:
                 cursor.execute(
-                    "INSERT INTO playoffs_series (series_name, team1, team2, team1_wins, team2_wins, winner, conference, round, year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    "INSERT INTO playoffs_series (series_name, team1, team2, team1_wins, team2_wins, winner, conference, round) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
                     (
                         series, 
                         result['team1'], 
@@ -214,8 +233,7 @@ def save_playoffs_game_to_db(game_id, result):
                         team2_wins, 
                         series_winner,
                         conference,
-                        round_name,
-                        datetime.now().year
+                        round_name
                     )
                 )
             
@@ -223,7 +241,7 @@ def save_playoffs_game_to_db(game_id, result):
             if 'player_stats' in result:
                 for player, stats in result['player_stats'].items():
                     cursor.execute(
-                        "INSERT INTO player_stats (game_id, player_name, team, points, two_pt, three_pt, free_throws, turnovers, rebounds, assists, steals, blocks) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        "INSERT INTO playoffs_player_stats (game_id, player_name, team, points, two_pt, three_pt, free_throws, turnovers, rebounds, assists, steals, blocks) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                         (str(game_id), str(player), str(stats['team']), int(stats['points']), int(stats['two_pt']), int(stats['three_pt']), int(stats['free_throws']), 
                         int(stats['turnovers']), int(stats['rebounds']), int(stats['assists']), int(stats['steals']), int(stats['blocks']))
                     )
@@ -371,24 +389,29 @@ def generate_playoffs_report():
             cursor.execute('''
             SELECT series_name, team1, team2, team1_wins, team2_wins, winner, conference, round
             FROM playoffs_series
-            WHERE year = ?
             ORDER BY 
                 CASE round
                     WHEN 'First Round' THEN 1
-                    WHEN 'Semifinals' THEN 2
+                    WHEN 'Conference Semifinals' THEN 2
                     WHEN 'Conference Finals' THEN 3
                     WHEN 'Finals' THEN 4
+                    ELSE 5
                 END,
-                conference
-            ''', (datetime.now().year,))
+                CASE conference
+                    WHEN conference LIKE 'Eastern%' THEN 1
+                    WHEN conference LIKE 'Western%' THEN 2
+                    WHEN conference = 'NBA Finals' THEN 3
+                    ELSE 4
+                END
+            ''')
             
             series = cursor.fetchall()
             
             # Get champion info if available
             cursor.execute('''
             SELECT winner FROM playoffs_series 
-            WHERE round = 'Finals' AND winner IS NOT NULL AND year = ?
-            ''', (datetime.now().year,))
+            WHERE round = 'Finals' AND winner IS NOT NULL
+            ''')
             
             champion = cursor.fetchone()
             
@@ -419,10 +442,9 @@ def generate_playoffs_report():
             
             # Get top playoff scorers
             cursor.execute('''
-            SELECT ps.player_name, SUM(ps.points) as total_points
-            FROM player_stats ps
-            JOIN playoffs_games pg ON ps.game_id = pg.id
-            GROUP BY ps.player_name
+            SELECT player_name, SUM(points) as total_points
+            FROM playoffs_player_stats
+            GROUP BY player_name
             ORDER BY total_points DESC
             LIMIT 10
             ''')
@@ -444,7 +466,7 @@ def generate_playoffs_report():
             report_messages.append("\nHIGHEST SCORING PLAYOFF GAMES:")
             for i, (team1, team2, score1, score2, winner, date) in enumerate(high_scoring_games, 1):
                 total_score = score1 + score2
-                report_messages.append(f"{i}. {team1} {score1} - {team2} {score2} ({total_score} pts total) on {date}, Winner: {winner}")
+                report_messages.append(f"{i}. {team1} {score1} - {team2} {score2} ({total_score} pts total), Winner: {winner}")
             
             report_messages.append("\n===================================")
             
