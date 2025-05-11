@@ -5,7 +5,7 @@ import logging
 import datetime
 import json
 
-from src.globals import game_lock, game_results, NBA_PLAYERS
+from src.globals import game_lock, game_results, playoff_results, NBA_PLAYERS
 from src.database import save_game_to_db
 
 # load player stats from JSON file
@@ -290,22 +290,40 @@ class NBA_Game():
         # Prepare player stats
         player_stats = {player.name: player.get_stats_dict() for player in self.players.values()}
         
+        # Determine if this is a playoff game by looking at the game_id format
+        is_playoff_game = any(prefix in self.game_id for prefix in ["R1-", "SF-", "CF-", "F-"])
+        
         # Store game results safely
         with game_lock:
-            game_results[self.game_id] = {
-                'team1': self.team1,
-                'team2': self.team2,
-                'score1': self.score[self.team1],
-                'score2': self.score[self.team2],
-                'winner': winner,
-                'events': self.events,
-                'arena': self.arena,
-                'date': self.date,
-                'player_stats': player_stats
-            }
-        
-        # Save to database
-        save_game_to_db(self.game_id, game_results[self.game_id])
+            if is_playoff_game:
+                # Store in playoff_results for playoff games
+                playoff_results[self.game_id] = {
+                    'team1': self.team1,
+                    'team2': self.team2,
+                    'score1': self.score[self.team1],
+                    'score2': self.score[self.team2],
+                    'winner': winner,
+                    'events': self.events,
+                    'arena': self.arena,
+                    'date': self.date,
+                    'player_stats': player_stats
+                }
+                # Don't call save_game_to_db here, it will be called from simulate_game_with_stadium_ops
+            else:
+                # Regular season - use game_results and save to db
+                game_results[self.game_id] = {
+                    'team1': self.team1,
+                    'team2': self.team2,
+                    'score1': self.score[self.team1],
+                    'score2': self.score[self.team2],
+                    'winner': winner,
+                    'events': self.events,
+                    'arena': self.arena,
+                    'date': self.date,
+                    'player_stats': player_stats
+                }
+                # Save regular season games to database immediately
+                save_game_to_db(self.game_id, game_results[self.game_id])
         
         # Signal that the game has ended
         self.game_ended.set()

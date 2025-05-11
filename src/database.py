@@ -188,55 +188,6 @@ def save_playoffs_game_to_db(game_id, result):
                 )
             )
             
-            # Update or insert series information
-            cursor.execute(
-                "SELECT id, team1_wins, team2_wins FROM playoffs_series WHERE series_name = ?",
-                (series,)
-            )
-            existing_series = cursor.fetchone()
-            
-            team1_wins = 0
-            team2_wins = 0
-            
-            # Count wins in this series
-            cursor.execute(
-                "SELECT winner, COUNT(*) FROM playoffs_games WHERE series = ? GROUP BY winner",
-                (series,)
-            )
-            for winner, count in cursor.fetchall():
-                if winner == result['team1']:
-                    team1_wins = count
-                elif winner == result['team2']:
-                    team2_wins = count
-            
-            # Determine winner if applicable
-            series_winner = None
-            if team1_wins >= 4:
-                series_winner = result['team1']
-            elif team2_wins >= 4:
-                series_winner = result['team2']
-            
-            # Update or insert series record
-            if existing_series:
-                cursor.execute(
-                    "UPDATE playoffs_series SET team1_wins = ?, team2_wins = ?, winner = ? WHERE id = ?",
-                    (team1_wins, team2_wins, series_winner, existing_series[0])
-                )
-            else:
-                cursor.execute(
-                    "INSERT INTO playoffs_series (series_name, team1, team2, team1_wins, team2_wins, winner, conference, round) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                    (
-                        series, 
-                        result['team1'], 
-                        result['team2'], 
-                        team1_wins, 
-                        team2_wins, 
-                        series_winner,
-                        conference,
-                        round_name
-                    )
-                )
-            
             # Insert player stats
             if 'player_stats' in result:
                 for player, stats in result['player_stats'].items():
@@ -255,6 +206,38 @@ def save_playoffs_game_to_db(game_id, result):
         logging.error(f"An unexpected error occurred while saving playoff game to database: {e}")
         raise
 
+def save_playoff_series_to_db(series_name, team1, team2, team1_wins, team2_wins, winner, conference, round_name):
+    """Save playoff series results to database"""
+    try:
+        with sqlite3.connect('nba_simulation.db') as conn:
+            cursor = conn.cursor()
+            
+            # Check if series already exists
+            cursor.execute(
+                "SELECT id FROM playoffs_series WHERE series_name = ?",
+                (series_name,)
+            )
+            existing_series = cursor.fetchone()
+            
+            # Update or insert series record
+            if existing_series:
+                cursor.execute(
+                    "UPDATE playoffs_series SET team1_wins = ?, team2_wins = ?, winner = ? WHERE series_name = ?",
+                    (team1_wins, team2_wins, winner, series_name)
+                )
+            else:
+                cursor.execute(
+                    "INSERT INTO playoffs_series (series_name, team1, team2, team1_wins, team2_wins, winner, conference, round) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+                    (series_name, team1, team2, team1_wins, team2_wins, winner, conference, round_name)
+                )
+            
+            conn.commit()
+            logging.info(f"Series result saved: {series_name} - {winner} wins {team1_wins}-{team2_wins}")
+
+    except sqlite3.Error as e:
+        logging.error(f"Database error while saving playoff series: {e}")
+    except Exception as e:
+        logging.error(f"An unexpected error occurred while saving playoff series to database: {e}")
 
 def save_stadium_ops_to_db(game_id, arena, operation_type, processed_count, details=None):
     """Save stadium operations data to database"""
@@ -419,26 +402,67 @@ def generate_playoffs_report():
                 report_messages.append(f"\nNBA CHAMPION: {champion[0]}")
             
             report_messages.append("\nPLAYOFF SERIES RESULTS:")
-            current_round = None
-            current_conference = None
             
+            conference_series = {}  # {conf: [series_data]}
+            
+            # First, group by round and conference
             for s_name, t1, t2, t1_wins, t2_wins, winner, conf, round_name in series:
-                if round_name != current_round:
+                # Initialize nested dictionaries as needed
+                if round_name not in conference_series:
+                    conference_series[round_name] = {}
+                
+                if conf not in conference_series[round_name]:
+                    conference_series[round_name][conf] = []
+                
+                # Add this series to the appropriate group
+                series_info = {
+                    "team1": t1,
+                    "team2": t2,
+                    "score": f"{t1_wins}-{t2_wins}",
+                    "winner": winner
+                }
+                conference_series[round_name][conf].append(series_info)
+            
+            # Now output in the correct order
+            round_order = ['First Round', 'Conference Semifinals', 'Conference Finals', 'NBA Finals']
+            conf_order = ['Eastern Conference', 'Western Conference', 'NBA Finals']
+            
+            for round_name in round_order:
+                if round_name in conference_series:
                     report_messages.append(f"\n{round_name}:")
-                    current_round = round_name
-                    current_conference = None
-                
-                if conf != current_conference:
-                    report_messages.append(f"\n  {conf}:")
-                    current_conference = conf
-                
-                status = f"{t1_wins}-{t2_wins}"
-                if winner:
-                    status += f" ({winner} wins)"
-                else:
-                    status += " (In progress)"
-                
-                report_messages.append(f"    {t1} vs {t2}: {status}")
+                    
+                    # Process conferences in order
+                    for conf in conf_order:
+                        # For NBA Finals, the conf might be "NBA Finals" 
+                        if conf == "NBA Finals" and "NBA Finals" not in conference_series[round_name]:
+                            continue
+                            
+                        # Skip if this conf isn't in this round
+                        full_conf_names = [c for c in conference_series[round_name].keys() 
+                                         if c.startswith(conf.split()[0])]
+                        
+                        if not full_conf_names:
+                            continue
+                            
+                        # Use the first matching conference name
+                        conf_key = full_conf_names[0]
+                        
+                        report_messages.append(f"\n  {conf_key}:")
+                        
+                        # Output all series for this conference in this round
+                        for series_info in conference_series[round_name][conf_key]:
+                            t1 = series_info["team1"]
+                            t2 = series_info["team2"]
+                            score = series_info["score"]
+                            winner = series_info["winner"]
+                            
+                            status = score
+                            if winner:
+                                status += f" ({winner} wins)"
+                            else:
+                                status += " (In progress)"
+                                
+                            report_messages.append(f"    {t1} vs {t2}: {status}")
             
             # Get top playoff scorers
             cursor.execute('''

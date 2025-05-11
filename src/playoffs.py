@@ -5,8 +5,8 @@ import sqlite3
 from concurrent.futures import ThreadPoolExecutor
 
 from src.nba_classes import NBA_Game
-from src.globals import NBA_TEAMS, game_results
-from src.database import save_playoffs_game_to_db
+from src.globals import NBA_TEAMS, playoff_results
+from src.database import save_playoffs_game_to_db, save_playoff_series_to_db
 from src.stadium_ops import StadiumOperation
 
 def get_team_standings():
@@ -170,7 +170,9 @@ def generate_playoff_schedule(playoff_bracket, start_date=datetime(2024, 4, 20))
                     'date': current_date,
                     'series': series_desc,
                     'game_num': game_num,
-                    'must_win': False  # Will be updated during simulation
+                    'must_win': False,  # Will be updated during simulation
+                    'conference': conference,
+                    'round': round_name
                 })
                 
                 # Add spacing between games (more rest in later rounds)
@@ -231,44 +233,15 @@ def simulate_game_with_stadium_ops(game):
         merchandise_future.result()
     
     # Get game result
-    if game['game_id'] in game_results:
-        result = game_results[game['game_id']]
+    if game['game_id'] in playoff_results:
+        result = playoff_results[game['game_id']]
         winner = result['winner']
         
         # Add series information to the result for database
         result['series'] = game['series']
         result['game_number'] = game['game_num']
-        
-        series_name = game['series']
-        
-        # Default values
-        conference = "NBA Finals"
-        round_name = "Finals"
-        
-        # Determine the round and conference based on the series name
-        if "NBA Finals" in series_name:
-            conference = "NBA Finals"
-            round_name = "Finals"
-        elif "Eastern Conference" in series_name:
-            conference = "Eastern Conference"
-            if "First Round" in series_name:
-                round_name = "First Round"
-            elif "Conference Semifinals" in series_name:
-                round_name = "Semifinals"
-            elif "Conference Finals" in series_name:
-                round_name = "Conference Finals"
-        elif "Western Conference" in series_name:
-            conference = "Western Conference"
-            if "First Round" in series_name:
-                round_name = "First Round"
-            elif "Conference Semifinals" in series_name:
-                round_name = "Semifinals"
-            elif "Conference Finals" in series_name:
-                round_name = "Conference Finals"
-            
-        # Add explicit round information
-        result['round'] = round_name
-        result['conference'] = conference
+        result['round'] = game['round']
+        result['conference'] = game['conference']
         
         # Save to playoffs database
         save_playoffs_game_to_db(game['game_id'], result)
@@ -365,6 +338,19 @@ def simulate_single_series(games):
     # Determine series winner
     series_winner = team1 if wins[team1] > wins[team2] else team2
     logging.info(f"Series completed: {series_name} - {series_winner} wins {wins[team1]}-{wins[team2]}")
+
+    # Save series results to database
+    save_playoff_series_to_db(
+        series_name=series_name,
+        team1=team1,
+        team2=team2,
+        team1_wins=wins[team1],
+        team2_wins=wins[team2],
+        winner=series_winner,
+        conference=games[0]['conference'],
+        round_name=games[0]['round']
+    )
+
     return {
         'winner': series_winner,
         'score': f"{wins[team1]}-{wins[team2]}",

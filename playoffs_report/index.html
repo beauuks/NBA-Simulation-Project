@@ -1,0 +1,441 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NBA Playoffs Bracket</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background: #111827;
+                margin: 0;
+                padding: 20px;
+                color: #e5e7eb;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: #1f2937;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            }
+            h1 {
+                text-align: center;
+                color: #f9fafb;
+                text-transform: uppercase;
+                background: linear-gradient(90deg, #c2410c, #1d4ed8);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                padding: 10px 0;
+                font-size: 2.5em;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                margin-bottom: 30px;
+                border-bottom: 1px solid #374151;
+            }
+            .brackets {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+            .conference {
+                width: 48%;
+            }
+            .conference-title {
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 20px;
+                font-size: 1.4em;
+                padding: 8px 0;
+                border-radius: 6px;
+            }
+            .conference.east .conference-title {
+                background-color: #1d4ed8;
+                color: white;
+            }
+            .conference.west .conference-title {
+                background-color: #c2410c;
+                color: white;
+            }
+            .finals {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .finals-title {
+                font-weight: bold;
+                margin-bottom: 15px;
+                font-size: 1.6em;
+                background: linear-gradient(90deg, #f59e0b, #b45309);
+                color: white;
+                padding: 10px;
+                border-radius: 6px;
+            }
+            .round {
+                margin-bottom: 30px;
+            }
+            .round-title {
+                text-align: center;
+                margin-bottom: 15px;
+                font-weight: bold;
+                color: #d1d5db;
+                background-color: #374151;
+                padding: 6px;
+                border-radius: 4px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 0.9em;
+            }
+            .matchup {
+                border: 1px solid #4b5563;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                padding: 12px;
+                background-color: #2d3748;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            .team {
+                padding: 8px;
+                border-radius: 4px;
+                margin: 5px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .team-name {
+                font-weight: normal;
+            }
+            .team-score {
+                font-weight: bold;
+            }
+            .team.winner {
+                background-color: rgba(74, 222, 128, 0.2);
+                font-weight: bold;
+            }
+            .vs {
+                text-align: center;
+                font-size: 0.8em;
+                color: #9ca3af;
+                margin: 5px 0;
+            }
+            .finals-matchup {
+                border: 2px solid #f59e0b;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 0 auto;
+                max-width: 300px;
+                background-color: #2d3748;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            .champion {
+                margin-top: 20px;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #f59e0b;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                animation: pulse 2s infinite;
+                padding: 10px;
+                border: 2px solid #f59e0b;
+                border-radius: 6px;
+                background-color: rgba(245, 158, 11, 0.1);
+            }
+            @keyframes pulse {
+                0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.4); }
+                70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+                100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+            }
+            .trophy {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+            .timestamp {
+                text-align: center;
+                margin-top: 30px;
+                color: #9ca3af;
+                font-size: 0.8em;
+                border-top: 1px solid #374151;
+                padding-top: 15px;
+            }
+            .bracket-container {
+                position: relative;
+            }
+            .series-result {
+                font-size: 0.85em;
+                color: #9ca3af;
+                margin-top: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>NBA Playoffs Bracket</h1>
+            
+            <div class="bracket-container">
+                <div class="brackets">
+                    <div class="conference east">
+                        <div class="conference-title">Eastern Conference</div>
+                        
+                        <div class="round">
+                            <div class="round-title">First Round</div>
+                            <div id="east-r1-matches">
+                                
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Chicago Bulls</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Charlotte Hornets</span>
+                <span class="team-score">1</span>
+            </div>
+            <div class="series-result">Chicago Bulls wins 4-1</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Milwaukee Bucks</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Boston Celtics</span>
+                <span class="team-score">1</span>
+            </div>
+            <div class="series-result">Milwaukee Bucks wins 4-1</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team ">
+                <span class="team-name">Toronto Raptors</span>
+                <span class="team-score">3</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team winner">
+                <span class="team-name">Cleveland Cavaliers</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="series-result">Cleveland Cavaliers wins 3-4</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Washington Wizards</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Indiana Pacers</span>
+                <span class="team-score">3</span>
+            </div>
+            <div class="series-result">Washington Wizards wins 4-3</div>
+        </div>
+        
+                            </div>
+                        </div>
+                        
+                        <div class="round">
+                            <div class="round-title">Conference Semifinals</div>
+                            <div id="east-semis-matches">
+                                
+        <div class="matchup">
+            <div class="team ">
+                <span class="team-name">Washington Wizards</span>
+                <span class="team-score">0</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team winner">
+                <span class="team-name">Milwaukee Bucks</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="series-result">Milwaukee Bucks wins 0-4</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Chicago Bulls</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Cleveland Cavaliers</span>
+                <span class="team-score">3</span>
+            </div>
+            <div class="series-result">Chicago Bulls wins 4-3</div>
+        </div>
+        
+                            </div>
+                        </div>
+                        
+                        <div class="round">
+                            <div class="round-title">Conference Finals</div>
+                            <div id="east-finals-match">
+                                
+        <div class="matchup">
+            <div class="team ">
+                <span class="team-name">Chicago Bulls</span>
+                <span class="team-score">2</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team winner">
+                <span class="team-name">Milwaukee Bucks</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="series-result">Milwaukee Bucks wins 2-4</div>
+        </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="conference west">
+                        <div class="conference-title">Western Conference</div>
+                        
+                        <div class="round">
+                            <div class="round-title">First Round</div>
+                            <div id="west-r1-matches">
+                                
+        <div class="matchup">
+            <div class="team ">
+                <span class="team-name">Denver Nuggets</span>
+                <span class="team-score">1</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team winner">
+                <span class="team-name">Memphis Grizzlies</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="series-result">Memphis Grizzlies wins 1-4</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team ">
+                <span class="team-name">Houston Rockets</span>
+                <span class="team-score">2</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team winner">
+                <span class="team-name">Golden State Warriors</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="series-result">Golden State Warriors wins 2-4</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Phoenix Suns</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Oklahoma City Thunder</span>
+                <span class="team-score">2</span>
+            </div>
+            <div class="series-result">Phoenix Suns wins 4-2</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Los Angeles Lakers</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Los Angeles Clippers</span>
+                <span class="team-score">3</span>
+            </div>
+            <div class="series-result">Los Angeles Lakers wins 4-3</div>
+        </div>
+        
+                            </div>
+                        </div>
+                        
+                        <div class="round">
+                            <div class="round-title">Conference Semifinals</div>
+                            <div id="west-semis-matches">
+                                
+        <div class="matchup">
+            <div class="team ">
+                <span class="team-name">Golden State Warriors</span>
+                <span class="team-score">2</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team winner">
+                <span class="team-name">Phoenix Suns</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="series-result">Phoenix Suns wins 2-4</div>
+        </div>
+        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Memphis Grizzlies</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Los Angeles Lakers</span>
+                <span class="team-score">3</span>
+            </div>
+            <div class="series-result">Memphis Grizzlies wins 4-3</div>
+        </div>
+        
+                            </div>
+                        </div>
+                        
+                        <div class="round">
+                            <div class="round-title">Conference Finals</div>
+                            <div id="west-finals-match">
+                                
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Memphis Grizzlies</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Phoenix Suns</span>
+                <span class="team-score">1</span>
+            </div>
+            <div class="series-result">Memphis Grizzlies wins 4-1</div>
+        </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="finals">
+                    <div class="finals-title">NBA Finals</div>
+                    <div id="nba-finals-match" class="finals-matchup">
+                        
+        <div class="matchup">
+            <div class="team winner">
+                <span class="team-name">Milwaukee Bucks</span>
+                <span class="team-score">4</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team ">
+                <span class="team-name">Memphis Grizzlies</span>
+                <span class="team-score">1</span>
+            </div>
+            <div class="series-result">Milwaukee Bucks wins 4-1</div>
+        </div>
+        
+                    </div>
+                    <div id="champion-display" class="champion">
+                        <span class='trophy'>🏆</span> Milwaukee Bucks
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timestamp">
+                Generated on May 11, 2025 at 19:06:31
+            </div>
+        </div>
+    </body>
+    </html>
+    
