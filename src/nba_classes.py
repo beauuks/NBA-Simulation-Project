@@ -308,7 +308,7 @@ class NBA_Game():
                     'date': self.date,
                     'player_stats': player_stats
                 }
-                # Don't call save_game_to_db here, it will be called from simulate_game_with_stadium_ops
+
             else:
                 # Regular season - use game_results and save to db
                 game_results[self.game_id] = {
