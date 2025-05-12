@@ -22,7 +22,7 @@ def main():
 
     # regular season
     logging.info("Starting NBA regular season simulation")
-    eastern_games, western_games = generate_nba_schedule(num_games=5)
+    eastern_games, western_games = generate_nba_schedule(num_games=10)
     
     simulate_conferences(eastern_games, western_games)
     generate_stats_report()
