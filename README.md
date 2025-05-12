@@ -1,6 +1,4 @@
 # NBA Simulation Project 🏀
-## ⚠️ Project Status: Work in Progress
-**Note: This is an incomplete simulation project and is actively under development.**
 
 ## Overview
 This is a Python-based NBA game simulation project that demonstrates advanced concurrent programming techniques, including:
@@ -17,6 +15,8 @@ This is a Python-based NBA game simulation project that demonstrates advanced co
   - Quarter-by-quarter gameplay
   - Random event generation
   - Scoring mechanics
+  - Player stats
+  - Home-game advantages
 
 
 ### Stadium Operations
@@ -40,28 +40,6 @@ This is a Python-based NBA game simulation project that demonstrates advanced co
 - Generates detailed logging
 - Implements thread-safe data structures
 
-## Requirements
-
-- Libraries:
-  - threading
-  - queue
-  - sqlite3
-  - json
-
-
-## Limitations and TODOs
-
- - More sophisticated game mechanics
- - Enhanced player performance modeling
- - Expanded team and player data
- - Realistic player and team statistics
- - More comprehensive statistical analysis
- - External API integration for real-time data
- - Improved error handling
- - More detailed stadium operation simulations
-
-## Disclaimer
-This is a simulation project for educational and demonstrative purposes. It does not represent actual NBA game outcomes or official NBA statistics.
 
 ## Course Context
 This project was developed as a comprehensive assignment for the **Operating Systems and Parallel Computing** course. It serves to demonstrate practical applications of:
@@ -70,6 +48,3 @@ This project was developed as a comprehensive assignment for the **Operating Sys
 - Parallel computing principles
 - Thread synchronization
 - Resource management
-
-## Contributions
-Contributions, issues, and feature requests are welcome!
