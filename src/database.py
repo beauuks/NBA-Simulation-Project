@@ -152,7 +152,7 @@ def save_game_to_db(game_id, result):
         raise
 
 def save_playoffs_game_to_db(game_id, result):
-    """Save playoff game results to database with series information"""
+    """Save playoff game results to database"""
     try:
         with sqlite3.connect('nba_simulation.db') as conn:
             cursor = conn.cursor()
@@ -403,7 +403,7 @@ def generate_playoffs_report():
             
             report_messages.append("\nPLAYOFF SERIES RESULTS:")
             
-            conference_series = {}  # {conf: [series_data]}
+            conference_series = {}  
             
             # First, group by round and conference
             for s_name, t1, t2, t1_wins, t2_wins, winner, conf, round_name in series:
@@ -498,7 +498,7 @@ def generate_playoffs_report():
         for message in report_messages:
             logging.info(message)
         
-        # Remove the file handler after logging
+        # Remove the file handler
         root_logger.removeHandler(file_handler)
         file_handler.close()
 

@@ -122,7 +122,6 @@ def generate_playoff_schedule(playoff_bracket, start_date=datetime(2024, 4, 20))
         round_data = playoff_bracket
         round_index = 1
     else:
-        # Standard first round format from create_playoff_bracket
         round_name = "First Round"
         round_data = playoff_bracket 
         round_index = 0

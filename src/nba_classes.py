@@ -133,7 +133,7 @@ class NBA_Game():
                 weights=play_weights
             )[0]
             
-            default_stats = {"2p%": 0.45, "3p%": 0.35, "ft%": 0.75}
+            default_stats = {"2p%": 0.45, "3p%": 0.35, "ft%": 0.75} # in case there's an error getting the player stats 
 
             if play_type == '2PT':
                 try:
@@ -145,7 +145,7 @@ class NBA_Game():
                         success_chance = base_percentage
                     success = random.random() < success_chance
                 except KeyError:
-                    # apply home court advantage to default percentage
+                    #  home court advantage + default percentage
                     if offense_team == home_team:
                         success = random.random() < (default_stats['2p%'] + home_shooting_boost)
                     else:
@@ -296,7 +296,7 @@ class NBA_Game():
         # Store game results safely
         with game_lock:
             if is_playoff_game:
-                # Store in playoff_results for playoff games
+                # Store in playoff_results dict for playoff games
                 playoff_results[self.game_id] = {
                     'team1': self.team1,
                     'team2': self.team2,
@@ -310,7 +310,7 @@ class NBA_Game():
                 }
 
             else:
-                # Regular season - use game_results and save to db
+                # save to regular season game results dict
                 game_results[self.game_id] = {
                     'team1': self.team1,
                     'team2': self.team2,
@@ -322,7 +322,7 @@ class NBA_Game():
                     'date': self.date,
                     'player_stats': player_stats
                 }
-                # Save regular season games to database immediately
+                # Save regular season games to database
                 save_game_to_db(self.game_id, game_results[self.game_id])
         
         # Signal that the game has ended

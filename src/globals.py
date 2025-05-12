@@ -6,7 +6,6 @@ import json
 game_results = {}
 playoff_results = {}
 game_lock = threading.Lock()
-stats_queue = queue.Queue()
 
 # Load the JSON file
 with open('data/nba_data.json', 'r') as f:
